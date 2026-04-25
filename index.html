@@ -681,7 +681,7 @@ function renderQ() {
       <div class="q-text">${q.text}</div>
       <div class="options">
         ${shuffledOpts.map((o, i) => `
-          <button class="opt-btn${selScore===o.score?' selected':''}" onclick="selectOpt(${o.score})">
+          <button class="opt-btn${selScore===o.score?' selected':''}" data-score="${o.score}" onclick="selectOpt(${o.score})">
             <span class="opt-num">${['A','B','C','D'][i]}</span>${o.text}
           </button>
         `).join('')}
@@ -695,9 +695,9 @@ function renderQ() {
 }
 
 function selectOpt(score) {
-  qState.answers[qState.cur] = score; // store the score value
+  qState.answers[qState.cur] = score;
   document.querySelectorAll('.opt-btn').forEach(b => {
-    b.classList.toggle('selected', parseInt(b.getAttribute('onclick').match(/\d+/)[0]) === score);
+    b.classList.toggle('selected', parseInt(b.dataset.score) === score);
   });
   document.getElementById('btn-next').disabled = false;
 }
@@ -730,11 +730,11 @@ function computeAndShow() {
   document.getElementById('q-loading').style.display = 'none';
   const area = document.getElementById('q-result');
   area.style.display = 'block';
-  area.innerHTML = buildResultHTML(type, a1sum, a2sum);
-  // animate bars
+  area.innerHTML = buildResultHTML(type, a1sum, a2sum, a1n, a2n);
+  // animate bars: score range = [n, n*4], span = n*3
   setTimeout(() => {
-    const lPct = Math.round(a1sum / 16 * 100);
-    const sPct = Math.round(a2sum / 16 * 100);
+    const lPct = Math.min(100, Math.round((a1sum - a1n) / (a1n * 3) * 100));
+    const sPct = Math.min(100, Math.round((a2sum - a2n) / (a2n * 3) * 100));
     document.getElementById('bar-a1').style.width = `${lPct}%`;
     document.getElementById('bar-a2').style.width = `${sPct}%`;
     document.getElementById('pct-a1').textContent = `${lPct}%`;
@@ -742,7 +742,7 @@ function computeAndShow() {
   }, 100);
 }
 
-function buildResultHTML(type, a1sum, a2sum) {
+function buildResultHTML(type, a1sum, a2sum, a1n, a2n) {
   const grad = typeGrad(type.a1, type.a2);
   const a1label = ['深聴き','やや聴き','やや話し','深話し'][type.a1-1];
   const a2label = ['のんびり','ゆったり','さくさく','ぱっぱ'][type.a2-1];

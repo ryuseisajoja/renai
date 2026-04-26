@@ -3,141 +3,1490 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>恋愛・会話スタイルのコラム一覧｜ことばの波長診断</title>
-  <meta name="description" content="話し方・聴き方・恋愛スタイルに関するコラム。聴き上手の恋愛傾向、話すペースが合わない相手との付き合い方など、会話スタイルと恋愛の関係を解説します。">
-  <link rel="canonical" href="https://love-kotoba-shindan.com/articles/">
-  <meta property="og:title" content="恋愛・会話スタイルのコラム一覧｜ことばの波長診断">
+  <title>ことばの波長、合ってる？ — 話し方でわかる恋愛相性診断16タイプ</title>
+  <meta name="description" content="「聴く派 or 話す派」「ゆっくり or はやく」の2軸で会話スタイルを16タイプに分類。恋愛の相性を数値で診断します。全12問・約3分・無料。">
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2580973941635700"
+     crossorigin="anonymous"></script>
+
+  <!-- OGP (SNSシェア用) -->
+  <meta property="og:title" content="ことばの波長、合ってる？ — 恋愛相性診断16タイプ">
+  <meta property="og:description" content="話し方・聴き方でわかる恋愛相性診断。16タイプで相性スコアが数値でわかる。全12問・約3分・無料。">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://love-kotoba-shindan.com/">
+  <meta property="og:image" content="https://love-kotoba-shindan.com/ogp.png">
   <meta property="og:site_name" content="ことばの波長診断">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ことばの波長、合ってる？ — 恋愛相性診断16タイプ">
+  <meta name="twitter:description" content="話し方・聴き方でわかる恋愛相性診断。16タイプで相性スコアが数値でわかる。全12問・無料。">
+  <meta name="twitter:image" content="https://love-kotoba-shindan.com/ogp.png">
+
+  <!-- 正規URL -->
+  <link rel="canonical" href="https://love-kotoba-shindan.com/">
+
+  <!-- ▼ Google AdSense ▼ -->
+  <!-- AdSense審査通過後、下のコメントをアカウントのコードに差し替えてください -->
+  <!--
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  -->
+  <!-- ▲ Google AdSense ▲ -->
 
   <style>
+  /* ── Share Buttons ── */
+  .share-row { display:flex; gap:8px; margin-bottom:10px; }
+  .share-btn {
+    flex:1; padding:12px 8px; border:none; border-radius:12px;
+    font-size:0.88rem; font-weight:700; cursor:pointer; transition:all 0.18s;
+    display:flex; align-items:center; justify-content:center; gap:6px;
+  }
+  .share-x   { background:#000; color:#fff; }
+  .share-x:hover { background:#222; transform:translateY(-2px); }
+  .share-line { background:#06c755; color:#fff; }
+  .share-line:hover { background:#05b04d; transform:translateY(-2px); }
+  .share-copy { background:var(--pink-pale); color:var(--pink); border:2px solid var(--pink-light); }
+  .share-copy:hover { background:var(--pink-light); transform:translateY(-2px); }
+
+  /* ── Affiliate Banner ── */
+  .affil-banner {
+    border-radius:16px; overflow:hidden; margin:18px 0;
+    border:2px solid var(--pink-light); background:white;
+  }
+  .affil-head {
+    background:linear-gradient(135deg,#f06292,#9c6fc9);
+    color:white; padding:10px 16px; font-size:0.78rem; font-weight:700; letter-spacing:0.5px;
+  }
+  .affil-body { padding:14px 16px; }
+  .affil-title { font-size:0.95rem; font-weight:800; color:var(--text-dark); margin-bottom:6px; }
+  .affil-desc  { font-size:0.8rem; color:var(--text-mid); line-height:1.6; margin-bottom:12px; }
+  .affil-apps  { display:flex; flex-direction:column; gap:8px; }
+  .affil-app {
+    display:flex; align-items:center; gap:10px; background:var(--pink-pale);
+    border-radius:11px; padding:10px 13px; text-decoration:none; color:inherit;
+    transition:all 0.18s;
+  }
+  .affil-app:hover { background:var(--pink-light); transform:translateX(3px); }
+  .affil-app-icon { font-size:1.5rem; flex-shrink:0; }
+  .affil-app-info { flex:1; }
+  .affil-app-name { font-size:0.88rem; font-weight:800; color:var(--text-dark); }
+  .affil-app-sub  { font-size:0.75rem; color:var(--text-mid); }
+  .affil-app-cta  { font-size:0.78rem; font-weight:700; color:var(--pink); flex-shrink:0; }
+
+  /* ── Shared result banner ── */
+  .shared-banner {
+    background:linear-gradient(135deg,#f06292,#9c6fc9); color:white;
+    border-radius:14px; padding:14px 18px; margin-bottom:16px;
+    display:flex; align-items:center; gap:12px;
+  }
+  .shared-banner p { font-size:0.85rem; line-height:1.5; }
+  .shared-banner strong { font-size:1rem; display:block; margin-bottom:3px; }
+
+  /* ── Ad Unit ── */
+  .ad-unit {
+    background: var(--pink-pale); border-radius: var(--radius);
+    padding: 12px; margin-bottom: 18px; text-align: center;
+    border: 1px dashed #f5c6d8; min-height: 90px;
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column; gap: 6px;
+  }
+  .ad-unit-label { font-size: 0.68rem; color: var(--text-light); letter-spacing: 1px; }
+  /* Google AdSense用 ins タグ非表示時の代替スタイル */
+  ins.adsbygoogle { display: block; width: 100%; }
+
     :root {
-      --pink: #f06292; --pink-light: #fce4ec; --pink-pale: #fff8fb;
-      --purple: #9c6fc9; --text-dark: #2d2d2d; --text-mid: #555; --text-light: #999;
-      --white: #fff; --radius: 16px;
+      --pink: #f06292;
+      --pink-light: #fce4ec;
+      --pink-pale: #fff8fb;
+      --purple: #9c6fc9;
+      --purple-light: #ede0f8;
+      --text-dark: #2d2d2d;
+      --text-mid: #555;
+      --text-light: #999;
+      --white: #ffffff;
+      --shadow: 0 8px 32px rgba(200,100,150,0.13);
+      --shadow-sm: 0 3px 12px rgba(0,0,0,0.07);
+      --radius: 20px;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif; background: linear-gradient(145deg, #fff0f7 0%, #f3e5ff 55%, #e8f4fd 100%); min-height: 100vh; color: var(--text-dark); }
-    header { background: linear-gradient(135deg, #f06292, #9c6fc9); color: white; padding: 14px 20px; }
-    .site-name { font-size: 0.82rem; font-weight: 700; text-decoration: none; color: white; }
-    main { max-width: 720px; margin: 0 auto; padding: 28px 16px 80px; }
-    h1 { font-size: 1.5rem; font-weight: 900; margin-bottom: 8px; }
-    .sub { color: var(--text-mid); font-size: 0.88rem; margin-bottom: 28px; }
-    .article-card {
-      background: white; border-radius: var(--radius); overflow: hidden;
-      box-shadow: 0 4px 18px rgba(200,100,150,0.1); margin-bottom: 16px;
-      text-decoration: none; color: inherit; display: block; transition: all 0.2s;
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+      background: linear-gradient(145deg, #fff0f7 0%, #f3e5ff 55%, #e8f4fd 100%);
+      min-height: 100vh;
+      color: var(--text-dark);
     }
-    .article-card:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(200,100,150,0.18); }
-    .article-card-head { background: linear-gradient(135deg, #f06292, #9c6fc9); padding: 14px 18px; display: flex; align-items: center; gap: 12px; }
-    .article-card-icon { font-size: 2rem; }
-    .article-card-title { color: white; font-size: 1rem; font-weight: 800; line-height: 1.4; }
-    .article-card-body { padding: 14px 18px; }
-    .article-card-desc { font-size: 0.85rem; color: var(--text-mid); line-height: 1.7; margin-bottom: 10px; }
-    .article-card-meta { font-size: 0.75rem; color: var(--text-light); display: flex; gap: 10px; align-items: center; }
-    .article-tag { background: var(--pink-pale); color: var(--pink); padding: 3px 10px; border-radius: 50px; font-size: 0.72rem; font-weight: 700; }
-    .cta-block { background: linear-gradient(135deg, #f06292, #9c6fc9); border-radius: 18px; padding: 24px; text-align: center; margin-top: 32px; color: white; }
-    .cta-btn { display: inline-block; background: white; color: var(--pink); font-weight: 900; font-size: 0.95rem; padding: 12px 28px; border-radius: 50px; text-decoration: none; margin-top: 12px; }
+
+    /* ── Header ── */
+    header { text-align: center; padding: 44px 20px 28px; }
+    .header-emojis { font-size: 2.2rem; letter-spacing: 5px; margin-bottom: 10px; }
+    header h1 {
+      font-size: clamp(1.5rem, 5vw, 2.4rem);
+      font-weight: 900;
+      background: linear-gradient(135deg, #f06292, #9c6fc9);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text; line-height: 1.3; margin-bottom: 8px;
+    }
+    header p { color: var(--text-mid); font-size: 0.9rem; }
+
+    /* ── Layout ── */
+    main { max-width: 780px; margin: 0 auto; padding: 0 14px 80px; }
+
+    /* ── Card ── */
+    .card {
+      background: var(--white); border-radius: var(--radius);
+      padding: 30px; margin-bottom: 20px; box-shadow: var(--shadow);
+    }
+
+    /* ── Tabs ── */
+    .nav-tabs {
+      display: flex; gap: 6px; margin-bottom: 24px;
+      background: var(--pink-pale); border-radius: 50px; padding: 5px;
+    }
+    .nav-tab {
+      flex: 1; padding: 9px 4px; border: none; border-radius: 50px;
+      cursor: pointer; font-size: 0.8rem; font-weight: 700;
+      color: var(--text-mid); background: transparent; transition: all 0.22s;
+    }
+    .nav-tab.active {
+      background: linear-gradient(135deg, #f06292, #9c6fc9);
+      color: white; box-shadow: 0 4px 14px rgba(240,98,146,0.32);
+    }
+    .section { display: none; }
+    .section.active { display: block; }
+
+    /* ── Progress ── */
+    .progress-wrap { margin-bottom: 24px; }
+    .progress-labels { display: flex; justify-content: space-between; font-size: 0.78rem; color: var(--text-light); margin-bottom: 5px; }
+    .progress-bar { height: 5px; background: var(--pink-light); border-radius: 99px; overflow: hidden; }
+    .progress-fill { height: 100%; background: linear-gradient(90deg, #f06292, #9c6fc9); border-radius: 99px; transition: width 0.4s ease; }
+
+    /* ── Question ── */
+    .q-anim { animation: fadeUp 0.35s ease; }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+    .q-badge {
+      display: inline-block; background: linear-gradient(135deg, #f06292, #9c6fc9);
+      color: white; font-size: 0.72rem; font-weight: 700; padding: 3px 12px;
+      border-radius: 50px; margin-bottom: 10px;
+    }
+    .q-axis-hint { font-size: 0.75rem; color: var(--text-light); margin-bottom: 6px; }
+    .q-text { font-size: 1.1rem; font-weight: 800; line-height: 1.55; margin-bottom: 18px; }
+    .options { display: flex; flex-direction: column; gap: 9px; }
+    .opt-btn {
+      width: 100%; padding: 13px 16px; border: 2px solid #f3e5f5;
+      border-radius: 13px; background: white; cursor: pointer;
+      font-size: 0.9rem; font-weight: 600; color: var(--text-dark);
+      text-align: left; transition: all 0.18s; display: flex; align-items: center; gap: 10px;
+    }
+    .opt-btn:hover { border-color: var(--pink); background: var(--pink-pale); transform: translateX(4px); }
+    .opt-btn.selected { border-color: var(--pink); background: linear-gradient(135deg, #fff0f7, #f3e5ff); }
+    .opt-num {
+      width: 26px; height: 26px; border-radius: 50%; background: var(--pink-light);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.78rem; font-weight: 800; color: var(--pink); flex-shrink: 0;
+    }
+    .opt-btn.selected .opt-num { background: linear-gradient(135deg, #f06292, #9c6fc9); color: white; }
+
+    /* ── Buttons ── */
+    .nav-btns { display: flex; gap: 10px; margin-top: 24px; }
+    .btn { flex: 1; padding: 13px; border: none; border-radius: 13px; font-size: 0.95rem; font-weight: 700; cursor: pointer; transition: all 0.2s; }
+    .btn-prev { background: var(--pink-pale); color: var(--pink); }
+    .btn-prev:hover { background: var(--pink-light); }
+    .btn-next { background: linear-gradient(135deg, #f06292, #9c6fc9); color: white; box-shadow: 0 4px 14px rgba(240,98,146,0.28); }
+    .btn-next:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(240,98,146,0.38); }
+    .btn-next:disabled { opacity: 0.4; cursor: not-allowed; transform: none; box-shadow: none; }
+    .btn-outline { width: 100%; padding: 13px; border: 2px solid var(--pink); border-radius: 13px; background: white; color: var(--pink); font-size: 0.93rem; font-weight: 700; cursor: pointer; margin-top: 10px; transition: all 0.18s; }
+    .btn-outline:hover { background: var(--pink-pale); }
+    .btn-full { width: 100%; padding: 14px; border: none; border-radius: 13px; background: linear-gradient(135deg, #f06292, #9c6fc9); color: white; font-size: 1rem; font-weight: 700; cursor: pointer; box-shadow: 0 4px 14px rgba(240,98,146,0.28); transition: all 0.2s; }
+    .btn-full:hover { transform: translateY(-2px); }
+    .btn-full:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+
+    /* ── Loading ── */
+    .loading-wrap { text-align: center; padding: 60px 20px; }
+    .pulse { font-size: 3.2rem; animation: pulse 0.85s ease-in-out infinite; }
+    @keyframes pulse { 0%,100%{transform:scale(1);} 50%{transform:scale(1.25);} }
+
+    /* ── 4×4 Grid (type map) ── */
+    .grid-wrap { position: relative; }
+    .axis-label-top {
+      display: flex; justify-content: space-between; font-size: 0.72rem;
+      color: var(--text-light); padding: 0 0 4px; font-weight: 600;
+    }
+    .grid-body { display: flex; gap: 4px; }
+    .axis-label-left {
+      display: flex; flex-direction: column; justify-content: space-between;
+      font-size: 0.68rem; color: var(--text-light); padding: 0 5px 0 0;
+      font-weight: 600; writing-mode: vertical-rl; text-orientation: mixed;
+      align-items: flex-end; gap: 0;
+    }
+    .axis-label-left span { writing-mode: horizontal-tb; font-size: 0.68rem; }
+    .type-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; flex: 1;
+    }
+    .type-cell {
+      border-radius: 11px; padding: 8px 5px; text-align: center;
+      cursor: pointer; transition: all 0.18s; border: 2px solid transparent;
+      position: relative;
+    }
+    .type-cell:hover { transform: scale(1.06); z-index: 2; }
+    .type-cell.selected { border-color: #fff; box-shadow: 0 0 0 3px #f06292, 0 4px 14px rgba(240,98,146,0.4); transform: scale(1.08); z-index: 3; }
+    .type-cell.highlight { box-shadow: 0 0 0 3px #9c6fc9, 0 4px 16px rgba(156,111,201,0.5); transform: scale(1.1); z-index: 4; }
+    .cell-icon { font-size: 1.3rem; }
+    .cell-name { font-size: 0.58rem; font-weight: 700; color: rgba(255,255,255,0.92); margin-top: 2px; line-height: 1.2; }
+
+    /* ── Result Type Card ── */
+    .result-hero {
+      border-radius: 18px; padding: 30px; text-align: center;
+      color: white; margin-bottom: 20px;
+    }
+    .result-hero .r-icon { font-size: 3.2rem; margin-bottom: 10px; }
+    .result-hero .r-pos { font-size: 0.72rem; font-weight: 700; opacity: 0.82; letter-spacing: 2px; margin-bottom: 3px; }
+    .result-hero .r-name { font-size: 1.75rem; font-weight: 900; margin-bottom: 8px; }
+    .result-hero .r-catch { font-size: 0.87rem; opacity: 0.9; line-height: 1.7; }
+
+    /* ── Trait tags ── */
+    .traits-row { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 18px; }
+    .tag { padding: 5px 13px; border-radius: 50px; font-size: 0.82rem; font-weight: 600; background: var(--pink-light); color: var(--pink); }
+
+    /* ── Section heading ── */
+    .s-title { font-size: 1rem; font-weight: 800; margin-bottom: 13px; display: flex; align-items: center; gap: 7px; }
+
+    /* ── Axis score bars ── */
+    .score-bars { display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px; }
+    .bar-row { display: flex; align-items: center; gap: 8px; }
+    .bar-axis { font-size: 0.78rem; color: var(--text-mid); width: 56px; text-align: right; flex-shrink: 0; }
+    .bar-track { flex: 1; height: 18px; background: var(--pink-pale); border-radius: 99px; overflow: hidden; }
+    .bar-fill { height: 100%; border-radius: 99px; transition: width 0.8s ease; }
+    .bar-pct { font-size: 0.78rem; color: var(--text-mid); width: 32px; flex-shrink: 0; }
+
+    /* ── Compat item ── */
+    .compat-item {
+      display: flex; align-items: flex-start; gap: 11px;
+      background: var(--pink-pale); border-radius: 12px; padding: 12px 14px; margin-bottom: 8px;
+    }
+    .compat-item .ci-icon { font-size: 1.5rem; flex-shrink: 0; }
+    .compat-item .ci-body { flex: 1; }
+    .compat-item .ci-name { font-size: 0.87rem; font-weight: 800; margin-bottom: 2px; }
+    .compat-item .ci-score { font-size: 0.78rem; color: var(--pink); font-weight: 700; margin-bottom: 3px; }
+    .compat-item .ci-desc { font-size: 0.8rem; color: var(--text-mid); line-height: 1.6; }
+
+    /* ── Compat result band ── */
+    .compat-band { border-radius: 16px; overflow: hidden; display: none; margin-top: 20px; }
+    .compat-band.show { display: block; animation: fadeUp 0.4s ease; }
+    .band-top { padding: 26px; text-align: center; color: white; }
+    .band-hearts { font-size: 1.6rem; letter-spacing: 3px; margin-bottom: 6px; }
+    .band-score { font-size: 3.8rem; font-weight: 900; line-height: 1; }
+    .band-label { font-size: 0.88rem; opacity: 0.88; margin-top: 4px; }
+    .band-body { background: var(--pink-pale); padding: 22px; }
+    .band-title { font-size: 1.2rem; font-weight: 900; margin-bottom: 8px; }
+    .band-desc { font-size: 0.88rem; color: var(--text-mid); line-height: 1.8; margin-bottom: 14px; }
+    .band-points { display: flex; flex-direction: column; gap: 8px; }
+    .band-point { background: white; border-radius: 11px; padding: 11px 14px; font-size: 0.83rem; color: var(--text-mid); line-height: 1.6; }
+    .band-point strong { color: var(--text-dark); }
+
+    /* ── Type detail ── */
+    .type-detail { display: none; }
+    .type-detail.show { display: block; animation: fadeUp 0.3s ease; }
+
+    /* ── Position grid in result ── */
+    .position-grid-wrap { margin-bottom: 20px; }
+    .mini-grid-outer { display: flex; align-items: flex-start; gap: 5px; margin-top: 6px; }
+    .mini-axis-left {
+      display: flex; flex-direction: column; justify-content: space-around;
+      font-size: 0.65rem; color: var(--text-light); height: 140px; flex-shrink: 0;
+    }
+    .mini-axis-left span { writing-mode: horizontal-tb; }
+    .mini-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 3px; flex: 1;
+    }
+    .mini-cell {
+      height: 32px; border-radius: 7px; display: flex; align-items: center;
+      justify-content: center; font-size: 0.9rem; transition: all 0.2s;
+      opacity: 0.55;
+    }
+    .mini-cell.me { opacity: 1; box-shadow: 0 0 0 2.5px white, 0 0 0 4px #f06292; transform: scale(1.12); z-index: 1; position: relative; }
+
+    /* ── Type Overview tab ── */
+    .overview-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;
+      margin-bottom: 16px;
+    }
+    @media(max-width:520px) { .overview-grid { grid-template-columns: repeat(2,1fr); } }
+    .ov-cell {
+      border-radius: 14px; overflow: hidden; cursor: pointer;
+      box-shadow: var(--shadow-sm); transition: all 0.2s;
+    }
+    .ov-cell:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+    .ov-cell.active { box-shadow: 0 0 0 3px #f06292, var(--shadow); }
+    .ov-head { padding: 14px 10px 10px; text-align: center; color: white; }
+    .ov-head .ov-icon { font-size: 1.8rem; margin-bottom: 4px; }
+    .ov-head .ov-name { font-size: 0.72rem; font-weight: 800; }
+    .ov-body { background: white; padding: 8px 10px 10px; }
+    .ov-short { font-size: 0.68rem; color: var(--text-mid); line-height: 1.5; margin-bottom: 6px; }
+    .ov-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+    .ov-tag { font-size: 0.62rem; padding: 2px 8px; border-radius: 50px; font-weight: 600; }
+
+    /* ── Compat type selectors (16 in grid) ── */
+    .sel-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; margin-bottom: 16px; }
+    .sel-cell {
+      border-radius: 10px; padding: 8px 4px; text-align: center;
+      cursor: pointer; border: 2px solid transparent; transition: all 0.18s;
+    }
+    .sel-cell:hover { transform: scale(1.06); }
+    .sel-cell.selected { border-color: white; box-shadow: 0 0 0 3px #f06292; }
+    .sel-cell .sc-icon { font-size: 1.2rem; }
+    .sel-cell .sc-name { font-size: 0.56rem; font-weight: 700; color: rgba(255,255,255,0.9); margin-top: 2px; line-height: 1.2; }
+
+    /* ── Axis labels ── */
+    .axis-row { display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--text-light); font-weight: 600; margin-bottom: 4px; padding: 0 2px; }
+    .sel-grid-wrap { position: relative; }
+    .sel-left-labels {
+      position: absolute; left: -38px; top: 0; bottom: 0;
+      display: flex; flex-direction: column; justify-content: space-between;
+      font-size: 0.65rem; color: var(--text-light); font-weight: 600;
+    }
+
     footer { text-align: center; padding: 16px; color: var(--text-light); font-size: 0.75rem; }
-    footer a { color: var(--text-light); }
   </style>
 </head>
 <body>
+
 <header>
-  <a class="site-name" href="../index.html">💕 ことばの波長診断</a>
+  <div class="header-emojis">💬 💕 👂</div>
+  <h1>ことばの波長、合ってる？</h1>
+  <p>話し方・聴き方でわかる恋愛相性診断</p>
 </header>
+
 <main>
-  <h1>恋愛・会話スタイル コラム</h1>
-  <p class="sub">「話し方」と「恋愛」の関係を深掘りするコラム集</p>
-
-  <a class="article-card" href="2026-04-26-line-henshin-speed-couple.html">
-    <div class="article-card-head" style="background:linear-gradient(135deg,#e91e8c,#9c6fc9);">
-      <div class="article-card-icon">📱</div>
-      <div class="article-card-title">LINEの返信スピードが違うカップルの問題と解決策<br>「既読スルー」に悩まない考え方</div>
-    </div>
-    <div class="article-card-body">
-      <div class="article-card-desc">「すぐ返す派」vs「まとめて返す派」のすれ違いが起きる本当の原因と、関係を壊さないための具体的な対処法を解説。</div>
-      <div class="article-card-meta">
-        <span>2026年4月</span>
-        <span class="article-tag">LINE</span>
-        <span class="article-tag">すれ違い</span>
-        <span style="margin-left:auto;color:var(--pink);font-weight:700;">読む →</span>
-      </div>
-    </div>
-  </a>
-
-  <a class="article-card" href="2026-04-26-oshaberi-renai-wana.html">
-    <div class="article-card-head" style="background:linear-gradient(135deg,#f06292,#e040b0);">
-      <div class="article-card-icon">🗣️</div>
-      <div class="article-card-title">話し好きな人が恋愛で陥りがちな罠5つ<br>喋りすぎが恋愛を壊すパターンとは</div>
-    </div>
-    <div class="article-card-body">
-      <div class="article-card-desc">会話が得意な人ほど無意識に相手を疲れさせてしまうことがある。話し好きタイプの落とし穴と、恋愛上手になる3つの習慣を解説。</div>
-      <div class="article-card-meta">
-        <span>2026年4月</span>
-        <span class="article-tag">話し好き</span>
-        <span class="article-tag">恋愛心理</span>
-        <span style="margin-left:auto;color:var(--pink);font-weight:700;">読む →</span>
-      </div>
-    </div>
-  </a>
-
-  <a class="article-card" href="2026-04-26-first-date-kaiwa-tsudzukanai.html">
-    <div class="article-card-head" style="background:linear-gradient(135deg,#9c6fc9,#f06292);">
-      <div class="article-card-icon">💬</div>
-      <div class="article-card-title">初デートで会話が続かない原因と対処法5選<br>沈黙を怖がらなくていい理由</div>
-    </div>
-    <div class="article-card-body">
-      <div class="article-card-desc">初デートで沈黙が起きるのは話し方タイプの違いが原因なことが多い。タイプ別の対処法と「沈黙は相性のバロメーター」という新しい考え方を解説。</div>
-      <div class="article-card-meta">
-        <span>2026年4月</span>
-        <span class="article-tag">初デート</span>
-        <span class="article-tag">会話</span>
-        <span style="margin-left:auto;color:var(--pink);font-weight:700;">読む →</span>
-      </div>
-    </div>
-  </a>
-
-  <a class="article-card" href="kiki-jouzu-renai.html">
-    <div class="article-card-head">
-      <div class="article-card-icon">👂</div>
-      <div class="article-card-title">聴き上手な人の恋愛の特徴5選<br>「話を聞いてくれる」が最強の武器になる理由</div>
-    </div>
-    <div class="article-card-body">
-      <div class="article-card-desc">安心感・信頼・長続きの秘密。聴き上手タイプの強みと弱点、相性のいい相手を徹底解説します。</div>
-      <div class="article-card-meta">
-        <span>2026年4月</span>
-        <span class="article-tag">聴き上手</span>
-        <span class="article-tag">恋愛傾向</span>
-        <span style="margin-left:auto;color:var(--pink);font-weight:700;">読む →</span>
-      </div>
-    </div>
-  </a>
-
-  <a class="article-card" href="speed-gap-renai.html">
-    <div class="article-card-head" style="background:linear-gradient(135deg,#9c6fc9,#5c6bc0);">
-      <div class="article-card-icon">⏱️</div>
-      <div class="article-card-title">話すスピードが合わない相手との付き合い方<br>テンポのズレを乗り越える5つのコツ</div>
-    </div>
-    <div class="article-card-body">
-      <div class="article-card-desc">ゆっくり派×はやい派カップルのすれ違いパターンと、それを乗り越えるための具体的な方法を解説。</div>
-      <div class="article-card-meta">
-        <span>2026年4月</span>
-        <span class="article-tag">テンポ</span>
-        <span class="article-tag">すれ違い</span>
-        <span style="margin-left:auto;color:var(--pink);font-weight:700;">読む →</span>
-      </div>
-    </div>
-  </a>
-
-  <div class="cta-block">
-    <p style="font-weight:800;font-size:1rem;margin-bottom:6px;">💕 自分の「ことばの波長タイプ」を診断</p>
-    <p style="font-size:0.85rem;opacity:0.9;">全12問・約3分・無料<br>相性のいい相手のタイプもわかります</p>
-    <a class="cta-btn" href="../index.html">診断する ▶</a>
+  <div class="nav-tabs">
+    <button class="nav-tab active" onclick="showTab('diagnose',this)">🔍 診断する</button>
+    <button class="nav-tab" onclick="showTab('compat',this)">💕 相性チェック</button>
+    <button class="nav-tab" onclick="showTab('types',this)">📖 タイプ一覧</button>
   </div>
+
+  <!-- ===== 診断タブ ===== -->
+  <div id="tab-diagnose" class="section active">
+
+    <div id="q-start" class="card">
+      <div style="text-align:center;margin-bottom:22px;">
+        <div style="font-size:2.8rem;margin-bottom:12px;">💬</div>
+        <h2 style="font-size:1.25rem;font-weight:900;margin-bottom:6px;">あなたの「ことばの波長」を診断</h2>
+        <p style="color:var(--text-mid);font-size:0.82rem;">全12問・約3分・無料</p>
+      </div>
+
+      <div style="background:var(--pink-pale);border-radius:14px;padding:18px;margin-bottom:18px;">
+        <p style="font-size:0.88rem;line-height:1.9;color:var(--text-mid);">
+          話し方って、人によって全然違いますよね。<br>
+          ずっと聴いてくれる人もいれば、どんどん話してくれる人もいる。
+          ゆっくり言葉を選ぶ人もいれば、思ったことをすぐ口にする人も。<br><br>
+          この診断では <strong style="color:var(--text-dark);">「聴く ↔ 話す」</strong> と
+          <strong style="color:var(--text-dark);">「ゆっくり ↔ はやく」</strong> の
+          2つの軸を4段階で測定して、あなたの会話スタイルを <strong style="color:var(--pink);">16タイプ</strong> に分類します。
+        </p>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:22px;">
+        <div style="display:flex;align-items:flex-start;gap:10px;font-size:0.85rem;color:var(--text-mid);">
+          <span style="font-size:1.1rem;flex-shrink:0;">📝</span>
+          <span><strong style="color:var(--text-dark);">シナリオ形式の質問</strong>に直感で答えるだけ。「こういうとき自分ってどうするかな」と想像しながら選んでみてください。</span>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:10px;font-size:0.85rem;color:var(--text-mid);">
+          <span style="font-size:1.1rem;flex-shrink:0;">💕</span>
+          <span><strong style="color:var(--text-dark);">相性チェック機能</strong>もあり。気になる相手のタイプと照らし合わせることで、二人の会話の相性が数値でわかります。</span>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:10px;font-size:0.85rem;color:var(--text-mid);">
+          <span style="font-size:1.1rem;flex-shrink:0;">⚠️</span>
+          <span>「どちらか」で迷ったときは、<strong style="color:var(--text-dark);">なりたい自分ではなく、実際の自分</strong>に近い方を選ぶとより正確に出ます。</span>
+        </div>
+      </div>
+
+      <button class="btn-full" onclick="startQuiz()">診断スタート ▶</button>
+    </div>
+
+    <div id="q-form" class="card" style="display:none;">
+      <div class="progress-wrap">
+        <div class="progress-labels">
+          <span id="q-label">質問 1 / 8</span>
+          <span id="q-pct-label">0%</span>
+        </div>
+        <div class="progress-bar"><div class="progress-fill" id="q-fill" style="width:0%"></div></div>
+      </div>
+      <div id="q-area"></div>
+      <div class="nav-btns">
+        <button class="btn btn-prev" id="btn-prev" onclick="prevQ()" style="display:none;">◀ 前へ</button>
+        <button class="btn btn-next" id="btn-next" onclick="nextQ()" disabled>次へ ▶</button>
+      </div>
+    </div>
+
+    <div id="q-loading" class="card loading-wrap" style="display:none;">
+      <div class="pulse">💕</div>
+      <p style="margin-top:14px;color:var(--text-mid);">タイプを分析中…</p>
+    </div>
+
+    <div id="q-result" style="display:none;"></div>
+
+  </div>
+
+  <!-- ===== 相性チェックタブ ===== -->
+  <div id="tab-compat" class="section">
+    <div class="card">
+      <div class="s-title">👤 あなたのタイプ</div>
+      <div class="axis-row"><span>← 聴く</span><span>話す →</span></div>
+      <div style="position:relative;padding-left:40px;">
+        <div class="sel-left-labels" id="compat-my-left"></div>
+        <div class="sel-grid" id="compat-my-grid"></div>
+      </div>
+
+      <div style="text-align:center;font-size:1.4rem;margin:10px 0;color:var(--pink);">💕 × 💕</div>
+
+      <div class="s-title">💑 相手のタイプ</div>
+      <div class="axis-row"><span>← 聴く</span><span>話す →</span></div>
+      <div style="position:relative;padding-left:40px;">
+        <div class="sel-left-labels" id="compat-partner-left"></div>
+        <div class="sel-grid" id="compat-partner-grid"></div>
+      </div>
+
+      <button class="btn-full" id="compat-btn" onclick="doCheckCompat()" disabled style="margin-top:20px;">
+        相性を診断する 💕
+      </button>
+    </div>
+
+    <div class="compat-band" id="compat-band">
+      <div class="band-top" id="band-top"></div>
+      <div class="band-body" id="band-body"></div>
+    </div>
+
+    <!-- ▼ 広告ユニット（相性チェックタブ） ▼ -->
+    <div class="ad-unit" id="compat-ad" style="display:none;">
+      <div class="ad-unit-label">スポンサー広告</div>
+      <!--
+      <ins class="adsbygoogle"
+           style="display:block;width:100%;height:90px;"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+           data-ad-slot="XXXXXXXXXX"
+           data-ad-format="horizontal"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      -->
+    </div>
+    <!-- ▲ 広告ユニット ▲ -->
+  </div>
+
+  <!-- ===== タイプ一覧タブ ===== -->
+  <div id="tab-types" class="section">
+    <div class="card">
+      <div class="s-title">🗂️ 16タイプ一覧</div>
+      <p style="font-size:0.8rem;color:var(--text-light);margin-bottom:12px;">タイプをタップすると詳細と相性が見られます</p>
+      <div class="axis-row"><span>← 聴く</span><span>話す →</span></div>
+      <div style="position:relative;padding-left:40px;">
+        <div class="sel-left-labels" id="types-left-labels"></div>
+        <div class="overview-grid" id="overview-grid"></div>
+      </div>
+    </div>
+    <!-- ▼ 広告ユニット（タイプ一覧タブ） ▼ -->
+    <div class="ad-unit" style="margin-top:0;">
+      <div class="ad-unit-label">スポンサー広告</div>
+      <!--
+      <ins class="adsbygoogle"
+           style="display:block;width:100%;height:90px;"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+           data-ad-slot="XXXXXXXXXX"
+           data-ad-format="horizontal"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      -->
+    </div>
+    <!-- ▲ 広告ユニット ▲ -->
+    <div id="type-detail-area"></div>
+  </div>
+
 </main>
+
 <footer>
-  💕 ことばの波長診断 ｜ <a href="../index.html">診断トップ</a>
+  💕 恋愛相性タイプ診断 — 16タイプ版<br>
+  <a href="articles/index.html" style="color:var(--text-light);font-size:0.72rem;text-decoration:underline;">恋愛コラム一覧</a>
+  &nbsp;｜&nbsp;
+  <a href="#" onclick="showPrivacy();return false;" style="color:var(--text-light);font-size:0.72rem;text-decoration:underline;">プライバシーポリシー</a>
 </footer>
+
+<!-- プライバシーポリシー モーダル -->
+<div id="privacy-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:9999;overflow-y:auto;padding:24px 14px;">
+  <div style="max-width:600px;margin:0 auto;background:white;border-radius:20px;padding:28px;font-size:0.85rem;color:var(--text-mid);line-height:1.8;">
+    <h2 style="font-size:1.1rem;font-weight:900;color:var(--text-dark);margin-bottom:16px;">プライバシーポリシー</h2>
+    <p><strong>広告について</strong><br>
+    本サイトはGoogle AdSense（Googleが提供する広告配信サービス）を使用しています。Googleはユーザーのブラウザに保存されたCookieを使用して広告を配信することがあります。</p>
+    <p style="margin-top:12px;"><strong>アクセス解析について</strong><br>
+    本サイトは将来的にアクセス解析ツールを使用する場合があります。取得するデータは個人を特定するものではありません。</p>
+    <p style="margin-top:12px;"><strong>診断結果について</strong><br>
+    本サイトの診断結果はすべてお使いのデバイス内で処理されます。回答・結果データをサーバーへ送信することは一切ありません。</p>
+    <p style="margin-top:12px;"><strong>免責事項</strong><br>
+    本診断はエンターテインメント目的のものであり、科学的根拠を保証するものではありません。</p>
+    <button onclick="document.getElementById('privacy-modal').style.display='none'" class="btn-full" style="margin-top:20px;">閉じる</button>
+  </div>
+</div>
+
+<script>
+// ================================================================
+//  DATA: 16 TYPES
+//  axis1: 1=深聴き, 2=やや聴き, 3=やや話し, 4=深話し
+//  axis2: 1=のんびり, 2=ゆったり, 3=さくさく, 4=ぱっぱ
+// ================================================================
+const T16 = [
+  // axis1=1 (深聴き) ──────────────────────────────────────────
+  { id:'1-1', a1:1, a2:1, icon:'🌊', name:'深海の聴き手',
+    short:'極上の聴き手・のんびり派',
+    catch:'誰よりも深く聴き、ゆっくり言葉を選ぶ。\n静かな海のような安心感が魅力。',
+    traits:['極上の聴き手','ゆったり','思慮深い','癒し系','言葉を大切に'],
+    desc:'相手の話を誰よりも深く聴き、言葉を丁寧に選んで返す。焦らないそのペースが、話す人にとって最高の安心感になる。感情を急かさず、じっくり向き合ってくれる存在。' },
+  { id:'1-2', a1:1, a2:2, icon:'🌙', name:'月夜の共感者',
+    short:'深い聴き手・落ち着きペース',
+    catch:'深く聴いて、落ち着いたペースで丁寧に応える。\n月明かりのような静かな包容力。',
+    traits:['聴き上手','落ち着き','共感力高い','丁寧','ロマンチスト'],
+    desc:'相手の言葉の奥にある気持ちまで汲み取る聴き手。ゆったりとしたペースで、相手が話し終わってからじっくり返す。急かさず、でも確かに寄り添ってくれる。' },
+  { id:'1-3', a1:1, a2:3, icon:'🌸', name:'春風の聴き手',
+    short:'深い聴き手・テンポよい反応',
+    catch:'深く聴きながら、テンポよく反応する。\n場を軽やかに盛り上げる名バイプレーヤー。',
+    traits:['聴き上手','テンポ感','機転が利く','明るい','反応がいい'],
+    desc:'聴くことが得意なのに、反応やリアクションはテンポよい。相手が気持ちよく話し続けられる環境を自然につくれる。話していて楽しい聴き手。' },
+  { id:'1-4', a1:1, a2:4, icon:'⚡', name:'電光の共感者',
+    short:'深い聴き手・超速反応',
+    catch:'深く聴くが、相槌や反応が超スピード。\nエネルギッシュに話を引き出す。',
+    traits:['聴き上手','反応超速','エネルギッシュ','好奇心旺盛','引き出し上手'],
+    desc:'聴くことへの情熱はトップクラス。でも反応はとにかく速くて、どんどん話を引き出す。一緒にいると相手が気づかないうちにたくさん話していることが多い。' },
+
+  // axis1=2 (やや聴き) ──────────────────────────────────────────
+  { id:'2-1', a1:2, a2:1, icon:'🌿', name:'縁側の午後',
+    short:'聴き寄り・のんびりペース',
+    catch:'聴くことが多く、ゆったり寄り添う。\n縁側の午後のような穏やかな時間をつくる。',
+    traits:['聴き寄り','のんびり','穏やか','安定感','寄り添い上手'],
+    desc:'基本は聴く方が多いが、自分の話もする。急がずゆっくり、相手の話を受け止めながら会話を進める。一緒にいると自然とリラックスできる安心感がある。' },
+  { id:'2-2', a1:2, a2:2, icon:'☕', name:'珈琲の午後',
+    short:'聴き寄り・落ち着きペース',
+    catch:'聴くことが多め、落ち着いたペース。\nカフェのような居心地のいい会話スタイル。',
+    traits:['バランス型','落ち着き','聴き寄り','丁寧','安定感'],
+    desc:'聴くことが若干多いが話すのも好き。落ち着いたペースで会話をつなぐ。極端な聴き手でも話し手でもないので、どんな相手とも比較的うまくいく万能型。' },
+  { id:'2-3', a1:2, a2:3, icon:'🎵', name:'軽快リスナー',
+    short:'聴き寄り・テンポよいペース',
+    catch:'聴く方が得意で、テンポよく会話をつなぐ。\nリズミカルに相手を引き立てる。',
+    traits:['聴き寄り','テンポよい','明るい','機転が利く','場を読む'],
+    desc:'基本は聴き手だが、話す速さはテンポよめ。間を置かずリアクションするので相手は「ちゃんと聴いてくれてる」と感じやすい。会話の潤滑油的な存在。' },
+  { id:'2-4', a1:2, a2:4, icon:'🐦', name:'素早い共鳴者',
+    short:'聴き寄り・速いペース',
+    catch:'聴き寄りだが反応が速い、活発なリスナー。\n軽やかに飛び回る小鳥のような存在。',
+    traits:['聴き寄り','反応速い','活発','好奇心旺盛','エネルギッシュ'],
+    desc:'聴く方が好きだが、ペースは速い。相手が話し始める前からもうリアクションしているような素早さ。テンポの速い相手とも相性よく、活発な会話を楽しめる。' },
+
+  // axis1=3 (やや話し) ──────────────────────────────────────────
+  { id:'3-1', a1:3, a2:1, icon:'🪵', name:'焚き火の語り手',
+    short:'話し寄り・のんびりペース',
+    catch:'話すことが好きで、じっくり言葉を選ぶ。\n焚き火のようにゆっくり温かく語りかける。',
+    traits:['話し寄り','ゆっくり','言葉を選ぶ','深い話が好き','ロマンチスト'],
+    desc:'話すことが好きで、でもゆっくり丁寧に言葉を選ぶ。聴いてくれる人がいれば、深みのある話をどんどん出してくる。急かされるのは苦手で、ゆったりした時間を好む。' },
+  { id:'3-2', a1:3, a2:2, icon:'☀️', name:'陽だまりトーカー',
+    short:'話し寄り・落ち着きペース',
+    catch:'話し好きで、落ち着いたペースで丁寧に伝える。\n温かい日差しのような会話スタイル。',
+    traits:['話し寄り','落ち着き','丁寧','温かい','わかりやすい'],
+    desc:'話すことが好きで、相手にきちんと伝わるよう丁寧なペースで話す。一方的になりすぎず、相手のリアクションも確認しながら進める気遣いがある。' },
+  { id:'3-3', a1:3, a2:3, icon:'🏃', name:'軽やかな話し手',
+    short:'話し寄り・テンポよいペース',
+    catch:'話すことが好きで、テンポよく楽しく展開する。\n軽やかに会話をリードする存在。',
+    traits:['話し寄り','テンポよい','楽しい','明るい','ムードメーカー'],
+    desc:'話すことが好きで、テンポもよい。会話を自然にリードしながら場を盛り上げる。でも聴くことも一定できるので、一方通行にならないバランス感がある。' },
+  { id:'3-4', a1:3, a2:4, icon:'🌊', name:'波乗りトーカー',
+    short:'話し寄り・速いペース',
+    catch:'話し好きで速いテンポ、会話を波のように展開する。\n勢いと熱量で場を引っ張る。',
+    traits:['話し寄り','速いテンポ','活発','エネルギッシュ','盛り上げ上手'],
+    desc:'話すことが好きで、テンポも速い。次々と話題を出して会話を盛り上げる。ゆっくり聴いてくれる相手がいると最高の力を発揮するが、同じペースの人とも楽しめる。' },
+
+  // axis1=4 (深話し) ──────────────────────────────────────────
+  { id:'4-1', a1:4, a2:1, icon:'🗿', name:'哲人の語り部',
+    short:'深い話し手・ゆっくりペース',
+    catch:'誰よりも話すのが好きで、じっくりゆっくり深く語る。\n哲学者のような奥行きと存在感。',
+    traits:['話し好き','ゆっくり深い','哲学的','言葉を大切に','存在感'],
+    desc:'話すことへの情熱は最強クラス。でもペースはゆっくりで、一言一言に重みがある。聴いてくれる人がいれば深い話をどこまでも語れる。急かされると全力が出せない。' },
+  { id:'4-2', a1:4, a2:2, icon:'⭐', name:'星夜の語り部',
+    short:'深い話し手・落ち着きペース',
+    catch:'たくさん話し、落ち着いたペースで温かく語りかける。\n夜空の星のように引きつける魅力。',
+    traits:['話し好き','落ち着き','温かい','語り上手','魅力的'],
+    desc:'話すことが大好きで、落ち着いたペースで語りかけてくる。聴いていると引き込まれるような話し方が魅力。聴いてくれる相手がいれば最高に輝く。' },
+  { id:'4-3', a1:4, a2:3, icon:'🎭', name:'舞台の演者',
+    short:'深い話し手・テンポよいペース',
+    catch:'話し好きでテンポよく、会話を盛り上げる存在。\n舞台に立つ演者のような引力がある。',
+    traits:['話し好き','テンポよい','ムードメーカー','楽しい','表現豊か'],
+    desc:'話すことが大好きで、テンポよく場を盛り上げる。表現力豊かで一緒にいると楽しい。聴き手がいれば最高だが、盛り上がりすぎて相手が置いてかれることも。' },
+  { id:'4-4', a1:4, a2:4, icon:'🌪️', name:'嵐の話し手',
+    short:'深い話し手・超速ペース',
+    catch:'誰より話すのが好きで、テンポも最速。\n嵐のような熱量と勢いで会話を席巻する。',
+    traits:['話し好き','超高速','エネルギッシュ','情熱的','ムードメーカー'],
+    desc:'話すことへの情熱とスピードが最大値。一緒にいると飽きることがない反面、相手がついていけないことも。包容力のある聴き手かゆっくりした聴き手との相性差が大きい。' },
+];
+
+// ================================================================
+//  UTILS
+// ================================================================
+function getType(id) { return T16.find(t => t.id === id); }
+
+function typeColor(a1, a2) {
+  // a1: 1→4 (listener→talker), hue: 220→340
+  // a2: 1→4 (slow→fast), sat: 45→80%, lig: 70→57%
+  const h = 220 + (a1-1)*40;
+  const s = 45  + (a2-1)*12;
+  const l = 70  - (a2-1)*4;
+  return `hsl(${h},${s}%,${l}%)`;
+}
+function typeGrad(a1, a2) {
+  const h = 220 + (a1-1)*40;
+  const s = 45  + (a2-1)*12;
+  const l = 70  - (a2-1)*4;
+  return `linear-gradient(135deg,hsl(${h},${s}%,${l}%),hsl(${h+18},${s+6}%,${l-5}%))`;
+}
+function tagStyle(a1, a2) {
+  const h = 220 + (a1-1)*40;
+  return `background:hsl(${h},50%,93%);color:hsl(${h},60%,40%)`;
+}
+
+// Compatibility score (0-100)
+const TALK_SCORES = {2:20, 3:30, 4:42, 5:50, 6:42, 7:30, 8:18};
+const SPEED_SCORES = [50, 40, 25, 10];
+function calcCompat(tA, tB) {
+  const talkScore  = TALK_SCORES[tA.a1 + tB.a1] ?? 18;
+  const speedScore = SPEED_SCORES[Math.abs(tA.a2 - tB.a2)];
+  return talkScore + speedScore;
+}
+
+// Compat description generator
+function compatText(tA, tB, score) {
+  const sum = tA.a1 + tB.a1;
+  const sd = Math.abs(tA.a2 - tB.a2);
+  const td = tB.a1 - tA.a1;
+
+  let roleTitle, roleDesc;
+  if (sum <= 4) {
+    roleTitle = '二人とも深い聴き手';
+    roleDesc = '両方が聴き手のため、会話の発信者が不在になりがち。意識的に話す努力が必要です。';
+  } else if (sum === 5) {
+    roleTitle = td > 0 ? 'あなたが聴き役、相手が話し役' : 'あなたが話し役、相手が聴き役';
+    roleDesc = '役割の補完が自然にできる最高のバランス。会話のやりとりが心地よく続きます。';
+  } else if (sum === 6) {
+    roleTitle = '聴く・話すのバランスが近い';
+    roleDesc = '役割が似ているため、両方が話そうとするか両方が待ちになるか。意識的な調整で良い関係に。';
+  } else if (sum <= 7) {
+    roleTitle = td > 0 ? 'あなたが聴き寄り、相手が話し寄り' : 'あなたが話し寄り、相手が聴き寄り';
+    roleDesc = '役割分担があり、補完し合える関係。ただし両方とも程よく話せるので会話が詰まることは少ない。';
+  } else {
+    roleTitle = '二人とも話し好き';
+    roleDesc = '会話は盛り上がる一方、お互い「もっと聴いてほしい」と感じることも。聴くターンを意識して。';
+  }
+
+  const speedTitle = ['スピードがぴったり一致！', 'スピード差はわずか', 'スピード差がやや大きめ', 'スピード差がかなり大きい'][sd];
+  const speedDesc = [
+    '話すテンポが完全に合います。お互いのリズムで気持ちよく会話できます。',
+    '少しだけテンポが違いますが、すぐに慣れる範囲。自然に合わせられます。',
+    'テンポ差があるため、一方が急かされたり待たされたりする場面が出てきます。意識的な歩み寄りが鍵。',
+    'テンポ差がかなり大きいです。速い方が意識的に落ち着く、ゆっくりな方が意識的に反応を速めるなど、お互いの配慮が必要です。'
+  ][sd];
+
+  const scoreLabel = score >= 88 ? '最高の相性！' : score >= 75 ? '相性良好◎' : score >= 60 ? '相性○（工夫次第で良い関係に）' : '個性が際立つ相性（挑戦的な組み合わせ）';
+
+  return { roleTitle, roleDesc, speedTitle, speedDesc, scoreLabel };
+}
+
+function scoreHearts(score) {
+  if (score >= 88) return '❤️❤️❤️❤️❤️';
+  if (score >= 75) return '❤️❤️❤️❤️🤍';
+  if (score >= 60) return '❤️❤️❤️🤍🤍';
+  return '❤️❤️🤍🤍🤍';
+}
+function scoreGrad(score) {
+  if (score >= 88) return 'linear-gradient(135deg,#f06292,#e91e63)';
+  if (score >= 75) return 'linear-gradient(135deg,#ffb74d,#ff8a65)';
+  if (score >= 60) return 'linear-gradient(135deg,#9c6fc9,#673ab7)';
+  return 'linear-gradient(135deg,#64b5f6,#1565c0)';
+}
+
+// ================================================================
+//  QUIZ
+// ================================================================
+const QUESTIONS = [
+  // Axis 1 (聴く↔話す): each opt has {text, score}
+  { axis:1,
+    text:'久しぶりに会った友達と2時間ほど話した。気づいたら終わっていたその時間——あなたはどんな状態だった？',
+    opts:[
+      { score:1, text:'ほぼずっと相手の話を聴いていた。「へえ！」「それで？」「続きは？」が口癖になっていた。自分のことはほとんど話さなかったけど、それがむしろ心地よかった' },
+      { score:3, text:'自分の話の方が多めだったけど、相手の話もちゃんと聴いていた。気づいたら会話をリードしていることが多かった' },
+      { score:2, text:'聴くことの方が多かったけど、自分の近況も少し話していた。聴くことも話すことも、どちらも楽しめていた' },
+      { score:4, text:'気づいたら自分がほとんどしゃべっていて、友達が聴き役になっていた。話したいことがどんどん出てきてしまう' }] },
+  { axis:1,
+    text:'仲のいい人が「失恋した」と連絡してきた。会って話を聞くことになった。そのとき自分はどう動く？',
+    opts:[
+      { score:4, text:'「こうした方がいいよ！」と積極的に自分の考えや経験をたくさん話したくなる。元気になってほしくて、言葉があふれてくる' },
+      { score:1, text:'とにかく全部聴こうと思う。うまいことを言うより、ただそばで聴き続けることが一番の支えだと思っている' },
+      { score:3, text:'話を聴きながら、自分の経験や考えも自然に混ぜていく。一緒に考えながら、気持ちを言葉にしてあげたい' },
+      { score:2, text:'まずはじっくり話を聴く。落ち着いてきたら、少しだけ自分の経験も話してあげたいと思う' }] },
+  { axis:1,
+    text:'初めて好きな人と2人でご飯を食べた日の帰り道。頭の中を占めていた気持ちはどれに近い？',
+    opts:[
+      { score:2, text:'「聴いたことと話したことのバランス、よかったかな……」と少し気になっている。聴くことも話すことも大切にしたい' },
+      { score:4, text:'「なんか気づいたら私ばっかりしゃべってた……大丈夫だったかな」と少し反省。話したいことが多すぎた' },
+      { score:1, text:'「もっと相手のことを聞けばよかった。あの話、もっと深く聞きたかったな」と感じている。相手のことがもっと知りたい' },
+      { score:3, text:'「自分のこと話しすぎたかな。でもちゃんと伝えたかったし」と思っている。伝えたいことはいっぱいあった' }] },
+  { axis:1,
+    text:'4〜5人でのグループ会話。気づいたら自分はどのポジションにいる？',
+    opts:[
+      { score:3, text:'話に積極的に参加していて、話題を出すこともある。場を盛り上げるのが好きで、自然と前に出ることが多い' },
+      { score:1, text:'完全に聴き役に徹していて、みんなの話をうんうんと楽しんでいる。あまり発言しなくても満足している' },
+      { score:4, text:'気づいたら自分が話の中心になっていることが多い。話したいことが尽きなくて、みんなが聴いてくれている' },
+      { score:2, text:'聴いていることの方が多いけど、たまに話すとみんなが盛り上がる。聴き役が心地よいが、話すのも好き' }] },
+  { axis:1,
+    text:'友達と映画を見た後、感想を話しているとき。自分はどっちのパターンが多い？',
+    opts:[
+      { score:1, text:'相手の感想を「へえ、そう感じたんだ！それどういうこと？」と引き出すことが多い。相手がどう受け取ったかを知りたい' },
+      { score:4, text:'「ここが最高だった！あのシーンは〇〇だったよね！」と自分からどんどん話す。感動を全部伝えたくなってしまう' },
+      { score:2, text:'相手の感想を聴いてから、それに重ねるように自分の意見も少し言う。相手の見方を知ると、自分の感想も深まる' },
+      { score:3, text:'自分の感想をしっかり伝えつつ、「あなたはどう思った？」と相手にも聴く。両方大事にしたい' }] },
+  { axis:1,
+    text:'会話の中で「これは得意だな」と自分でも感じる場面はどれに近い？',
+    opts:[
+      { score:2, text:'「それってどういうこと？」と、相手が話しやすくなるような質問をできるとき。引き出すのが好き' },
+      { score:4, text:'次々と話題を出して、場の会話の流れをつくれたとき。自分が動かした感じがして気持ちいい' },
+      { score:1, text:'相手の言葉の奥にある気持ちを汲み取って、「わかるよ、それって〇〇な感じだよね」と伝えられるとき' },
+      { score:3, text:'自分の気持ちや考えを、ちゃんと整理して相手にうまく伝えられたとき。「伝わった」という感覚が好き' }] },
+
+  // Axis 2 (ゆっくり↔はやく)
+  { axis:2,
+    text:'友達から突然「ちょっといい？電話できる？」とLINEが来た。電話してすぐ、自分はどうなる？',
+    opts:[
+      { score:3, text:'「え、何々？！どうしたの？」と少し速めに聴いてしまう。気になりすぎて、テンポが速くなってしまう' },
+      { score:1, text:'「うん、聴くよ。どうしたの？」とゆっくり促して、相手が自分のペースで話し始めるのをじっくり待つ' },
+      { score:4, text:'「え！どうしたの！？何があったの！？大丈夫！？」と矢継ぎ早に聞いてしまう。心配が先走って言葉があふれる' },
+      { score:2, text:'「大丈夫？何かあった？」と確認してから、話を聴く体勢にゆっくり入る。まず落ち着いて聴きたい' }] },
+  { axis:2,
+    text:'頭の中で考えていることを言葉にするとき、自分はどちらに近い？',
+    opts:[
+      { score:4, text:'思ったそばから口に出る。「あ、それでね、そういえば……」と話しながら考えていくのが自然。まとまってなくてもOK' },
+      { score:2, text:'ある程度まとめてから話す。少し間を置いて、「えーと、つまり……」と整理しながら話すことが多い' },
+      { score:1, text:'頭の中でしっかり整理してから、一言一言選んで話す。「えーと……」が多めだけど、それくらい丁寧に伝えたい' },
+      { score:3, text:'話しながら頭が整理されていく。「こういうことかな、いや違うか、でも……」と考えながらしゃべる感じ' }] },
+  { axis:2,
+    text:'好きな人と2人でいるとき、しばらく沈黙が続いた。そのとき自分はどうしてる？',
+    opts:[
+      { score:2, text:'少し気になってくるけど、相手のペースに任せてしばらく待つ。焦らずに、自然な流れに任せる' },
+      { score:4, text:'沈黙が苦手で、すぐ「そういえばさ！」と何か話してしまう。間が持てなくて、つい口が動いてしまう' },
+      { score:1, text:'特に気にならない。無言でいる時間も好きで、二人でいるだけで十分。沈黙も会話のうちだと思っている' },
+      { score:3, text:'「ねえ、そういえば……」と割と早めに何か話したくなる。沈黙が少し気になって、自然と言葉が出てくる' }] },
+  { axis:2,
+    text:'好きな人と話していて、すごく盛り上がったとき。自分はどんな感じ？',
+    opts:[
+      { score:1, text:'ゆっくり言葉を選びながら、じっくり会話を楽しんでいる。一言一言が大切で、急がなくていいと感じている' },
+      { score:4, text:'テンポがどんどん上がって、言葉が次々あふれてくる。興奮して、止まれなくなる感じ' },
+      { score:3, text:'テンポよく会話が弾んで、気持ちよく話せている。リズムに乗って、自然とテンポが上がっていく' },
+      { score:2, text:'落ち着いたペースで、でも楽しくて時間を忘れている。じっくり話せることが幸せで、急ぐ必要を感じない' }] },
+  { axis:2,
+    text:'誰かに気持ちや考えを伝えるとき（LINE・会話どちらでも）、自分はどっちのタイプ？',
+    opts:[
+      { score:2, text:'ある程度考えてから伝える。少し時間をかけて、「どう伝えようかな」と準備してから話すことが多い' },
+      { score:4, text:'思ったことをすぐ伝えたくなる。後からまとめればいいと思う方。溜め込まずにすぐ出したい' },
+      { score:3, text:'わりとすぐに言葉が出てくる。テンポよく伝えられる方。「とりあえず伝えて、あとは話しながら」が得意' },
+      { score:1, text:'言葉をじっくり考えて、伝えたいことを丁寧に選ぶ方。時間がかかっても、ちゃんと正確に伝えたい' }] },
+  { axis:2,
+    text:'自分たちの会話のリズムを景色にたとえるなら、どれが一番しっくりくる？',
+    opts:[
+      { score:3, text:'カフェのBGM——テンポよく、でも心地よく続く感じ。程よいテンポで話題が展開していくのが好き' },
+      { score:1, text:'焚き火のそば——言葉がゆっくり燃えるように、じっくりと深く。急かされず、一言一言を味わいたい' },
+      { score:4, text:'お祭りの屋台——次々と話題が変わって、にぎやかで楽しい。テンポが速くても、それが心地よい' },
+      { score:2, text:'夕暮れの散歩——落ち着いたペースで、大切なことをじっくり。急がず、でも確かに進んでいく感じ' }] },
+];
+
+let qState = { cur:0, answers:[], shuffled:[] };
+
+function posFromScore(sum, n) {
+  // n = number of questions per axis (each scored 1-4)
+  // Normalize to 0-1, then map to position 1-4
+  const min = n, max = n * 4, range = max - min;
+  const norm = (sum - min) / range;
+  if (norm < 0.25) return 1;
+  if (norm < 0.50) return 2;
+  if (norm < 0.75) return 3;
+  return 4;
+}
+
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length-1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i+1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function startQuiz() {
+  // Pre-shuffle option order for each question (stored so Back button shows same order)
+  const shuffled = QUESTIONS.map(q => shuffle(q.opts));
+  qState = { cur:0, answers:new Array(12).fill(null), shuffled };
+  document.getElementById('q-start').style.display = 'none';
+  document.getElementById('q-form').style.display = 'block';
+  renderQ();
+}
+
+function renderQ() {
+  const q = QUESTIONS[qState.cur];
+  const total = QUESTIONS.length;
+  const pct = Math.round(qState.cur / total * 100);
+  document.getElementById('q-label').textContent = `質問 ${qState.cur+1} / ${total}`;
+  document.getElementById('q-pct-label').textContent = `${pct}%`;
+  document.getElementById('q-fill').style.width = `${pct}%`;
+
+  const selScore = qState.answers[qState.cur]; // stored as score value
+  const shuffledOpts = qState.shuffled[qState.cur];
+  document.getElementById('q-area').innerHTML = `
+    <div class="q-anim">
+      <span class="q-badge">Q${qState.cur+1}</span>
+      <div class="q-text">${q.text}</div>
+      <div class="options">
+        ${shuffledOpts.map((o, i) => `
+          <button class="opt-btn${selScore===o.score?' selected':''}" data-score="${o.score}" onclick="selectOpt(${o.score})">
+            <span class="opt-num">${['A','B','C','D'][i]}</span>${o.text}
+          </button>
+        `).join('')}
+      </div>
+    </div>`;
+
+  document.getElementById('btn-prev').style.display = qState.cur === 0 ? 'none' : '';
+  const btnNext = document.getElementById('btn-next');
+  btnNext.textContent = qState.cur === total-1 ? '診断結果を見る ✨' : '次へ ▶';
+  btnNext.disabled = selScore === null;
+}
+
+function selectOpt(score) {
+  qState.answers[qState.cur] = score;
+  document.querySelectorAll('.opt-btn').forEach(b => {
+    b.classList.toggle('selected', parseInt(b.dataset.score) === score);
+  });
+  document.getElementById('btn-next').disabled = false;
+}
+
+function nextQ() {
+  if (qState.answers[qState.cur] === null) return;
+  if (qState.cur < QUESTIONS.length-1) { qState.cur++; renderQ(); }
+  else showQuizLoading();
+}
+function prevQ() { if (qState.cur > 0) { qState.cur--; renderQ(); } }
+
+function showQuizLoading() {
+  document.getElementById('q-form').style.display = 'none';
+  document.getElementById('q-loading').style.display = 'block';
+  setTimeout(computeAndShow, 1300);
+}
+
+function computeAndShow() {
+  let a1sum = 0, a2sum = 0, a1n = 0, a2n = 0;
+  QUESTIONS.forEach((q, i) => {
+    const score = qState.answers[i]; // already the score (1-4)
+    if (q.axis === 1) { a1sum += score; a1n++; }
+    else              { a2sum += score; a2n++; }
+  });
+  const a1pos = posFromScore(a1sum, a1n);
+  const a2pos = posFromScore(a2sum, a2n);
+  const typeId = `${a1pos}-${a2pos}`;
+  const type = getType(typeId);
+
+  document.getElementById('q-loading').style.display = 'none';
+  const area = document.getElementById('q-result');
+  area.style.display = 'block';
+  area.innerHTML = buildResultHTML(type, a1sum, a2sum, a1n, a2n);
+  // animate bars: score range = [n, n*4], span = n*3
+  setTimeout(() => {
+    const lPct = Math.min(100, Math.round((a1sum - a1n) / (a1n * 3) * 100));
+    const sPct = Math.min(100, Math.round((a2sum - a2n) / (a2n * 3) * 100));
+    document.getElementById('bar-a1').style.width = `${lPct}%`;
+    document.getElementById('bar-a2').style.width = `${sPct}%`;
+    document.getElementById('pct-a1').textContent = `${lPct}%`;
+    document.getElementById('pct-a2').textContent = `${sPct}%`;
+  }, 100);
+}
+
+function buildResultHTML(type, a1sum, a2sum, a1n, a2n) {
+  const grad = typeGrad(type.a1, type.a2);
+  const a1label = ['深聴き','やや聴き','やや話し','深話し'][type.a1-1];
+  const a2label = ['のんびり','ゆったり','さくさく','ぱっぱ'][type.a2-1];
+
+  // Sorted compat
+  const compatList = T16
+    .filter(t => t.id !== type.id)
+    .map(t => ({ t, score: calcCompat(type, t) }))
+    .sort((a,b) => b.score - a.score);
+
+  const top3 = compatList.slice(0, 3);
+  const bot3 = compatList.slice(-3).reverse();
+
+  // Mini grid
+  const miniCells = buildMiniGridCells(type.id);
+
+  return `
+    <div class="result-hero" style="background:${grad}">
+      <div style="width:92px;height:92px;margin:0 auto 12px;filter:drop-shadow(0 4px 10px rgba(0,0,0,0.18));">${typeIllustration(type.a1,type.a2)}</div>
+      <div class="r-pos">TYPE ${type.id} ／ ${a1label} × ${a2label}</div>
+      <div class="r-name">${type.name}</div>
+      <div class="r-catch">${type.catch}</div>
+    </div>
+
+    <div class="card">
+      <div class="s-title">🗺️ あなたのポジション</div>
+      <div class="axis-row"><span>← 聴く</span><span>話す →</span></div>
+      ${miniCells}
+
+      <div class="s-title" style="margin-top:20px;">📊 スコア詳細</div>
+      <div class="score-bars">
+        <div class="bar-row">
+          <div class="bar-axis">聴く→話す</div>
+          <div class="bar-track"><div class="bar-fill" id="bar-a1" style="width:0%;background:linear-gradient(90deg,#f06292,#9c6fc9)"></div></div>
+          <div class="bar-pct" id="pct-a1">0%</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-axis">ゆっくり→はやく</div>
+          <div class="bar-track"><div class="bar-fill" id="bar-a2" style="width:0%;background:linear-gradient(90deg,#80cbc4,#ff8a65)"></div></div>
+          <div class="bar-pct" id="pct-a2">0%</div>
+        </div>
+      </div>
+      <p style="font-size:0.75rem;color:var(--text-light);margin-bottom:20px;">※ バーが中央より左=聴き/ゆっくり寄り、右=話し/はやく寄り</p>
+
+      <div class="s-title">✨ あなたの特徴</div>
+      <div class="traits-row">
+        ${type.traits.map(tr => `<span class="tag" style="${tagStyle(type.a1,type.a2)}">${tr}</span>`).join('')}
+      </div>
+
+      <div class="s-title">💬 詳細説明</div>
+      <p style="color:var(--text-mid);font-size:0.88rem;line-height:1.8;margin-bottom:22px;">${type.desc}</p>
+
+      <div class="s-title">❤️ 相性ランキング（上位3タイプ）</div>
+      ${top3.map(({t,score}) => compatItemHTML(t, score, type)).join('')}
+
+      <div class="s-title" style="margin-top:16px;">💔 ちょっと難しい相手（下位3タイプ）</div>
+      ${bot3.map(({t,score}) => compatItemHTML(t, score, type)).join('')}
+
+      <!-- ▼ SNSシェア ▼ -->
+      <div class="s-title">📣 結果をシェアする</div>
+      <div class="share-row">
+        <button class="share-btn share-x" onclick="shareToX('${type.id}')">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.265 5.638L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
+          Xでシェア
+        </button>
+        <button class="share-btn share-line" onclick="shareToLINE('${type.id}')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+          LINEで送る
+        </button>
+      </div>
+      <button class="share-btn share-copy" style="width:100%;margin-bottom:18px;" onclick="copyShareLink('${type.id}')">
+        🔗 診断リンクをコピー
+      </button>
+      <!-- ▲ SNSシェア ▲ -->
+
+      <!-- ▼ アフィリエイト（マッチングアプリ） ▼ -->
+      ${buildAffiliateHTML(type)}
+      <!-- ▲ アフィリエイト ▲ -->
+
+      <!-- ▼ 広告ユニット ▼ -->
+      <div class="ad-unit">
+        <div class="ad-unit-label">スポンサー広告</div>
+        <!--
+        <ins class="adsbygoogle" style="display:block;width:100%;height:90px;"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="horizontal"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        -->
+      </div>
+      <!-- ▲ 広告ユニット ▲ -->
+
+      <button class="btn-outline" onclick="resetQuiz()" style="margin-top:4px;">🔄 もう一度診断する</button>
+    </div>
+  `;
+}
+
+function buildMiniGridCells(myId) {
+  // axis2 (rows, top=slow) × axis1 (cols, left=listener)
+  let cells = '';
+  for (let a2=1; a2<=4; a2++) {
+    for (let a1=1; a1<=4; a1++) {
+      const id = `${a1}-${a2}`;
+      const t = getType(id);
+      const isMe = id === myId;
+      const bg = typeColor(a1, a2);
+      cells += `<div class="mini-cell${isMe?' me':''}" style="background:${bg}">${t.icon}</div>`;
+    }
+  }
+  const rowLabels = ['のんびり','ゆったり','さくさく','ぱっぱ'];
+  return `
+    <div style="display:flex;gap:4px;align-items:flex-start;margin-bottom:6px;">
+      <div style="display:flex;flex-direction:column;justify-content:space-around;height:148px;flex-shrink:0;padding-right:4px;padding-top:4px;padding-bottom:4px;">
+        ${rowLabels.map(l=>`<span style="font-size:0.62rem;color:var(--text-light);font-weight:600;">${l}</span>`).join('')}
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:3px;flex:1;">
+        ${cells}
+      </div>
+    </div>
+    <p style="font-size:0.72rem;color:var(--text-light);text-align:center;margin-bottom:6px;">🔵 が紫枠 = あなたのポジション</p>
+  `;
+}
+
+function compatItemHTML(t, score, myType) {
+  const hearts = scoreHearts(score);
+  const txt = compatText(myType, t, score);
+  return `
+    <div class="compat-item">
+      <div class="ci-icon" style="width:46px;height:46px;border-radius:12px;overflow:hidden;flex-shrink:0;background:${typeColor(t.a1,t.a2)};">${typeIllustration(t.a1,t.a2)}</div>
+      <div class="ci-body">
+        <div class="ci-name">${t.name}（TYPE ${t.id}）</div>
+        <div class="ci-score">${hearts} 相性スコア ${score}点</div>
+        <div class="ci-desc">${txt.roleTitle}。${txt.speedTitle}</div>
+      </div>
+    </div>`;
+}
+
+function resetQuiz() {
+  document.getElementById('q-result').style.display = 'none';
+  document.getElementById('q-result').innerHTML = '';
+  document.getElementById('q-start').style.display = 'block';
+}
+
+function copyResult(typeId) {
+  const t = getType(typeId);
+  const text = `【恋愛相性タイプ診断 16タイプ版】\nわたしは「${t.name}（TYPE ${t.id}）」でした！\n${t.catch}`;
+  navigator.clipboard.writeText(text).then(() => alert('コピーしました！'));
+}
+
+// ================================================================
+//  COMPAT TAB
+// ================================================================
+let cState = { my: null, partner: null };
+
+function buildCompatTab() {
+  ['my','partner'].forEach(who => {
+    const grid = document.getElementById(`compat-${who}-grid`);
+    const leftLabel = document.getElementById(`compat-${who}-left`);
+    buildSelGrid(grid, who);
+    buildLeftLabels(leftLabel);
+  });
+}
+
+function buildLeftLabels(el) {
+  const labels = ['のんびり','ゆったり','さくさく','ぱっぱ'];
+  el.innerHTML = labels.map(l => `<span>${l}</span>`).join('');
+}
+
+function buildSelGrid(grid, who) {
+  let html = '';
+  for (let a2=1; a2<=4; a2++) {
+    for (let a1=1; a1<=4; a1++) {
+      const t = getType(`${a1}-${a2}`);
+      html += `
+        <div class="sel-cell" id="sc-${who}-${t.id}"
+          style="background:${typeColor(a1,a2)}"
+          onclick="selectCompatType('${who}','${t.id}')">
+          <div style="width:38px;height:38px;margin:0 auto 1px;">${typeIllustration(a1,a2)}</div>
+          <div class="sc-name">${t.name}</div>
+        </div>`;
+    }
+  }
+  grid.innerHTML = html;
+}
+
+function selectCompatType(who, id) {
+  if (who==='my') cState.my = id;
+  else cState.partner = id;
+
+  document.querySelectorAll(`[id^="sc-${who}-"]`).forEach(el => el.classList.remove('selected'));
+  document.getElementById(`sc-${who}-${id}`).classList.add('selected');
+
+  document.getElementById('compat-btn').disabled = !(cState.my && cState.partner);
+}
+
+function doCheckCompat() {
+  const tA = getType(cState.my);
+  const tB = getType(cState.partner);
+  const score = calcCompat(tA, tB);
+  const txt = compatText(tA, tB, score);
+
+  const band = document.getElementById('compat-band');
+  band.className = 'compat-band show';
+  band.scrollIntoView({ behavior:'smooth', block:'nearest' });
+  // 広告表示
+  const compatAd = document.getElementById('compat-ad');
+  if (compatAd) compatAd.style.display = 'flex';
+
+  document.getElementById('band-top').style.background = scoreGrad(score);
+  document.getElementById('band-top').innerHTML = `
+    <div class="band-hearts">${scoreHearts(score)}</div>
+    <div class="band-score">${score}</div>
+    <div class="band-label">${txt.scoreLabel}</div>`;
+
+  document.getElementById('band-body').innerHTML = `
+    <div class="band-title" style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+      <div style="width:32px;height:32px;display:inline-block;vertical-align:middle;">${typeIllustration(tA.a1,tA.a2)}</div>
+      ${tA.name}
+      <span style="color:var(--text-light);">×</span>
+      <div style="width:32px;height:32px;display:inline-block;vertical-align:middle;">${typeIllustration(tB.a1,tB.a2)}</div>
+      ${tB.name}
+    </div>
+    <div class="band-desc">
+      <strong>話す量：</strong>${txt.roleDesc}<br>
+      <strong>スピード：</strong>${txt.speedDesc}
+    </div>
+    <div class="band-points">
+      <div class="band-point"><strong>役割分担：</strong>${txt.roleTitle}</div>
+      <div class="band-point"><strong>テンポ差：</strong>${txt.speedTitle}</div>
+      <div class="band-point">
+        ${score >= 75 ? '✅ この組み合わせは自然に会話のリズムが合いやすいです。' :
+          score >= 60 ? '💛 少し意識的に相手のペースに合わせる努力があると、とても良い関係になれます。' :
+          '⚠️ 二人のスタイルが大きく違います。でも違いを楽しめる二人なら、かえって刺激的な関係に！'}
+      </div>
+    </div>`;
+}
+
+// ================================================================
+//  TYPES TAB
+// ================================================================
+let selectedOverview = null;
+
+function buildTypesTab() {
+  const grid = document.getElementById('overview-grid');
+  const leftLabels = document.getElementById('types-left-labels');
+  buildLeftLabels(leftLabels);
+
+  let html = '';
+  for (let a2=1; a2<=4; a2++) {
+    for (let a1=1; a1<=4; a1++) {
+      const t = getType(`${a1}-${a2}`);
+      html += `
+        <div class="ov-cell" id="ov-${t.id}" onclick="showTypeDetail('${t.id}')">
+          <div class="ov-head" style="background:${typeGrad(a1,a2)}">
+            <div class="ov-icon"><div style="width:62px;height:62px;margin:0 auto 4px;">${typeIllustration(a1,a2)}</div></div>
+            <div class="ov-name">${t.name}</div>
+          </div>
+          <div class="ov-body">
+            <div class="ov-short">${t.short}</div>
+            <div class="ov-tags">
+              ${t.traits.slice(0,3).map(tr=>`<span class="ov-tag" style="${tagStyle(a1,a2)}">${tr}</span>`).join('')}
+            </div>
+          </div>
+        </div>`;
+    }
+  }
+  grid.innerHTML = html;
+}
+
+function showTypeDetail(id) {
+  if (selectedOverview) document.getElementById(`ov-${selectedOverview}`)?.classList.remove('active');
+  selectedOverview = id;
+  document.getElementById(`ov-${id}`).classList.add('active');
+
+  const t = getType(id);
+  const compatSorted = T16
+    .filter(x => x.id !== id)
+    .map(x => ({ t:x, score:calcCompat(t,x) }))
+    .sort((a,b) => b.score - a.score);
+
+  const area = document.getElementById('type-detail-area');
+  area.innerHTML = `
+    <div class="card type-detail show">
+      <div class="result-hero" style="background:${typeGrad(t.a1,t.a2)};margin-bottom:18px;">
+        <div style="width:88px;height:88px;margin:0 auto 10px;filter:drop-shadow(0 4px 8px rgba(0,0,0,0.16));">${typeIllustration(t.a1,t.a2)}</div>
+        <div class="r-pos">TYPE ${t.id}　${['深聴き','やや聴き','やや話し','深話し'][t.a1-1]} × ${['のんびり','ゆったり','さくさく','ぱっぱ'][t.a2-1]}</div>
+        <div class="r-name">${t.name}</div>
+        <div class="r-catch">${t.catch}</div>
+      </div>
+      <div class="traits-row">
+        ${t.traits.map(tr=>`<span class="tag" style="${tagStyle(t.a1,t.a2)}">${tr}</span>`).join('')}
+      </div>
+      <p style="color:var(--text-mid);font-size:0.88rem;line-height:1.8;margin-bottom:20px;">${t.desc}</p>
+
+      <div class="s-title">💕 相性ランキング（上位5）</div>
+      ${compatSorted.slice(0,5).map(({t:x,score}) => `
+        <div class="compat-item">
+          <div style="width:44px;height:44px;border-radius:11px;overflow:hidden;flex-shrink:0;background:${typeColor(x.a1,x.a2)};">${typeIllustration(x.a1,x.a2)}</div>
+          <div class="ci-body">
+            <div class="ci-name">${x.name}（TYPE ${x.id}）</div>
+            <div class="ci-score">${scoreHearts(score)} ${score}点</div>
+          </div>
+        </div>`).join('')}
+    </div>`;
+
+  area.querySelector('.type-detail').scrollIntoView({ behavior:'smooth', block:'nearest' });
+}
+
+// ================================================================
+//  TABS
+// ================================================================
+function showTab(id, btn) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(`tab-${id}`).classList.add('active');
+  btn.classList.add('active');
+}
+
+// ================================================================
+//  SVG ILLUSTRATION GENERATOR
+// ================================================================
+function typeIllustration(a1, a2) {
+  const h  = 220 + (a1-1)*40;
+  const s  = 45  + (a2-1)*12;
+  const l  = 70  - (a2-1)*4;
+  const col  = `hsl(${h},${s}%,${l}%)`;
+  const dark = `hsl(${h},${s+10}%,${Math.max(25,l-22)}%)`;
+  const pale = `hsl(${h},${Math.max(18,s-22)}%,${Math.min(96,l+14)}%)`;
+  const mid  = `hsl(${h},${s}%,${l-10}%)`;
+  const skin = '#FFDBBB';
+  const hair = [`#3d2b1f`,`#5c3d2e`,`#8b6040`,`#c8956a`][a1-1];
+
+  const earR      = [12,8,5,2][a1-1];
+  const eyeH      = [1.4,2.2,3,4.2][a2-1];
+  const browRaise = [0,1,2,3][a2-1];
+
+  // Special decoration per type
+  const decos = {
+    '1-1':`<path d="M12,38 Q8,50 12,62" stroke="${mid}" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.5"/>
+           <path d="M7,40 Q3,50 7,60" stroke="${mid}" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.35"/>
+           <ellipse cx="12" cy="72" rx="5" ry="7.5" fill="${col}" opacity="0.45"/>`,
+    '1-2':`<path d="M88,14 Q82,27 88,40 Q96,27 88,14" fill="${mid}" opacity="0.65"/>
+           <circle cx="79" cy="18" r="2" fill="${pale}" opacity="0.8"/>
+           <circle cx="85" cy="9" r="1.5" fill="${pale}" opacity="0.6"/>`,
+    '1-3':`<circle cx="14" cy="22" r="5.5" fill="${pale}" opacity="0.7"/>
+           <circle cx="23" cy="13" r="3.5" fill="${col}" opacity="0.55"/>
+           <circle cx="9" cy="13" r="2.5" fill="${mid}" opacity="0.45"/>`,
+    '1-4':`<path d="M86,13 L82,28 L87,28 L79,46" stroke="${col}" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+           <path d="M92,19 L89,30 L93,30 L86,44" stroke="${mid}" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>`,
+    '2-1':`<path d="M14,68 Q7,58 13,49 Q21,58 14,68" fill="${col}" opacity="0.55"/>
+           <line x1="14" y1="49" x2="14" y2="68" stroke="${dark}" stroke-width="1" opacity="0.4"/>`,
+    '2-2':`<path d="M82,38 Q86,30 82,22" stroke="${mid}" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+           <path d="M87,40 Q91,32 87,24" stroke="${mid}" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.4"/>`,
+    '2-3':`<text x="82" y="26" font-size="15" fill="${dark}" opacity="0.6" font-family="serif">♪</text>
+           <text x="76" y="38" font-size="10" fill="${mid}" opacity="0.4" font-family="serif">♩</text>`,
+    '2-4':`<path d="M80,18 Q86,13 92,18" stroke="${dark}" stroke-width="2" fill="none" stroke-linecap="round"/>
+           <path d="M84,27 Q90,22 96,27" stroke="${dark}" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>`,
+    '3-1':`<path d="M16,78 Q12,68 17,62 Q20,68 22,64 Q21,74 16,78" fill="#ff8c42" opacity="0.6"/>
+           <ellipse cx="17" cy="80" rx="7" ry="2.5" fill="${dark}" opacity="0.22"/>`,
+    '3-2':`<circle cx="88" cy="22" r="8" fill="#FFD700" opacity="0.65"/>
+           <line x1="88" y1="8" x2="88" y2="3" stroke="#FFD700" stroke-width="2.5" stroke-linecap="round"/>
+           <line x1="97" y1="13" x2="101" y2="9" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
+           <line x1="100" y1="22" x2="105" y2="22" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>`,
+    '3-3':`<line x1="80" y1="62" x2="96" y2="59" stroke="${dark}" stroke-width="2" stroke-linecap="round" opacity="0.42"/>
+           <line x1="82" y1="68" x2="98" y2="68" stroke="${dark}" stroke-width="2" stroke-linecap="round" opacity="0.32"/>
+           <line x1="80" y1="74" x2="95" y2="77" stroke="${dark}" stroke-width="1.5" stroke-linecap="round" opacity="0.22"/>`,
+    '3-4':`<path d="M4,70 Q10,63 18,70 Q24,77 30,70" stroke="${col}" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.65"/>
+           <path d="M4,78 Q10,71 18,78" stroke="${mid}" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.45"/>`,
+    '4-1':`<path d="M8,83 L15,65 L22,83" fill="${mid}" opacity="0.5"/>
+           <path d="M10,83 L15,68 L20,83" fill="${col}" opacity="0.35"/>`,
+    '4-2':`<text x="82" y="16" font-size="11" fill="#FFD700" opacity="0.9">✦</text>
+           <text x="90" y="28" font-size="7" fill="#FFD700" opacity="0.7">✦</text>
+           <text x="78" y="28" font-size="7" fill="#FFD700" opacity="0.75">✦</text>
+           <text x="86" y="38" font-size="5" fill="#FFD700" opacity="0.55">✦</text>`,
+    '4-3':`<path d="M86,5 L80,38" stroke="${col}" stroke-width="10" stroke-linecap="round" opacity="0.18"/>
+           <path d="M86,5 L92,38" stroke="${col}" stroke-width="7" stroke-linecap="round" opacity="0.13"/>`,
+    '4-4':`<path d="M12,18 Q16,10 14,20 L18,16 Q14,26 10,22 Z" fill="${col}" opacity="0.65"/>
+           <path d="M8,30 Q11,24 10,32 L13,29 Q10,37 7,33 Z" fill="${mid}" opacity="0.5"/>`,
+  };
+
+  const hairs = [
+    `<path d="M28,38 Q26,20 36,15 Q50,8 64,15 Q74,20 72,38" fill="${hair}"/>
+     <path d="M28,38 Q21,50 24,62" stroke="${hair}" stroke-width="8" fill="none" stroke-linecap="round"/>
+     <path d="M72,38 Q79,50 76,62" stroke="${hair}" stroke-width="8" fill="none" stroke-linecap="round"/>`,
+    `<path d="M29,38 Q27,22 37,17 Q50,10 63,17 Q73,22 71,38" fill="${hair}"/>
+     <path d="M29,38 Q24,50 28,58" stroke="${hair}" stroke-width="6" fill="none" stroke-linecap="round"/>
+     <path d="M71,38 Q76,50 72,58" stroke="${hair}" stroke-width="6" fill="none" stroke-linecap="round"/>`,
+    `<path d="M30,40 Q28,24 38,19 Q50,13 62,19 Q72,24 70,40" fill="${hair}"/>
+     <path d="M30,40 Q26,48 30,54" stroke="${hair}" stroke-width="5" fill="none" stroke-linecap="round"/>
+     <path d="M70,40 Q74,48 70,54" stroke="${hair}" stroke-width="5" fill="none" stroke-linecap="round"/>`,
+    `<path d="M30,42 Q28,26 40,20 Q50,14 60,20 Q72,26 70,42" fill="${hair}"/>
+     <path d="M36,22 Q40,13 44,18" stroke="${hair}" stroke-width="4" fill="none" stroke-linecap="round"/>
+     <path d="M50,16 Q50,7 50,14" stroke="${hair}" stroke-width="4" fill="none" stroke-linecap="round"/>
+     <path d="M56,20 Q62,12 65,18" stroke="${hair}" stroke-width="4" fill="none" stroke-linecap="round"/>`,
+  ];
+
+  const mouths = [
+    `<path d="M44,57 Q50,60 56,57" stroke="${dark}" stroke-width="2" fill="none" stroke-linecap="round"/>`,
+    `<path d="M43,56 Q50,61 57,56" stroke="${dark}" stroke-width="2" fill="none" stroke-linecap="round"/>`,
+    `<path d="M42,55 Q50,62 58,55" stroke="${dark}" stroke-width="2" fill="none" stroke-linecap="round"/>`,
+    `<ellipse cx="50" cy="57" rx="7" ry="5" fill="${dark}"/>
+     <ellipse cx="50" cy="55.5" rx="5" ry="3" fill="hsl(${h},40%,72%)"/>`,
+  ];
+
+  let motion = '';
+  if (a2 === 3) motion = `
+    <line x1="85" y1="52" x2="94" y2="49" stroke="${dark}" stroke-width="1.8" stroke-linecap="round" opacity="0.45"/>
+    <line x1="86" y1="58" x2="96" y2="58" stroke="${dark}" stroke-width="1.8" stroke-linecap="round" opacity="0.35"/>
+    <line x1="85" y1="64" x2="93" y2="67" stroke="${dark}" stroke-width="1.5" stroke-linecap="round" opacity="0.25"/>`;
+  else if (a2 === 4) motion = `
+    <line x1="84" y1="50" x2="95" y2="46" stroke="${dark}" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+    <line x1="85" y1="57" x2="97" y2="57" stroke="${dark}" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+    <line x1="84" y1="64" x2="95" y2="68" stroke="${dark}" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+    <line x1="6" y1="50" x2="16" y2="47" stroke="${dark}" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
+    <line x1="5" y1="57" x2="15" y2="57" stroke="${dark}" stroke-width="1.5" stroke-linecap="round" opacity="0.25"/>`;
+
+  const waves = a1<=2 ? (() => {
+    const wx = 15+earR, alpha=[0.72,0.48][a1-1];
+    return `<path d="M${wx},40 Q${wx+6},48 ${wx},56" stroke="${mid}" stroke-width="2" fill="none" stroke-linecap="round" opacity="${alpha}"/>
+            <path d="M${wx-5},36 Q${wx+2},48 ${wx-5},60" stroke="${mid}" stroke-width="1.3" fill="none" stroke-linecap="round" opacity="${alpha*.6}"/>`;
+  })() : '';
+
+  const bubble = a1>=3 ? (() => {
+    const bw=a1===3?28:35, bh=a1===3?18:22, bx=61, by=6;
+    const inner = a1===4
+      ? `<circle cx="${bx+8}" cy="${by+bh/2}" r="2.5" fill="${dark}"/>
+         <circle cx="${bx+bw/2}" cy="${by+bh/2}" r="2.5" fill="${dark}"/>
+         <circle cx="${bx+bw-8}" cy="${by+bh/2}" r="2.5" fill="${dark}"/>`
+      : `<line x1="${bx+6}" y1="${by+7}" x2="${bx+bw-8}" y2="${by+7}" stroke="${dark}" stroke-width="1.5" stroke-linecap="round"/>
+         <line x1="${bx+6}" y1="${by+13}" x2="${bx+bw-13}" y2="${by+13}" stroke="${dark}" stroke-width="1.2" stroke-linecap="round"/>`;
+    return `<rect x="${bx}" y="${by}" width="${bw}" height="${bh}" rx="8" fill="white" stroke="${dark}" stroke-width="1.3"/>
+            <polygon points="${bx+6},${by+bh} ${bx},${by+bh+7} ${bx+14},${by+bh}" fill="white" stroke="${dark}" stroke-width="1.3"/>
+            ${inner}`;
+  })() : '';
+
+  const ears = earR > 0 ? `
+    <ellipse cx="28" cy="47" rx="${earR}" ry="${earR*1.3}" fill="${skin}" stroke="${dark}" stroke-width="1.2"/>
+    <ellipse cx="72" cy="47" rx="${earR}" ry="${earR*1.3}" fill="${skin}" stroke="${dark}" stroke-width="1.2"/>
+    <ellipse cx="28" cy="47" rx="${earR*.5}" ry="${earR*.7}" fill="hsl(${h},40%,85%)" opacity="0.55"/>
+    <ellipse cx="72" cy="47" rx="${earR*.5}" ry="${earR*.7}" fill="hsl(${h},40%,85%)" opacity="0.55"/>` : '';
+
+  return `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs><radialGradient id="ibg${a1}${a2}">
+    <stop offset="0%" stop-color="${pale}"/>
+    <stop offset="100%" stop-color="${col}" stop-opacity="0.35"/>
+  </radialGradient></defs>
+  <circle cx="50" cy="52" r="46" fill="url(#ibg${a1}${a2})"/>
+  ${motion}${decos[`${a1}-${a2}`]||''}${ears}
+  <ellipse cx="50" cy="47" rx="22" ry="23" fill="${skin}" stroke="${dark}" stroke-width="1.5"/>
+  ${hairs[a1-1]}
+  <ellipse cx="41" cy="47" rx="4.5" ry="${eyeH}" fill="${dark}"/>
+  <ellipse cx="59" cy="47" rx="4.5" ry="${eyeH}" fill="${dark}"/>
+  <ellipse cx="42.5" cy="${(47-eyeH*.4).toFixed(1)}" rx="1.4" ry="${Math.min(eyeH*.35,1.1).toFixed(1)}" fill="white"/>
+  <ellipse cx="60.5" cy="${(47-eyeH*.4).toFixed(1)}" rx="1.4" ry="${Math.min(eyeH*.35,1.1).toFixed(1)}" fill="white"/>
+  <path d="M37,${40-browRaise} Q41,${38-browRaise} 45,${40}" stroke="${dark}" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M55,${40} Q59,${38-browRaise} 63,${40-browRaise}" stroke="${dark}" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <ellipse cx="35" cy="52" rx="6.5" ry="4" fill="hsl(${h+15},70%,82%)" opacity="0.42"/>
+  <ellipse cx="65" cy="52" rx="6.5" ry="4" fill="hsl(${h+15},70%,82%)" opacity="0.42"/>
+  ${mouths[a1-1]}${waves}${bubble}
+</svg>`;
+}
+
+// ================================================================
+//  SHARE FUNCTIONS (方向性C)
+// ================================================================
+function getShareURL(typeId) {
+  const base = location.origin + location.pathname;
+  return `${base}?result=${typeId}`;
+}
+
+function shareToX(typeId) {
+  const t = getType(typeId);
+  const url = getShareURL(typeId);
+  const text = `私の「ことばの波長」は\n「${t.name}（TYPE ${t.id}）」でした！\n\n${t.catch.split('\n')[0]}\n\nあなたは何タイプ？👇`;
+  window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`, '_blank');
+}
+
+function shareToLINE(typeId) {
+  const t = getType(typeId);
+  const url = getShareURL(typeId);
+  const text = `私の話し方タイプは「${t.name}」でした！恋愛相性診断、あなたもやってみて👇`;
+  window.open(`https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`, '_blank');
+}
+
+function copyShareLink(typeId) {
+  const url = getShareURL(typeId);
+  navigator.clipboard.writeText(url).then(() => {
+    alert('リンクをコピーしました！\nLINEやSNSで友達に送ってみてください💕');
+  });
+}
+
+// タイプ別アフィリエイトバナー（聴き/話し寄りで推奨アプリを変える）
+function buildAffiliateHTML(type) {
+  // a1: 1-2=聴き寄り(じっくり系), 3-4=話し寄り(活発系)
+  // a2: 1-2=ゆっくり, 3-4=はやい
+  const isListener = type.a1 <= 2;
+  const isSlow     = type.a2 <= 2;
+
+  const apps = isListener ? [
+    { icon:'💍', name:'Pairs（ペアーズ）', sub:'じっくり相手を知りたい人向け・累計会員2,000万人', cta:'無料で始める →', url:'https://pairs.lv/', color:'#e91e8c' },
+    { icon:'☕', name:'with（ウィズ）', sub:'心理テストで相性を重視したマッチング', cta:'無料登録 →', url:'https://with-jp.com/', color:'#4caf50' },
+  ] : [
+    { icon:'🔥', name:'Omiai（お見合い）', sub:'真剣な出会いを求める20〜30代に人気', cta:'無料で始める →', url:'https://fb.omiai-jp.com/', color:'#ff5722' },
+    { icon:'💬', name:'タップル', sub:'趣味でつながる・気軽に話せるマッチングアプリ', cta:'無料登録 →', url:'https://tapple.me/', color:'#e91e63' },
+  ];
+
+  const msg = isListener
+    ? (isSlow ? 'じっくり相手を知っていくスタイルのあなたには、プロフィールをしっかり読めるアプリが合いそう。' : 'しっかり聴きながらテンポよく距離を縮められるアプリが向いているかも。')
+    : (isSlow ? '話すのが好きだけど焦らないあなたには、ゆっくり関係を育てられる真剣系がおすすめ。' : '会話が得意で積極的なあなたには、アクティブにやり取りできるアプリがぴったり。');
+
+  return `
+    <div class="affil-banner">
+      <div class="affil-head">💕 あなたのタイプにおすすめの出会い方</div>
+      <div class="affil-body">
+        <div class="affil-desc">${msg}</div>
+        <div class="affil-apps">
+          ${apps.map(a => `
+            <a class="affil-app" href="${a.url}" target="_blank" rel="noopener sponsored">
+              <div class="affil-app-icon">${a.icon}</div>
+              <div class="affil-app-info">
+                <div class="affil-app-name" style="color:${a.color}">${a.name}</div>
+                <div class="affil-app-sub">${a.sub}</div>
+              </div>
+              <div class="affil-app-cta">${a.cta}</div>
+            </a>`).join('')}
+        </div>
+        <p style="font-size:0.68rem;color:var(--text-light);margin-top:10px;text-align:center;">※ PRを含みます</p>
+      </div>
+    </div>`;
+}
+
+// シェアURLから結果を直接表示（?result=TYPE_IDでアクセスされた場合）
+function checkSharedResult() {
+  const params = new URLSearchParams(location.search);
+  const typeId = params.get('result');
+  if (!typeId) return;
+  const type = getType(typeId);
+  if (!type) return;
+
+  // 診断タブのスタート画面を隠して結果を表示
+  document.getElementById('q-start').style.display = 'none';
+  const area = document.getElementById('q-result');
+  area.style.display = 'block';
+
+  // タイプ位置から近似スコアを計算（バー表示用）
+  const a1n = 6, a2n = 6;
+  // 各ポジションの中間値（1→1.5n, 2→2.5n, 3→3.5n, 4→4n近似）
+  const a1sum = Math.round(a1n * (type.a1 * 1.0 + 0.5));
+  const a2sum = Math.round(a2n * (type.a2 * 1.0 + 0.5));
+
+  // シェアされた結果である旨のバナーを追加
+  const shareBanner = `
+    <div class="shared-banner">
+      <div style="font-size:2rem;">💌</div>
+      <p><strong>友達からシェアされた診断結果</strong>あなたのタイプもチェックしてみよう！下にスクロールして「もう一度診断する」から自分の結果を出せます。</p>
+    </div>`;
+
+  area.innerHTML = shareBanner + buildResultHTML(type, a1sum, a2sum, a1n, a2n);
+
+  setTimeout(() => {
+    const lPct = Math.min(100, Math.round((a1sum - a1n) / (a1n * 3) * 100));
+    const sPct = Math.min(100, Math.round((a2sum - a2n) / (a2n * 3) * 100));
+    const ba1 = document.getElementById('bar-a1');
+    const ba2 = document.getElementById('bar-a2');
+    const pa1 = document.getElementById('pct-a1');
+    const pa2 = document.getElementById('pct-a2');
+    if (ba1) { ba1.style.width = `${lPct}%`; pa1.textContent = `${lPct}%`; }
+    if (ba2) { ba2.style.width = `${sPct}%`; pa2.textContent = `${sPct}%`; }
+  }, 100);
+}
+
+// ================================================================
+//  PRIVACY / MISC
+// ================================================================
+function showPrivacy() {
+  document.getElementById('privacy-modal').style.display = 'block';
+}
+
+// ================================================================
+//  INIT
+// ================================================================
+buildCompatTab();
+buildTypesTab();
+checkSharedResult(); // ?result=TYPE_ID でシェアURLからアクセスされた場合に結果を表示
+</script>
 </body>
 </html>

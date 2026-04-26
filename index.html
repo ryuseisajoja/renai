@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ことばの波長、合ってる？ — 話し方でわかる恋愛相性診断16タイプ</title>
-  <meta name="description" content="「聴く派 or 話す派」「ゆっくり or はやく」の2軸で会話スタイルを16タイプに分類。恋愛の相性を数値で診断します。全12問・約3分・無料。">
+  <meta name="description" content="「聴く派 or 話す派」「ゆっくり or はやく」の2軸で会話スタイルを16タイプに分類。恋愛の相性を数値で診断します。全12問 / 約3分 / 無料。">
+  <meta name="google-site-verification" content="RgCT6PNilxXMM6V2MFpnRz-Swm8Cdwy6hy7psCcRf8Y" />
 
   <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2580973941635700"
@@ -12,7 +13,7 @@
 
   <!-- OGP (SNSシェア用) -->
   <meta property="og:title" content="ことばの波長、合ってる？ — 恋愛相性診断16タイプ">
-  <meta property="og:description" content="話し方・聴き方でわかる恋愛相性診断。16タイプで相性スコアが数値でわかる。全12問・約3分・無料。">
+  <meta property="og:description" content="話し方・聴き方でわかる恋愛相性診断。16タイプで相性スコアが数値でわかる。全12問 / 約3分 / 無料。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://love-kotoba-shindan.com/">
   <meta property="og:image" content="https://love-kotoba-shindan.com/ogp.png">
@@ -119,10 +120,10 @@
     }
 
     /* ── Header ── */
-    header { text-align: center; padding: 44px 20px 28px; }
-    .header-emojis { font-size: 2.2rem; letter-spacing: 5px; margin-bottom: 10px; }
+    header { text-align: center; padding: 36px 20px 22px; }
+    
     header h1 {
-      font-size: clamp(1.5rem, 5vw, 2.4rem);
+      font-size: clamp(1.4rem, 4.5vw, 2rem);
       font-weight: 900;
       background: linear-gradient(135deg, #f06292, #9c6fc9);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent;
@@ -145,8 +146,8 @@
       background: var(--pink-pale); border-radius: 50px; padding: 5px;
     }
     .nav-tab {
-      flex: 1; padding: 9px 4px; border: none; border-radius: 50px;
-      cursor: pointer; font-size: 0.8rem; font-weight: 700;
+      flex: 1; padding: 8px 2px; border: none; border-radius: 50px;
+      cursor: pointer; font-size: 0.72rem; font-weight: 700;
       color: var(--text-mid); background: transparent; transition: all 0.22s;
     }
     .nav-tab.active {
@@ -250,7 +251,7 @@
     .tag { padding: 5px 13px; border-radius: 50px; font-size: 0.82rem; font-weight: 600; background: var(--pink-light); color: var(--pink); }
 
     /* ── Section heading ── */
-    .s-title { font-size: 1rem; font-weight: 800; margin-bottom: 13px; display: flex; align-items: center; gap: 7px; }
+    .s-title { font-size: 0.78rem; font-weight: 800; margin-bottom: 13px; letter-spacing: 0.08em; text-transform: none; color: var(--text-dark); border-bottom: 2px solid var(--pink-light); padding-bottom: 8px; }
 
     /* ── Axis score bars ── */
     .score-bars { display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px; }
@@ -348,21 +349,62 @@
     }
 
     footer { text-align: center; padding: 16px; color: var(--text-light); font-size: 0.75rem; }
+
+    /* ── Column tab ── */
+    .col-card {
+      background: white; border-radius: 18px; overflow: hidden;
+      box-shadow: 0 4px 20px rgba(200,100,150,0.12); margin-bottom: 14px;
+      text-decoration: none; color: inherit; display: block; transition: all 0.22s;
+    }
+    .col-card:hover { transform: translateY(-4px); box-shadow: 0 10px 32px rgba(200,100,150,0.2); }
+    .col-card-head {
+      background: linear-gradient(135deg, #f06292, #9c6fc9);
+      padding: 14px 18px; display: flex; align-items: center; gap: 12px;
+    }
+    .col-card-icon { font-size: 2rem; }
+    .col-card-title { color: white; font-size: 0.97rem; font-weight: 800; line-height: 1.4; }
+    .col-card-body { padding: 12px 18px 14px; }
+    .col-card-desc { font-size: 0.83rem; color: var(--text-mid); line-height: 1.7; margin-bottom: 8px; }
+    .col-card-meta { font-size: 0.73rem; color: var(--text-light); display: flex; gap: 8px; align-items: center; }
+    .col-tag { background: var(--pink-pale); color: var(--pink); padding: 2px 10px; border-radius: 50px; font-size: 0.7rem; font-weight: 700; }
+
+    /* ── Sparkle / game feel ── */
+    @keyframes sparkle { 0%,100%{opacity:.7;transform:scale(1) rotate(0deg);}50%{opacity:1;transform:scale(1.3) rotate(20deg);} }
+    .sparkle-icon { display:inline-block; animation: sparkle 1.8s ease-in-out infinite; }
+    @keyframes popIn { 0%{opacity:0;transform:scale(.7);}80%{transform:scale(1.06);}100%{opacity:1;transform:scale(1);} }
+    .pop-in { animation: popIn 0.45s cubic-bezier(.17,.67,.35,1.2) both; }
+    @keyframes floatUp { 0%{opacity:0;transform:translateY(18px);}100%{opacity:1;transform:translateY(0);} }
+    .float-up { animation: floatUp 0.5s ease both; }
+    .result-sparkle { font-size:1.4rem; position:relative; display:inline-block; animation: sparkle 1s ease-in-out infinite; }
+
+    /* ── Share buttons (bigger, more fun) ── */
+    .share-row { display:flex; gap:8px; margin-bottom:10px; flex-wrap:wrap; }
+    .share-btn { flex:1; min-width:80px; padding:12px 8px; border:none; border-radius:14px;
+      font-size:0.85rem; font-weight:800; cursor:pointer; transition:all 0.18s;
+      display:flex; align-items:center; justify-content:center; gap:5px; }
+    .share-x   { background:#000; color:#fff; }
+    .share-x:hover { background:#222; transform:translateY(-2px) scale(1.04); }
+    .share-line { background:#06c755; color:#fff; }
+    .share-line:hover { background:#05b04d; transform:translateY(-2px) scale(1.04); }
+    .share-copy { background:var(--pink-pale); color:var(--pink); border:2px solid var(--pink-light); }
+    .share-copy:hover { background:var(--pink-light); transform:translateY(-2px) scale(1.04); }
+    .share-img  { background:linear-gradient(135deg,#fd5949,#d6249f,#285aeb); color:#fff; }
+    .share-img:hover { transform:translateY(-2px) scale(1.04); }
   </style>
 </head>
 <body>
 
 <header>
-  <div class="header-emojis">💬 💕 👂</div>
   <h1>ことばの波長、合ってる？</h1>
-  <p>話し方・聴き方でわかる恋愛相性診断</p>
+  <p>話し方・聴き方でわかる恋愛相性診断 — 16タイプ</p>
 </header>
 
 <main>
   <div class="nav-tabs">
-    <button class="nav-tab active" onclick="showTab('diagnose',this)">🔍 診断する</button>
-    <button class="nav-tab" onclick="showTab('compat',this)">💕 相性チェック</button>
-    <button class="nav-tab" onclick="showTab('types',this)">📖 タイプ一覧</button>
+    <button class="nav-tab active" onclick="showTab('diagnose',this)">診断する</button>
+    <button class="nav-tab" onclick="showTab('compat',this)">相性チェック</button>
+    <button class="nav-tab" onclick="showTab('types',this)">タイプ一覧</button>
+    <button class="nav-tab" onclick="showTab('column',this)">コラム</button>
   </div>
 
   <!-- ===== 診断タブ ===== -->
@@ -372,7 +414,7 @@
       <div style="text-align:center;margin-bottom:22px;">
         <div style="font-size:2.8rem;margin-bottom:12px;">💬</div>
         <h2 style="font-size:1.25rem;font-weight:900;margin-bottom:6px;">あなたの「ことばの波長」を診断</h2>
-        <p style="color:var(--text-mid);font-size:0.82rem;">全12問・約3分・無料</p>
+        <p style="color:var(--text-mid);font-size:0.82rem;">全12問 / 約3分 / 無料</p>
       </div>
 
       <div style="background:var(--pink-pale);border-radius:14px;padding:18px;margin-bottom:18px;">
@@ -388,15 +430,15 @@
 
       <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:22px;">
         <div style="display:flex;align-items:flex-start;gap:10px;font-size:0.85rem;color:var(--text-mid);">
-          <span style="font-size:1.1rem;flex-shrink:0;">📝</span>
+          <span style="width:8px;height:8px;border-radius:50%;background:var(--pink);flex-shrink:0;margin-top:6px;"></span>
           <span><strong style="color:var(--text-dark);">シナリオ形式の質問</strong>に直感で答えるだけ。「こういうとき自分ってどうするかな」と想像しながら選んでみてください。</span>
         </div>
         <div style="display:flex;align-items:flex-start;gap:10px;font-size:0.85rem;color:var(--text-mid);">
-          <span style="font-size:1.1rem;flex-shrink:0;">💕</span>
+          <span style="width:8px;height:8px;border-radius:50%;background:var(--purple);flex-shrink:0;margin-top:6px;"></span>
           <span><strong style="color:var(--text-dark);">相性チェック機能</strong>もあり。気になる相手のタイプと照らし合わせることで、二人の会話の相性が数値でわかります。</span>
         </div>
         <div style="display:flex;align-items:flex-start;gap:10px;font-size:0.85rem;color:var(--text-mid);">
-          <span style="font-size:1.1rem;flex-shrink:0;">⚠️</span>
+          <span style="width:8px;height:8px;border-radius:50%;background:#ff9800;flex-shrink:0;margin-top:6px;"></span>
           <span>「どちらか」で迷ったときは、<strong style="color:var(--text-dark);">なりたい自分ではなく、実際の自分</strong>に近い方を選ぶとより正確に出ます。</span>
         </div>
       </div>
@@ -420,8 +462,8 @@
     </div>
 
     <div id="q-loading" class="card loading-wrap" style="display:none;">
-      <div class="pulse">💕</div>
-      <p style="margin-top:14px;color:var(--text-mid);">タイプを分析中…</p>
+      <div class="pulse">✦</div>
+      <p style="margin-top:14px;color:var(--text-mid);">タイプを分析中...</p>
     </div>
 
     <div id="q-result" style="display:none;"></div>
@@ -431,7 +473,7 @@
   <!-- ===== 相性チェックタブ ===== -->
   <div id="tab-compat" class="section">
     <div class="card">
-      <div class="s-title">👤 あなたのタイプ</div>
+      <div class="s-title">あなたのタイプ</div>
       <div class="axis-row"><span>← 聴く</span><span>話す →</span></div>
       <div style="position:relative;padding-left:40px;">
         <div class="sel-left-labels" id="compat-my-left"></div>
@@ -440,7 +482,7 @@
 
       <div style="text-align:center;font-size:1.4rem;margin:10px 0;color:var(--pink);">💕 × 💕</div>
 
-      <div class="s-title">💑 相手のタイプ</div>
+      <div class="s-title">相手のタイプ</div>
       <div class="axis-row"><span>← 聴く</span><span>話す →</span></div>
       <div style="position:relative;padding-left:40px;">
         <div class="sel-left-labels" id="compat-partner-left"></div>
@@ -448,7 +490,7 @@
       </div>
 
       <button class="btn-full" id="compat-btn" onclick="doCheckCompat()" disabled style="margin-top:20px;">
-        相性を診断する 💕
+        相性を診断する
       </button>
     </div>
 
@@ -475,7 +517,7 @@
   <!-- ===== タイプ一覧タブ ===== -->
   <div id="tab-types" class="section">
     <div class="card">
-      <div class="s-title">🗂️ 16タイプ一覧</div>
+      <div class="s-title">16タイプ一覧</div>
       <p style="font-size:0.8rem;color:var(--text-light);margin-bottom:12px;">タイプをタップすると詳細と相性が見られます</p>
       <div class="axis-row"><span>← 聴く</span><span>話す →</span></div>
       <div style="position:relative;padding-left:40px;">
@@ -499,11 +541,75 @@
     <div id="type-detail-area"></div>
   </div>
 
+  <!-- ===== コラムタブ ===== -->
+  <div id="tab-column" class="section">
+    <div class="card" style="padding:18px 18px 6px;">
+      <div class="s-title">恋愛と会話スタイルのコラム</div>
+      <p style="font-size:0.8rem;color:var(--text-light);margin-bottom:16px;">話し方と恋愛の関係を深堀りするコラム</p>
+
+      <a class="col-card" href="articles/2026-04-26-line-henshin-speed-couple.html">
+        <div class="col-card-head" style="background:linear-gradient(135deg,#e91e8c,#9c6fc9);">
+          <div class="col-card-icon">📱</div>
+          <div class="col-card-title">LINEの返信スピードが違うカップルの問題と解決策</div>
+        </div>
+        <div class="col-card-body">
+          <div class="col-card-desc">「すぐ返す派」vs「まとめて返す派」のすれ違いが起きる本当の原因と対処法</div>
+          <div class="col-card-meta"><span>2026年4月</span><span class="col-tag">LINE</span><span class="col-tag">すれ違い</span><span style="margin-left:auto;color:var(--pink);font-weight:800;">読む →</span></div>
+        </div>
+      </a>
+
+      <a class="col-card" href="articles/2026-04-26-oshaberi-renai-wana.html">
+        <div class="col-card-head" style="background:linear-gradient(135deg,#f06292,#e040b0);">
+          <div class="col-card-icon">🗣️</div>
+          <div class="col-card-title">話し好きな人が恋愛で陥りがちな罠5つ</div>
+        </div>
+        <div class="col-card-body">
+          <div class="col-card-desc">会話が得意な人ほど無意識に相手を疲れさせることがある。落とし穴と改善策を解説</div>
+          <div class="col-card-meta"><span>2026年4月</span><span class="col-tag">話し好き</span><span class="col-tag">恋愛心理</span><span style="margin-left:auto;color:var(--pink);font-weight:800;">読む →</span></div>
+        </div>
+      </a>
+
+      <a class="col-card" href="articles/2026-04-26-first-date-kaiwa-tsudzukanai.html">
+        <div class="col-card-head" style="background:linear-gradient(135deg,#9c6fc9,#f06292);">
+          <div class="col-card-icon">💬</div>
+          <div class="col-card-title">初デートで会話が続かない原因と対処法5選</div>
+        </div>
+        <div class="col-card-body">
+          <div class="col-card-desc">沈黙が怖い人必見！タイプ別の対処法と「沈黙は相性のバロメーター」という考え方</div>
+          <div class="col-card-meta"><span>2026年4月</span><span class="col-tag">初デート</span><span class="col-tag">会話</span><span style="margin-left:auto;color:var(--pink);font-weight:800;">読む →</span></div>
+        </div>
+      </a>
+
+      <a class="col-card" href="articles/speed-gap-renai.html">
+        <div class="col-card-head" style="background:linear-gradient(135deg,#9c6fc9,#5c6bc0);">
+          <div class="col-card-icon">⏱️</div>
+          <div class="col-card-title">話すスピードが合わない相手との付き合い方</div>
+        </div>
+        <div class="col-card-body">
+          <div class="col-card-desc">ゆっくり派×はやい派カップルのすれ違いパターンと、乗り越えるための具体的なコツ</div>
+          <div class="col-card-meta"><span>2026年4月</span><span class="col-tag">テンポ</span><span class="col-tag">すれ違い</span><span style="margin-left:auto;color:var(--pink);font-weight:800;">読む →</span></div>
+        </div>
+      </a>
+
+      <a class="col-card" href="articles/kiki-jouzu-renai.html">
+        <div class="col-card-head" style="background:linear-gradient(135deg,#f06292,#9c6fc9);">
+          <div class="col-card-icon">👂</div>
+          <div class="col-card-title">聴き上手な人の恋愛の特徴5選</div>
+        </div>
+        <div class="col-card-body">
+          <div class="col-card-desc">「話を聞いてくれる」が恋愛最強の武器になる理由。強みと弱点を徹底解説</div>
+          <div class="col-card-meta"><span>2026年4月</span><span class="col-tag">聴き上手</span><span class="col-tag">恋愛傾向</span><span style="margin-left:auto;color:var(--pink);font-weight:800;">読む →</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
 </main>
 
 <footer>
-  💕 恋愛相性タイプ診断 — 16タイプ版<br>
-  <a href="articles/index.html" style="color:var(--text-light);font-size:0.72rem;text-decoration:underline;">恋愛コラム一覧</a>
+  ことばの波長診断 — 16タイプ版<br>
+  <a href="articles/index.html" style="color:var(--text-light);font-size:0.72rem;text-decoration:underline;">コラム一覧</a>
   &nbsp;｜&nbsp;
   <a href="#" onclick="showPrivacy();return false;" style="color:var(--text-light);font-size:0.72rem;text-decoration:underline;">プライバシーポリシー</a>
 </footer>
@@ -779,703 +885,403 @@ const QUESTIONS = [
       { score:1, text:'ゆっくり言葉を選びながら、じっくり会話を楽しんでいる。一言一言が大切で、急がなくていいと感じている' },
       { score:4, text:'テンポがどんどん上がって、言葉が次々あふれてくる。興奮して、止まれなくなる感じ' },
       { score:3, text:'テンポよく会話が弾んで、気持ちよく話せている。リズムに乗って、自然とテンポが上がっていく' },
-      { score:2, text:'落ち着いたペースで、でも楽しくて時間を忘れている。じっくり話せることが幸せで、急ぐ必要を感じない' }] },
+      { score:2, text:'落ち着いたペースで、でも弾む会話が続く感じ。ゆっくりでも十分楽しくて、急ぐ必要を感じない' }] },
   { axis:2,
-    text:'誰かに気持ちや考えを伝えるとき（LINE・会話どちらでも）、自分はどっちのタイプ？',
+    text:'LINEで好きな人にメッセージを送るとき、自分のやり方に近いのは？',
     opts:[
-      { score:2, text:'ある程度考えてから伝える。少し時間をかけて、「どう伝えようかな」と準備してから話すことが多い' },
-      { score:4, text:'思ったことをすぐ伝えたくなる。後からまとめればいいと思う方。溜め込まずにすぐ出したい' },
-      { score:3, text:'わりとすぐに言葉が出てくる。テンポよく伝えられる方。「とりあえず伝えて、あとは話しながら」が得意' },
-      { score:1, text:'言葉をじっくり考えて、伝えたいことを丁寧に選ぶ方。時間がかかっても、ちゃんと正確に伝えたい' }] },
+      { score:2, text:'少し考えてから送る。言葉を選んでいるうちに、ちょっと時間がかかることがある' },
+      { score:4, text:'思ったらすぐ送る。長文より短いメッセージを何回も送る方が自然。テンポよくやりとりしたい' },
+      { score:1, text:'じっくり考えてから送る。「これで伝わるかな」と何回か読み直してから送信ボタンを押す' },
+      { score:3, text:'ある程度まとめてから送るが、気持ちが盛り上がると短いメッセージを連続で送ってしまうことも' }] },
   { axis:2,
-    text:'自分たちの会話のリズムを景色にたとえるなら、どれが一番しっくりくる？',
+    text:'会話中、間（ま）についてどう感じる？',
     opts:[
-      { score:3, text:'カフェのBGM——テンポよく、でも心地よく続く感じ。程よいテンポで話題が展開していくのが好き' },
-      { score:1, text:'焚き火のそば——言葉がゆっくり燃えるように、じっくりと深く。急かされず、一言一言を味わいたい' },
-      { score:4, text:'お祭りの屋台——次々と話題が変わって、にぎやかで楽しい。テンポが速くても、それが心地よい' },
-      { score:2, text:'夕暮れの散歩——落ち着いたペースで、大切なことをじっくり。急がず、でも確かに進んでいく感じ' }] },
+      { score:4, text:'間が苦手。無言が続くとなんか焦って、自分から何か話してしまう。沈黙は埋めたい派' },
+      { score:1, text:'間が好き。沈黙もコミュニケーションの一部だと思っている。無理に埋める必要はない' },
+      { score:3, text:'少し気になるが、すぐに何か話すことが多い。間が長いと「何か話さなきゃ」と感じる' },
+      { score:2, text:'やや気になる。しばらく待てるが、あまり長いと話題を変えたくなる' }] },
 ];
 
-let qState = { cur:0, answers:[], shuffled:[] };
+// ================================================================
+//  UTILS
+// ================================================================
+function getType(id) { return T16.find(t => t.id === id); }
 
-function posFromScore(sum, n) {
-  // n = number of questions per axis (each scored 1-4)
-  // Normalize to 0-1, then map to position 1-4
-  const min = n, max = n * 4, range = max - min;
-  const norm = (sum - min) / range;
-  if (norm < 0.25) return 1;
-  if (norm < 0.50) return 2;
-  if (norm < 0.75) return 3;
-  return 4;
+function typeColor(a1, a2) {
+  const h = 220 + (a1 - 1) * 40;
+  const s = 45 + (a2 - 1) * 12;
+  const l = 70 - (a2 - 1) * 5;
+  return `hsl(${h},${s}%,${l}%)`;
 }
 
-function shuffle(arr) {
-  const a = [...arr];
-  for (let i = a.length-1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i+1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
+function typeGrad(a1, a2) {
+  const c1 = typeColor(a1, a2);
+  const c2 = typeColor(Math.min(a1 + 1, 4), Math.min(a2 + 1, 4));
+  return `linear-gradient(135deg,${c1},${c2})`;
 }
+
+function tagStyle(a1, a2) {
+  return `background:${typeColor(a1,a2)}22;color:${typeColor(a1,a2)};border:1px solid ${typeColor(a1,a2)}44`;
+}
+
+function calcCompat(tA, tB) {
+  const d1 = Math.abs(tA.a1 - tB.a1);
+  const d2 = Math.abs(tA.a2 - tB.a2);
+  const raw = 100 - d1 * 14 - d2 * 10;
+  const bonus = (tA.a1 + tB.a1 === 5 && d2 <= 1) ? 8 : 0;
+  return Math.max(40, Math.min(99, raw + bonus));
+}
+
+function compatText(tA, tB, score) {
+  const d1 = Math.abs(tA.a1 - tB.a1);
+  const d2 = Math.abs(tA.a2 - tB.a2);
+  const speakDiff = ['スピードがぴったり一致！', 'スピード差はわずか', 'スピード差がやや大きめ', 'スピード差がかなり大きい'][d2];
+  const speedDesc = [
+    '話すテンポが自然に合う。会話のリズムが心地よく、一緒にいて楽だと感じやすいはず。',
+    'テンポの差はほぼ気にならないレベル。慣れればすぐに自然な会話ができるようになる。',
+    '片方がもう少しペースを合わせる意識が必要。でも工夫次第で心地よい会話になれる。',
+    'テンポの差が大きく、最初は「噛み合わない」と感じることも。お互いの話し方を知ることが大事。'
+  ][d2];
+  const listenDiff = ['聴く↔話すのバランスが自然にとれる相性', 'やや差があるがバランス取りやすい', '補い合える関係になりやすい', '会話スタイルがかなり違う'][d1];
+  let main = '';
+  if (score >= 88) main = `ことばの波長、めちゃくちゃ合ってる！会話のテンポも聴く・話すのバランスも自然にぴったり。一緒にいると「話しやすい」と感じる最高の相性。`;
+  else if (score >= 75) main = `かなり相性がいい！${listenDiff}。少し意識を合わせるだけで、居心地のいい会話ができるはず。`;
+  else if (score >= 60) main = `悪くない相性！違いはあるけど、お互いの話し方を知ることで補い合える関係になれる。`;
+  else main = `話し方のスタイルがかなり違う。でも違いを知ってお互いに合わせる意識があれば、逆に刺激的な関係になれることも。`;
+  return { main, speedDesc, speakDiff, listenDiff };
+}
+
+function scoreHearts(score) {
+  if (score >= 88) return '💕💕💕💕💕';
+  if (score >= 75) return '💕💕💕💕';
+  if (score >= 60) return '💕💕💕';
+  return '💕💕';
+}
+
+function scoreGrad(score) {
+  if (score >= 88) return 'linear-gradient(135deg,#f06292,#e91e63)';
+  if (score >= 75) return 'linear-gradient(135deg,#ffb74d,#ff8a65)';
+  if (score >= 60) return 'linear-gradient(135deg,#9c6fc9,#673ab7)';
+  return 'linear-gradient(135deg,#64b5f6,#1565c0)';
+}
+
+// ================================================================
+//  TAB SWITCHING
+// ================================================================
+function showTab(id, btn) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  btn.classList.add('active');
+  if (id === 'compat') renderCompatGrids();
+  if (id === 'types')  renderTypeOverview();
+}
+
+// ================================================================
+//  QUIZ ENGINE
+// ================================================================
+let quizIdx = 0;
+let answers = {};
 
 function startQuiz() {
-  // Pre-shuffle option order for each question (stored so Back button shows same order)
-  const shuffled = QUESTIONS.map(q => shuffle(q.opts));
-  qState = { cur:0, answers:new Array(12).fill(null), shuffled };
+  quizIdx = 0;
+  answers = {};
   document.getElementById('q-start').style.display = 'none';
   document.getElementById('q-form').style.display = 'block';
-  renderQ();
+  renderQuestion(0);
 }
 
-function renderQ() {
-  const q = QUESTIONS[qState.cur];
+function renderQuestion(idx) {
+  const q = QUESTIONS[idx];
   const total = QUESTIONS.length;
-  const pct = Math.round(qState.cur / total * 100);
-  document.getElementById('q-label').textContent = `質問 ${qState.cur+1} / ${total}`;
-  document.getElementById('q-pct-label').textContent = `${pct}%`;
-  document.getElementById('q-fill').style.width = `${pct}%`;
+  const pct = Math.round((idx / total) * 100);
+  document.getElementById('q-label').textContent = `質問 ${idx + 1} / ${total}`;
+  document.getElementById('q-pct-label').textContent = pct + '%';
+  document.getElementById('q-fill').style.width = pct + '%';
 
-  const selScore = qState.answers[qState.cur]; // stored as score value
-  const shuffledOpts = qState.shuffled[qState.cur];
-  document.getElementById('q-area').innerHTML = `
+  const opts = [...q.opts].sort(() => Math.random() - 0.5);
+  const selected = answers[idx];
+  const html = `
     <div class="q-anim">
-      <span class="q-badge">Q${qState.cur+1}</span>
-      <div class="q-text">${q.text}</div>
+      <div class="q-badge">Q${idx + 1}</div>
+      <p class="q-axis-hint">${q.axis === 1 ? '【聴く ↔ 話す】' : '【ゆっくり ↔ はやく】'}</p>
+      <p class="q-text">${q.text}</p>
       <div class="options">
-        ${shuffledOpts.map((o, i) => `
-          <button class="opt-btn${selScore===o.score?' selected':''}" data-score="${o.score}" onclick="selectOpt(${o.score})">
-            <span class="opt-num">${['A','B','C','D'][i]}</span>${o.text}
-          </button>
-        `).join('')}
+        ${opts.map((o, i) => `
+          <button class="opt-btn ${selected === o.score ? 'selected' : ''}"
+            onclick="selectOpt(${idx}, ${o.score}, this)">
+            <span class="opt-num">${String.fromCharCode(65 + i)}</span>
+            <span>${o.text}</span>
+          </button>`).join('')}
       </div>
     </div>`;
-
-  document.getElementById('btn-prev').style.display = qState.cur === 0 ? 'none' : '';
-  const btnNext = document.getElementById('btn-next');
-  btnNext.textContent = qState.cur === total-1 ? '診断結果を見る ✨' : '次へ ▶';
-  btnNext.disabled = selScore === null;
+  document.getElementById('q-area').innerHTML = html;
+  document.getElementById('btn-prev').style.display = idx === 0 ? 'none' : '';
+  document.getElementById('btn-next').disabled = selected === undefined;
+  document.getElementById('btn-next').textContent = idx === total - 1 ? '結果を見る ✨' : '次へ ▶';
 }
 
-function selectOpt(score) {
-  qState.answers[qState.cur] = score;
-  document.querySelectorAll('.opt-btn').forEach(b => {
-    b.classList.toggle('selected', parseInt(b.dataset.score) === score);
-  });
+function selectOpt(idx, score, btn) {
+  answers[idx] = score;
+  document.querySelectorAll('.opt-btn').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
   document.getElementById('btn-next').disabled = false;
 }
 
 function nextQ() {
-  if (qState.answers[qState.cur] === null) return;
-  if (qState.cur < QUESTIONS.length-1) { qState.cur++; renderQ(); }
-  else showQuizLoading();
+  if (answers[quizIdx] === undefined) return;
+  if (quizIdx === QUESTIONS.length - 1) {
+    submitQuiz();
+  } else {
+    quizIdx++;
+    renderQuestion(quizIdx);
+  }
 }
-function prevQ() { if (qState.cur > 0) { qState.cur--; renderQ(); } }
 
-function showQuizLoading() {
+function prevQ() {
+  if (quizIdx > 0) { quizIdx--; renderQuestion(quizIdx); }
+}
+
+function submitQuiz() {
   document.getElementById('q-form').style.display = 'none';
   document.getElementById('q-loading').style.display = 'block';
-  setTimeout(computeAndShow, 1300);
-}
-
-function computeAndShow() {
-  let a1sum = 0, a2sum = 0, a1n = 0, a2n = 0;
-  QUESTIONS.forEach((q, i) => {
-    const score = qState.answers[i]; // already the score (1-4)
-    if (q.axis === 1) { a1sum += score; a1n++; }
-    else              { a2sum += score; a2n++; }
-  });
-  const a1pos = posFromScore(a1sum, a1n);
-  const a2pos = posFromScore(a2sum, a2n);
-  const typeId = `${a1pos}-${a2pos}`;
-  const type = getType(typeId);
-
-  document.getElementById('q-loading').style.display = 'none';
-  const area = document.getElementById('q-result');
-  area.style.display = 'block';
-  area.innerHTML = buildResultHTML(type, a1sum, a2sum, a1n, a2n);
-  // animate bars: score range = [n, n*4], span = n*3
   setTimeout(() => {
-    const lPct = Math.min(100, Math.round((a1sum - a1n) / (a1n * 3) * 100));
-    const sPct = Math.min(100, Math.round((a2sum - a2n) / (a2n * 3) * 100));
-    document.getElementById('bar-a1').style.width = `${lPct}%`;
-    document.getElementById('bar-a2').style.width = `${sPct}%`;
-    document.getElementById('pct-a1').textContent = `${lPct}%`;
-    document.getElementById('pct-a2').textContent = `${sPct}%`;
-  }, 100);
+    const a1qs = QUESTIONS.filter(q => q.axis === 1);
+    const a2qs = QUESTIONS.filter(q => q.axis === 2);
+    const a1sum = a1qs.reduce((s, q, i) => s + (answers[QUESTIONS.indexOf(q)] || 2), 0);
+    const a2sum = a2qs.reduce((s, q, i) => s + (answers[QUESTIONS.indexOf(q)] || 2), 0);
+    const a1avg = a1sum / a1qs.length;
+    const a2avg = a2sum / a2qs.length;
+    const a1 = Math.max(1, Math.min(4, Math.round(a1avg)));
+    const a2 = Math.max(1, Math.min(4, Math.round(a2avg)));
+    const type = getType(`${a1}-${a2}`);
+    document.getElementById('q-loading').style.display = 'none';
+    renderResult(type, Math.round(a1avg * 25), Math.round(a2avg * 25));
+    // Save for compat tab
+    window._myType = type;
+  }, 1600);
 }
 
-function buildResultHTML(type, a1sum, a2sum, a1n, a2n) {
+// ================================================================
+//  RESULT RENDER
+// ================================================================
+function renderResult(type, s1pct, s2pct) {
   const grad = typeGrad(type.a1, type.a2);
-  const a1label = ['深聴き','やや聴き','やや話し','深話し'][type.a1-1];
-  const a2label = ['のんびり','ゆったり','さくさく','ぱっぱ'][type.a2-1];
+  const url = encodeURIComponent(location.href);
+  const shareText = encodeURIComponent(`私の「ことばの波長タイプ」は${type.icon}「${type.name}」でした！あなたのタイプも診断してみて💕`);
+  const html = `
+    <div class="pop-in">
+      <div class="result-hero" style="background:${grad}">
+        <div class="r-icon">${type.icon}</div>
+        <div class="r-pos">${type.short}</div>
+        <div class="r-name">${type.name}</div>
+        <div class="r-catch">${type.catch.replace(/\n/g,'<br>')}</div>
+      </div>
 
-  // Sorted compat
-  const compatList = T16
-    .filter(t => t.id !== type.id)
-    .map(t => ({ t, score: calcCompat(type, t) }))
-    .sort((a,b) => b.score - a.score);
-
-  const top3 = compatList.slice(0, 3);
-  const bot3 = compatList.slice(-3).reverse();
-
-  // Mini grid
-  const miniCells = buildMiniGridCells(type.id);
-
-  return `
-    <div class="result-hero" style="background:${grad}">
-      <div style="width:92px;height:92px;margin:0 auto 12px;filter:drop-shadow(0 4px 10px rgba(0,0,0,0.18));">${typeIllustration(type.a1,type.a2)}</div>
-      <div class="r-pos">TYPE ${type.id} ／ ${a1label} × ${a2label}</div>
-      <div class="r-name">${type.name}</div>
-      <div class="r-catch">${type.catch}</div>
-    </div>
-
-    <div class="card">
-      <div class="s-title">🗺️ あなたのポジション</div>
-      <div class="axis-row"><span>← 聴く</span><span>話す →</span></div>
-      ${miniCells}
-
-      <div class="s-title" style="margin-top:20px;">📊 スコア詳細</div>
-      <div class="score-bars">
-        <div class="bar-row">
-          <div class="bar-axis">聴く→話す</div>
-          <div class="bar-track"><div class="bar-fill" id="bar-a1" style="width:0%;background:linear-gradient(90deg,#f06292,#9c6fc9)"></div></div>
-          <div class="bar-pct" id="pct-a1">0%</div>
+      <div class="card">
+        <div class="s-title">あなたの波長スコア</div>
+        <div class="score-bars">
+          <div class="bar-row">
+            <span class="bar-axis">聴く派</span>
+            <div class="bar-track"><div class="bar-fill" style="width:${100-s1pct}%;background:linear-gradient(90deg,#64b5f6,#1976d2)"></div></div>
+            <span class="bar-axis" style="text-align:left">話す派</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-axis">ゆっくり</span>
+            <div class="bar-track"><div class="bar-fill" style="width:${s2pct}%;background:linear-gradient(90deg,#f06292,#9c6fc9)"></div></div>
+            <span class="bar-axis" style="text-align:left">はやく</span>
+          </div>
         </div>
-        <div class="bar-row">
-          <div class="bar-axis">ゆっくり→はやく</div>
-          <div class="bar-track"><div class="bar-fill" id="bar-a2" style="width:0%;background:linear-gradient(90deg,#80cbc4,#ff8a65)"></div></div>
-          <div class="bar-pct" id="pct-a2">0%</div>
+        <div class="traits-row">${type.traits.map(t=>`<span class="tag" style="${tagStyle(type.a1,type.a2)}">${t}</span>`).join('')}</div>
+        <p style="font-size:0.88rem;color:var(--text-mid);line-height:1.8;">${type.desc}</p>
+      </div>
+
+      <div class="card" style="padding:20px;">
+        <div class="s-title">シェアする</div>
+        <div class="share-row">
+          <button class="share-btn share-x" onclick="shareX('${shareText}','${url}')">X でポスト</button>
+          <button class="share-btn share-line" onclick="shareLine('${shareText}','${url}')">LINE</button>
+          <button class="share-btn share-copy" onclick="copyLink()">リンクをコピー</button>
         </div>
       </div>
-      <p style="font-size:0.75rem;color:var(--text-light);margin-bottom:20px;">※ バーが中央より左=聴き/ゆっくり寄り、右=話し/はやく寄り</p>
 
-      <div class="s-title">✨ あなたの特徴</div>
-      <div class="traits-row">
-        ${type.traits.map(tr => `<span class="tag" style="${tagStyle(type.a1,type.a2)}">${tr}</span>`).join('')}
+      <div class="card">
+        <div class="s-title">相性のいいタイプ</div>
+        ${buildCompatPreview(type)}
       </div>
 
-      <div class="s-title">💬 詳細説明</div>
-      <p style="color:var(--text-mid);font-size:0.88rem;line-height:1.8;margin-bottom:22px;">${type.desc}</p>
-
-      <div class="s-title">❤️ 相性ランキング（上位3タイプ）</div>
-      ${top3.map(({t,score}) => compatItemHTML(t, score, type)).join('')}
-
-      <div class="s-title" style="margin-top:16px;">💔 ちょっと難しい相手（下位3タイプ）</div>
-      ${bot3.map(({t,score}) => compatItemHTML(t, score, type)).join('')}
-
-      <!-- ▼ SNSシェア ▼ -->
-      <div class="s-title">📣 結果をシェアする</div>
-      <div class="share-row">
-        <button class="share-btn share-x" onclick="shareToX('${type.id}')">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.265 5.638L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
-          Xでシェア
-        </button>
-        <button class="share-btn share-line" onclick="shareToLINE('${type.id}')">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
-          LINEで送る
-        </button>
-      </div>
-      <button class="share-btn share-copy" style="width:100%;margin-bottom:18px;" onclick="copyShareLink('${type.id}')">
-        🔗 診断リンクをコピー
-      </button>
-      <!-- ▲ SNSシェア ▲ -->
-
-      <!-- ▼ アフィリエイト（マッチングアプリ） ▼ -->
-      ${buildAffiliateHTML(type)}
-      <!-- ▲ アフィリエイト ▲ -->
-
-      <!-- ▼ 広告ユニット ▼ -->
-      <div class="ad-unit">
-        <div class="ad-unit-label">スポンサー広告</div>
-        <!--
-        <ins class="adsbygoogle" style="display:block;width:100%;height:90px;"
-             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="horizontal"></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        -->
-      </div>
-      <!-- ▲ 広告ユニット ▲ -->
-
-      <button class="btn-outline" onclick="resetQuiz()" style="margin-top:4px;">🔄 もう一度診断する</button>
-    </div>
-  `;
-}
-
-function buildMiniGridCells(myId) {
-  // axis2 (rows, top=slow) × axis1 (cols, left=listener)
-  let cells = '';
-  for (let a2=1; a2<=4; a2++) {
-    for (let a1=1; a1<=4; a1++) {
-      const id = `${a1}-${a2}`;
-      const t = getType(id);
-      const isMe = id === myId;
-      const bg = typeColor(a1, a2);
-      cells += `<div class="mini-cell${isMe?' me':''}" style="background:${bg}">${t.icon}</div>`;
-    }
-  }
-  const rowLabels = ['のんびり','ゆったり','さくさく','ぱっぱ'];
-  return `
-    <div style="display:flex;gap:4px;align-items:flex-start;margin-bottom:6px;">
-      <div style="display:flex;flex-direction:column;justify-content:space-around;height:148px;flex-shrink:0;padding-right:4px;padding-top:4px;padding-bottom:4px;">
-        ${rowLabels.map(l=>`<span style="font-size:0.62rem;color:var(--text-light);font-weight:600;">${l}</span>`).join('')}
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:3px;flex:1;">
-        ${cells}
-      </div>
-    </div>
-    <p style="font-size:0.72rem;color:var(--text-light);text-align:center;margin-bottom:6px;">🔵 が紫枠 = あなたのポジション</p>
-  `;
-}
-
-function compatItemHTML(t, score, myType) {
-  const hearts = scoreHearts(score);
-  const txt = compatText(myType, t, score);
-  return `
-    <div class="compat-item">
-      <div class="ci-icon" style="width:46px;height:46px;border-radius:12px;overflow:hidden;flex-shrink:0;background:${typeColor(t.a1,t.a2)};">${typeIllustration(t.a1,t.a2)}</div>
-      <div class="ci-body">
-        <div class="ci-name">${t.name}（TYPE ${t.id}）</div>
-        <div class="ci-score">${hearts} 相性スコア ${score}点</div>
-        <div class="ci-desc">${txt.roleTitle}。${txt.speedTitle}</div>
+      <div style="text-align:center;margin-top:8px;">
+        <button class="btn-outline" onclick="retryQuiz()">🔄 もう一回やってみる</button>
       </div>
     </div>`;
+  document.getElementById('q-result').innerHTML = html;
+  document.getElementById('q-result').style.display = 'block';
+  document.getElementById('q-result').scrollIntoView({behavior:'smooth', block:'start'});
 }
 
-function resetQuiz() {
+function buildCompatPreview(myType) {
+  const others = T16.filter(t => t.id !== myType.id);
+  const scored = others.map(t => ({t, score: calcCompat(myType, t)})).sort((a,b)=>b.score-a.score);
+  return scored.slice(0,3).map(({t,score}) => `
+    <div class="compat-item">
+      <div class="ci-icon">${t.icon}</div>
+      <div class="ci-body">
+        <div class="ci-name">${t.name} <span style="font-size:0.75rem;color:var(--text-light);">${t.short}</span></div>
+        <div class="ci-score">${scoreHearts(score)} 相性${score}点</div>
+        <div class="ci-desc">${compatText(myType, t, score).main.slice(0,60)}…</div>
+      </div>
+    </div>`).join('');
+}
+
+function retryQuiz() {
   document.getElementById('q-result').style.display = 'none';
-  document.getElementById('q-result').innerHTML = '';
   document.getElementById('q-start').style.display = 'block';
+  quizIdx = 0; answers = {};
 }
 
-function copyResult(typeId) {
-  const t = getType(typeId);
-  const text = `【恋愛相性タイプ診断 16タイプ版】\nわたしは「${t.name}（TYPE ${t.id}）」でした！\n${t.catch}`;
-  navigator.clipboard.writeText(text).then(() => alert('コピーしました！'));
+// ================================================================
+//  SHARE
+// ================================================================
+function shareX(text, url) {
+  window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank');
+}
+function shareLine(text, url) {
+  window.open(`https://social-plugins.line.me/lineit/share?url=${url}&text=${text}`, '_blank');
+}
+function copyLink() {
+  navigator.clipboard.writeText(location.href).then(() => {
+    const btn = document.querySelector('.share-copy');
+    const orig = btn.innerHTML;
+    btn.innerHTML = '✅ コピーしたよ！';
+    setTimeout(() => { btn.innerHTML = orig; }, 2000);
+  });
 }
 
 // ================================================================
 //  COMPAT TAB
 // ================================================================
-let cState = { my: null, partner: null };
+let compatMy = null, compatPartner = null;
 
-function buildCompatTab() {
-  ['my','partner'].forEach(who => {
-    const grid = document.getElementById(`compat-${who}-grid`);
-    const leftLabel = document.getElementById(`compat-${who}-left`);
-    buildSelGrid(grid, who);
-    buildLeftLabels(leftLabel);
+function renderCompatGrids() {
+  renderSelGrid('compat-my-grid', 'compat-my-left', (id) => {
+    compatMy = getType(id);
+    updateCompatBtn();
+  }, () => compatMy ? compatMy.id : null);
+  renderSelGrid('compat-partner-grid', 'compat-partner-left', (id) => {
+    compatPartner = getType(id);
+    updateCompatBtn();
+  }, () => compatPartner ? compatPartner.id : null);
+}
+
+function renderSelGrid(gridId, leftId, onSelect, getSelected) {
+  const grid = document.getElementById(gridId);
+  const leftEl = document.getElementById(leftId);
+  if (!grid) return;
+  const rows = [[1,1],[1,2],[1,3],[1,4],[2,1],[2,2],[2,3],[2,4],[3,1],[3,2],[3,3],[3,4],[4,1],[4,2],[4,3],[4,4]];
+  grid.style.cssText = 'display:grid;grid-template-columns:repeat(4,1fr);gap:4px;';
+  grid.innerHTML = rows.map(([a1,a2]) => {
+    const t = getType(`${a1}-${a2}`);
+    const sel = getSelected() === t.id ? 'selected' : '';
+    return `<div class="sel-cell ${sel}" style="background:${typeGrad(a1,a2)};border-radius:10px;padding:8px 4px;text-align:center;cursor:pointer;border:2px solid transparent;transition:all 0.18s;"
+      onclick="selectCompatType('${gridId}','${leftId}','${t.id}')">
+      <div style="font-size:1.2rem;">${t.icon}</div>
+      <div style="font-size:0.55rem;font-weight:700;color:rgba(255,255,255,.9);margin-top:2px;line-height:1.2;">${t.name}</div>
+    </div>`;
+  }).join('');
+  if (leftEl) leftEl.innerHTML = '<span style="font-size:.62rem;color:var(--text-light);">話す↑</span><span style="font-size:.62rem;color:var(--text-light);">聴く↓</span>';
+}
+
+function selectCompatType(gridId, leftId, typeId) {
+  const grid = document.getElementById(gridId);
+  grid.querySelectorAll('.sel-cell').forEach(c => {
+    c.classList.remove('selected');
+    c.style.boxShadow = '';
   });
+  const target = [...grid.querySelectorAll('.sel-cell')].find(c => c.onclick.toString().includes(`'${typeId}'`));
+  if (target) { target.classList.add('selected'); target.style.boxShadow = '0 0 0 3px #f06292'; }
+  if (gridId === 'compat-my-grid') compatMy = getType(typeId);
+  else compatPartner = getType(typeId);
+  updateCompatBtn();
 }
 
-function buildLeftLabels(el) {
-  const labels = ['のんびり','ゆったり','さくさく','ぱっぱ'];
-  el.innerHTML = labels.map(l => `<span>${l}</span>`).join('');
-}
-
-function buildSelGrid(grid, who) {
-  let html = '';
-  for (let a2=1; a2<=4; a2++) {
-    for (let a1=1; a1<=4; a1++) {
-      const t = getType(`${a1}-${a2}`);
-      html += `
-        <div class="sel-cell" id="sc-${who}-${t.id}"
-          style="background:${typeColor(a1,a2)}"
-          onclick="selectCompatType('${who}','${t.id}')">
-          <div style="width:38px;height:38px;margin:0 auto 1px;">${typeIllustration(a1,a2)}</div>
-          <div class="sc-name">${t.name}</div>
-        </div>`;
-    }
-  }
-  grid.innerHTML = html;
-}
-
-function selectCompatType(who, id) {
-  if (who==='my') cState.my = id;
-  else cState.partner = id;
-
-  document.querySelectorAll(`[id^="sc-${who}-"]`).forEach(el => el.classList.remove('selected'));
-  document.getElementById(`sc-${who}-${id}`).classList.add('selected');
-
-  document.getElementById('compat-btn').disabled = !(cState.my && cState.partner);
+function updateCompatBtn() {
+  const btn = document.getElementById('compat-btn');
+  if (btn) btn.disabled = !(compatMy && compatPartner);
 }
 
 function doCheckCompat() {
-  const tA = getType(cState.my);
-  const tB = getType(cState.partner);
-  const score = calcCompat(tA, tB);
-  const txt = compatText(tA, tB, score);
-
+  if (!compatMy || !compatPartner) return;
+  const score = calcCompat(compatMy, compatPartner);
+  const ct = compatText(compatMy, compatPartner, score);
   const band = document.getElementById('compat-band');
-  band.className = 'compat-band show';
-  band.scrollIntoView({ behavior:'smooth', block:'nearest' });
-  // 広告表示
-  const compatAd = document.getElementById('compat-ad');
-  if (compatAd) compatAd.style.display = 'flex';
-
-  document.getElementById('band-top').style.background = scoreGrad(score);
-  document.getElementById('band-top').innerHTML = `
-    <div class="band-hearts">${scoreHearts(score)}</div>
-    <div class="band-score">${score}</div>
-    <div class="band-label">${txt.scoreLabel}</div>`;
-
-  document.getElementById('band-body').innerHTML = `
-    <div class="band-title" style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
-      <div style="width:32px;height:32px;display:inline-block;vertical-align:middle;">${typeIllustration(tA.a1,tA.a2)}</div>
-      ${tA.name}
-      <span style="color:var(--text-light);">×</span>
-      <div style="width:32px;height:32px;display:inline-block;vertical-align:middle;">${typeIllustration(tB.a1,tB.a2)}</div>
-      ${tB.name}
-    </div>
-    <div class="band-desc">
-      <strong>話す量：</strong>${txt.roleDesc}<br>
-      <strong>スピード：</strong>${txt.speedDesc}
-    </div>
+  const bandTop = document.getElementById('band-top');
+  const bandBody = document.getElementById('band-body');
+  band.style.display = 'block';
+  bandTop.style.cssText = `padding:26px;text-align:center;color:white;background:${scoreGrad(score)};border-radius:18px 18px 0 0;`;
+  bandTop.innerHTML = `<div class="band-hearts">${scoreHearts(score)}</div>
+    <div class="band-score">${score}<span style="font-size:1.2rem;">点</span></div>
+    <div class="band-label">${ct.speakDiff}</div>`;
+  bandBody.innerHTML = `
+    <div class="band-title">${compatMy.icon}${compatMy.name} × ${compatPartner.icon}${compatPartner.name}</div>
+    <div class="band-desc">${ct.main}</div>
     <div class="band-points">
-      <div class="band-point"><strong>役割分担：</strong>${txt.roleTitle}</div>
-      <div class="band-point"><strong>テンポ差：</strong>${txt.speedTitle}</div>
-      <div class="band-point">
-        ${score >= 75 ? '✅ この組み合わせは自然に会話のリズムが合いやすいです。' :
-          score >= 60 ? '💛 少し意識的に相手のペースに合わせる努力があると、とても良い関係になれます。' :
-          '⚠️ 二人のスタイルが大きく違います。でも違いを楽しめる二人なら、かえって刺激的な関係に！'}
-      </div>
+      <div class="band-point"><strong>💬 会話テンポ：</strong>${ct.speedDesc}</div>
+      <div class="band-point"><strong>👂 聴く/話すバランス：</strong>${ct.listenDiff}</div>
     </div>`;
+  band.scrollIntoView({behavior:'smooth', block:'nearest'});
+  const adEl = document.getElementById('compat-ad');
+  if (adEl) adEl.style.display = 'block';
 }
 
 // ================================================================
 //  TYPES TAB
 // ================================================================
-let selectedOverview = null;
-
-function buildTypesTab() {
+function renderTypeOverview() {
   const grid = document.getElementById('overview-grid');
-  const leftLabels = document.getElementById('types-left-labels');
-  buildLeftLabels(leftLabels);
-
-  let html = '';
-  for (let a2=1; a2<=4; a2++) {
-    for (let a1=1; a1<=4; a1++) {
-      const t = getType(`${a1}-${a2}`);
-      html += `
-        <div class="ov-cell" id="ov-${t.id}" onclick="showTypeDetail('${t.id}')">
-          <div class="ov-head" style="background:${typeGrad(a1,a2)}">
-            <div class="ov-icon"><div style="width:62px;height:62px;margin:0 auto 4px;">${typeIllustration(a1,a2)}</div></div>
-            <div class="ov-name">${t.name}</div>
-          </div>
-          <div class="ov-body">
-            <div class="ov-short">${t.short}</div>
-            <div class="ov-tags">
-              ${t.traits.slice(0,3).map(tr=>`<span class="ov-tag" style="${tagStyle(a1,a2)}">${tr}</span>`).join('')}
-            </div>
-          </div>
-        </div>`;
-    }
-  }
-  grid.innerHTML = html;
+  const leftEl = document.getElementById('types-left-labels');
+  if (!grid || grid.children.length > 0) return;
+  const order = [[1,1],[1,2],[1,3],[1,4],[2,1],[2,2],[2,3],[2,4],[3,1],[3,2],[3,3],[3,4],[4,1],[4,2],[4,3],[4,4]];
+  grid.innerHTML = order.map(([a1,a2]) => {
+    const t = getType(`${a1}-${a2}`);
+    return `<div class="ov-cell" onclick="showTypeDetail('${t.id}')">
+      <div class="ov-head" style="background:${typeGrad(a1,a2)}">
+        <div class="ov-icon">${t.icon}</div>
+        <div class="ov-name">${t.name}</div>
+      </div>
+      <div class="ov-body">
+        <div class="ov-short">${t.short}</div>
+        <div class="ov-tags">${t.traits.slice(0,2).map(tr=>`<span class="ov-tag" style="${tagStyle(a1,a2)}">${tr}</span>`).join('')}</div>
+      </div>
+    </div>`;
+  }).join('');
+  if (leftEl) leftEl.innerHTML = '<span>話す↑</span><span>聴く↓</span>';
 }
 
 function showTypeDetail(id) {
-  if (selectedOverview) document.getElementById(`ov-${selectedOverview}`)?.classList.remove('active');
-  selectedOverview = id;
-  document.getElementById(`ov-${id}`).classList.add('active');
-
   const t = getType(id);
-  const compatSorted = T16
-    .filter(x => x.id !== id)
-    .map(x => ({ t:x, score:calcCompat(t,x) }))
-    .sort((a,b) => b.score - a.score);
-
   const area = document.getElementById('type-detail-area');
+  const myT = window._myType;
+  const scoreVsMe = myT ? calcCompat(myT, t) : null;
   area.innerHTML = `
-    <div class="card type-detail show">
-      <div class="result-hero" style="background:${typeGrad(t.a1,t.a2)};margin-bottom:18px;">
-        <div style="width:88px;height:88px;margin:0 auto 10px;filter:drop-shadow(0 4px 8px rgba(0,0,0,0.16));">${typeIllustration(t.a1,t.a2)}</div>
-        <div class="r-pos">TYPE ${t.id}　${['深聴き','やや聴き','やや話し','深話し'][t.a1-1]} × ${['のんびり','ゆったり','さくさく','ぱっぱ'][t.a2-1]}</div>
+    <div class="card type-detail show" style="margin-top:16px;">
+      <div class="result-hero" style="background:${typeGrad(t.a1,t.a2)};margin-bottom:16px;">
+        <div class="r-icon">${t.icon}</div>
+        <div class="r-pos">${t.short}</div>
         <div class="r-name">${t.name}</div>
-        <div class="r-catch">${t.catch}</div>
+        <div class="r-catch">${t.catch.replace(/\n/,'<br>')}</div>
       </div>
-      <div class="traits-row">
-        ${t.traits.map(tr=>`<span class="tag" style="${tagStyle(t.a1,t.a2)}">${tr}</span>`).join('')}
-      </div>
-      <p style="color:var(--text-mid);font-size:0.88rem;line-height:1.8;margin-bottom:20px;">${t.desc}</p>
-
-      <div class="s-title">💕 相性ランキング（上位5）</div>
-      ${compatSorted.slice(0,5).map(({t:x,score}) => `
-        <div class="compat-item">
-          <div style="width:44px;height:44px;border-radius:11px;overflow:hidden;flex-shrink:0;background:${typeColor(x.a1,x.a2)};">${typeIllustration(x.a1,x.a2)}</div>
-          <div class="ci-body">
-            <div class="ci-name">${x.name}（TYPE ${x.id}）</div>
-            <div class="ci-score">${scoreHearts(score)} ${score}点</div>
-          </div>
-        </div>`).join('')}
+      <div class="traits-row">${t.traits.map(tr=>`<span class="tag" style="${tagStyle(t.a1,t.a2)}">${tr}</span>`).join('')}</div>
+      <p style="font-size:0.88rem;color:var(--text-mid);line-height:1.8;margin-bottom:14px;">${t.desc}</p>
+      ${scoreVsMe ? `<div style="background:var(--pink-pale);border-radius:12px;padding:12px 16px;font-size:0.85rem;color:var(--text-mid);">
+        💕 あなた(${myT.name})との相性：<strong style="color:var(--pink);">${calcCompat(myT,t)}点</strong>
+      </div>` : ''}
+      <button class="btn-outline" style="margin-top:12px;" onclick="document.getElementById('type-detail-area').innerHTML=''">閉じる ✕</button>
     </div>`;
-
-  area.querySelector('.type-detail').scrollIntoView({ behavior:'smooth', block:'nearest' });
+  area.scrollIntoView({behavior:'smooth', block:'nearest'});
 }
 
 // ================================================================
-//  TABS
-// ================================================================
-function showTab(id, btn) {
-  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
-  document.getElementById(`tab-${id}`).classList.add('active');
-  btn.classList.add('active');
-}
-
-// ================================================================
-//  SVG ILLUSTRATION GENERATOR
-// ================================================================
-function typeIllustration(a1, a2) {
-  const h  = 220 + (a1-1)*40;
-  const s  = 45  + (a2-1)*12;
-  const l  = 70  - (a2-1)*4;
-  const col  = `hsl(${h},${s}%,${l}%)`;
-  const dark = `hsl(${h},${s+10}%,${Math.max(25,l-22)}%)`;
-  const pale = `hsl(${h},${Math.max(18,s-22)}%,${Math.min(96,l+14)}%)`;
-  const mid  = `hsl(${h},${s}%,${l-10}%)`;
-  const skin = '#FFDBBB';
-  const hair = [`#3d2b1f`,`#5c3d2e`,`#8b6040`,`#c8956a`][a1-1];
-
-  const earR      = [12,8,5,2][a1-1];
-  const eyeH      = [1.4,2.2,3,4.2][a2-1];
-  const browRaise = [0,1,2,3][a2-1];
-
-  // Special decoration per type
-  const decos = {
-    '1-1':`<path d="M12,38 Q8,50 12,62" stroke="${mid}" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.5"/>
-           <path d="M7,40 Q3,50 7,60" stroke="${mid}" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.35"/>
-           <ellipse cx="12" cy="72" rx="5" ry="7.5" fill="${col}" opacity="0.45"/>`,
-    '1-2':`<path d="M88,14 Q82,27 88,40 Q96,27 88,14" fill="${mid}" opacity="0.65"/>
-           <circle cx="79" cy="18" r="2" fill="${pale}" opacity="0.8"/>
-           <circle cx="85" cy="9" r="1.5" fill="${pale}" opacity="0.6"/>`,
-    '1-3':`<circle cx="14" cy="22" r="5.5" fill="${pale}" opacity="0.7"/>
-           <circle cx="23" cy="13" r="3.5" fill="${col}" opacity="0.55"/>
-           <circle cx="9" cy="13" r="2.5" fill="${mid}" opacity="0.45"/>`,
-    '1-4':`<path d="M86,13 L82,28 L87,28 L79,46" stroke="${col}" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-           <path d="M92,19 L89,30 L93,30 L86,44" stroke="${mid}" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>`,
-    '2-1':`<path d="M14,68 Q7,58 13,49 Q21,58 14,68" fill="${col}" opacity="0.55"/>
-           <line x1="14" y1="49" x2="14" y2="68" stroke="${dark}" stroke-width="1" opacity="0.4"/>`,
-    '2-2':`<path d="M82,38 Q86,30 82,22" stroke="${mid}" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
-           <path d="M87,40 Q91,32 87,24" stroke="${mid}" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.4"/>`,
-    '2-3':`<text x="82" y="26" font-size="15" fill="${dark}" opacity="0.6" font-family="serif">♪</text>
-           <text x="76" y="38" font-size="10" fill="${mid}" opacity="0.4" font-family="serif">♩</text>`,
-    '2-4':`<path d="M80,18 Q86,13 92,18" stroke="${dark}" stroke-width="2" fill="none" stroke-linecap="round"/>
-           <path d="M84,27 Q90,22 96,27" stroke="${dark}" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>`,
-    '3-1':`<path d="M16,78 Q12,68 17,62 Q20,68 22,64 Q21,74 16,78" fill="#ff8c42" opacity="0.6"/>
-           <ellipse cx="17" cy="80" rx="7" ry="2.5" fill="${dark}" opacity="0.22"/>`,
-    '3-2':`<circle cx="88" cy="22" r="8" fill="#FFD700" opacity="0.65"/>
-           <line x1="88" y1="8" x2="88" y2="3" stroke="#FFD700" stroke-width="2.5" stroke-linecap="round"/>
-           <line x1="97" y1="13" x2="101" y2="9" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
-           <line x1="100" y1="22" x2="105" y2="22" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>`,
-    '3-3':`<line x1="80" y1="62" x2="96" y2="59" stroke="${dark}" stroke-width="2" stroke-linecap="round" opacity="0.42"/>
-           <line x1="82" y1="68" x2="98" y2="68" stroke="${dark}" stroke-width="2" stroke-linecap="round" opacity="0.32"/>
-           <line x1="80" y1="74" x2="95" y2="77" stroke="${dark}" stroke-width="1.5" stroke-linecap="round" opacity="0.22"/>`,
-    '3-4':`<path d="M4,70 Q10,63 18,70 Q24,77 30,70" stroke="${col}" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.65"/>
-           <path d="M4,78 Q10,71 18,78" stroke="${mid}" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.45"/>`,
-    '4-1':`<path d="M8,83 L15,65 L22,83" fill="${mid}" opacity="0.5"/>
-           <path d="M10,83 L15,68 L20,83" fill="${col}" opacity="0.35"/>`,
-    '4-2':`<text x="82" y="16" font-size="11" fill="#FFD700" opacity="0.9">✦</text>
-           <text x="90" y="28" font-size="7" fill="#FFD700" opacity="0.7">✦</text>
-           <text x="78" y="28" font-size="7" fill="#FFD700" opacity="0.75">✦</text>
-           <text x="86" y="38" font-size="5" fill="#FFD700" opacity="0.55">✦</text>`,
-    '4-3':`<path d="M86,5 L80,38" stroke="${col}" stroke-width="10" stroke-linecap="round" opacity="0.18"/>
-           <path d="M86,5 L92,38" stroke="${col}" stroke-width="7" stroke-linecap="round" opacity="0.13"/>`,
-    '4-4':`<path d="M12,18 Q16,10 14,20 L18,16 Q14,26 10,22 Z" fill="${col}" opacity="0.65"/>
-           <path d="M8,30 Q11,24 10,32 L13,29 Q10,37 7,33 Z" fill="${mid}" opacity="0.5"/>`,
-  };
-
-  const hairs = [
-    `<path d="M28,38 Q26,20 36,15 Q50,8 64,15 Q74,20 72,38" fill="${hair}"/>
-     <path d="M28,38 Q21,50 24,62" stroke="${hair}" stroke-width="8" fill="none" stroke-linecap="round"/>
-     <path d="M72,38 Q79,50 76,62" stroke="${hair}" stroke-width="8" fill="none" stroke-linecap="round"/>`,
-    `<path d="M29,38 Q27,22 37,17 Q50,10 63,17 Q73,22 71,38" fill="${hair}"/>
-     <path d="M29,38 Q24,50 28,58" stroke="${hair}" stroke-width="6" fill="none" stroke-linecap="round"/>
-     <path d="M71,38 Q76,50 72,58" stroke="${hair}" stroke-width="6" fill="none" stroke-linecap="round"/>`,
-    `<path d="M30,40 Q28,24 38,19 Q50,13 62,19 Q72,24 70,40" fill="${hair}"/>
-     <path d="M30,40 Q26,48 30,54" stroke="${hair}" stroke-width="5" fill="none" stroke-linecap="round"/>
-     <path d="M70,40 Q74,48 70,54" stroke="${hair}" stroke-width="5" fill="none" stroke-linecap="round"/>`,
-    `<path d="M30,42 Q28,26 40,20 Q50,14 60,20 Q72,26 70,42" fill="${hair}"/>
-     <path d="M36,22 Q40,13 44,18" stroke="${hair}" stroke-width="4" fill="none" stroke-linecap="round"/>
-     <path d="M50,16 Q50,7 50,14" stroke="${hair}" stroke-width="4" fill="none" stroke-linecap="round"/>
-     <path d="M56,20 Q62,12 65,18" stroke="${hair}" stroke-width="4" fill="none" stroke-linecap="round"/>`,
-  ];
-
-  const mouths = [
-    `<path d="M44,57 Q50,60 56,57" stroke="${dark}" stroke-width="2" fill="none" stroke-linecap="round"/>`,
-    `<path d="M43,56 Q50,61 57,56" stroke="${dark}" stroke-width="2" fill="none" stroke-linecap="round"/>`,
-    `<path d="M42,55 Q50,62 58,55" stroke="${dark}" stroke-width="2" fill="none" stroke-linecap="round"/>`,
-    `<ellipse cx="50" cy="57" rx="7" ry="5" fill="${dark}"/>
-     <ellipse cx="50" cy="55.5" rx="5" ry="3" fill="hsl(${h},40%,72%)"/>`,
-  ];
-
-  let motion = '';
-  if (a2 === 3) motion = `
-    <line x1="85" y1="52" x2="94" y2="49" stroke="${dark}" stroke-width="1.8" stroke-linecap="round" opacity="0.45"/>
-    <line x1="86" y1="58" x2="96" y2="58" stroke="${dark}" stroke-width="1.8" stroke-linecap="round" opacity="0.35"/>
-    <line x1="85" y1="64" x2="93" y2="67" stroke="${dark}" stroke-width="1.5" stroke-linecap="round" opacity="0.25"/>`;
-  else if (a2 === 4) motion = `
-    <line x1="84" y1="50" x2="95" y2="46" stroke="${dark}" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
-    <line x1="85" y1="57" x2="97" y2="57" stroke="${dark}" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
-    <line x1="84" y1="64" x2="95" y2="68" stroke="${dark}" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
-    <line x1="6" y1="50" x2="16" y2="47" stroke="${dark}" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
-    <line x1="5" y1="57" x2="15" y2="57" stroke="${dark}" stroke-width="1.5" stroke-linecap="round" opacity="0.25"/>`;
-
-  const waves = a1<=2 ? (() => {
-    const wx = 15+earR, alpha=[0.72,0.48][a1-1];
-    return `<path d="M${wx},40 Q${wx+6},48 ${wx},56" stroke="${mid}" stroke-width="2" fill="none" stroke-linecap="round" opacity="${alpha}"/>
-            <path d="M${wx-5},36 Q${wx+2},48 ${wx-5},60" stroke="${mid}" stroke-width="1.3" fill="none" stroke-linecap="round" opacity="${alpha*.6}"/>`;
-  })() : '';
-
-  const bubble = a1>=3 ? (() => {
-    const bw=a1===3?28:35, bh=a1===3?18:22, bx=61, by=6;
-    const inner = a1===4
-      ? `<circle cx="${bx+8}" cy="${by+bh/2}" r="2.5" fill="${dark}"/>
-         <circle cx="${bx+bw/2}" cy="${by+bh/2}" r="2.5" fill="${dark}"/>
-         <circle cx="${bx+bw-8}" cy="${by+bh/2}" r="2.5" fill="${dark}"/>`
-      : `<line x1="${bx+6}" y1="${by+7}" x2="${bx+bw-8}" y2="${by+7}" stroke="${dark}" stroke-width="1.5" stroke-linecap="round"/>
-         <line x1="${bx+6}" y1="${by+13}" x2="${bx+bw-13}" y2="${by+13}" stroke="${dark}" stroke-width="1.2" stroke-linecap="round"/>`;
-    return `<rect x="${bx}" y="${by}" width="${bw}" height="${bh}" rx="8" fill="white" stroke="${dark}" stroke-width="1.3"/>
-            <polygon points="${bx+6},${by+bh} ${bx},${by+bh+7} ${bx+14},${by+bh}" fill="white" stroke="${dark}" stroke-width="1.3"/>
-            ${inner}`;
-  })() : '';
-
-  const ears = earR > 0 ? `
-    <ellipse cx="28" cy="47" rx="${earR}" ry="${earR*1.3}" fill="${skin}" stroke="${dark}" stroke-width="1.2"/>
-    <ellipse cx="72" cy="47" rx="${earR}" ry="${earR*1.3}" fill="${skin}" stroke="${dark}" stroke-width="1.2"/>
-    <ellipse cx="28" cy="47" rx="${earR*.5}" ry="${earR*.7}" fill="hsl(${h},40%,85%)" opacity="0.55"/>
-    <ellipse cx="72" cy="47" rx="${earR*.5}" ry="${earR*.7}" fill="hsl(${h},40%,85%)" opacity="0.55"/>` : '';
-
-  return `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <defs><radialGradient id="ibg${a1}${a2}">
-    <stop offset="0%" stop-color="${pale}"/>
-    <stop offset="100%" stop-color="${col}" stop-opacity="0.35"/>
-  </radialGradient></defs>
-  <circle cx="50" cy="52" r="46" fill="url(#ibg${a1}${a2})"/>
-  ${motion}${decos[`${a1}-${a2}`]||''}${ears}
-  <ellipse cx="50" cy="47" rx="22" ry="23" fill="${skin}" stroke="${dark}" stroke-width="1.5"/>
-  ${hairs[a1-1]}
-  <ellipse cx="41" cy="47" rx="4.5" ry="${eyeH}" fill="${dark}"/>
-  <ellipse cx="59" cy="47" rx="4.5" ry="${eyeH}" fill="${dark}"/>
-  <ellipse cx="42.5" cy="${(47-eyeH*.4).toFixed(1)}" rx="1.4" ry="${Math.min(eyeH*.35,1.1).toFixed(1)}" fill="white"/>
-  <ellipse cx="60.5" cy="${(47-eyeH*.4).toFixed(1)}" rx="1.4" ry="${Math.min(eyeH*.35,1.1).toFixed(1)}" fill="white"/>
-  <path d="M37,${40-browRaise} Q41,${38-browRaise} 45,${40}" stroke="${dark}" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-  <path d="M55,${40} Q59,${38-browRaise} 63,${40-browRaise}" stroke="${dark}" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-  <ellipse cx="35" cy="52" rx="6.5" ry="4" fill="hsl(${h+15},70%,82%)" opacity="0.42"/>
-  <ellipse cx="65" cy="52" rx="6.5" ry="4" fill="hsl(${h+15},70%,82%)" opacity="0.42"/>
-  ${mouths[a1-1]}${waves}${bubble}
-</svg>`;
-}
-
-// ================================================================
-//  SHARE FUNCTIONS (方向性C)
-// ================================================================
-function getShareURL(typeId) {
-  const base = location.origin + location.pathname;
-  return `${base}?result=${typeId}`;
-}
-
-function shareToX(typeId) {
-  const t = getType(typeId);
-  const url = getShareURL(typeId);
-  const text = `私の「ことばの波長」は\n「${t.name}（TYPE ${t.id}）」でした！\n\n${t.catch.split('\n')[0]}\n\nあなたは何タイプ？👇`;
-  window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`, '_blank');
-}
-
-function shareToLINE(typeId) {
-  const t = getType(typeId);
-  const url = getShareURL(typeId);
-  const text = `私の話し方タイプは「${t.name}」でした！恋愛相性診断、あなたもやってみて👇`;
-  window.open(`https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`, '_blank');
-}
-
-function copyShareLink(typeId) {
-  const url = getShareURL(typeId);
-  navigator.clipboard.writeText(url).then(() => {
-    alert('リンクをコピーしました！\nLINEやSNSで友達に送ってみてください💕');
-  });
-}
-
-// タイプ別アフィリエイトバナー（聴き/話し寄りで推奨アプリを変える）
-function buildAffiliateHTML(type) {
-  // a1: 1-2=聴き寄り(じっくり系), 3-4=話し寄り(活発系)
-  // a2: 1-2=ゆっくり, 3-4=はやい
-  const isListener = type.a1 <= 2;
-  const isSlow     = type.a2 <= 2;
-
-  const apps = isListener ? [
-    { icon:'💍', name:'Pairs（ペアーズ）', sub:'じっくり相手を知りたい人向け・累計会員2,000万人', cta:'無料で始める →', url:'https://pairs.lv/', color:'#e91e8c' },
-    { icon:'☕', name:'with（ウィズ）', sub:'心理テストで相性を重視したマッチング', cta:'無料登録 →', url:'https://with-jp.com/', color:'#4caf50' },
-  ] : [
-    { icon:'🔥', name:'Omiai（お見合い）', sub:'真剣な出会いを求める20〜30代に人気', cta:'無料で始める →', url:'https://fb.omiai-jp.com/', color:'#ff5722' },
-    { icon:'💬', name:'タップル', sub:'趣味でつながる・気軽に話せるマッチングアプリ', cta:'無料登録 →', url:'https://tapple.me/', color:'#e91e63' },
-  ];
-
-  const msg = isListener
-    ? (isSlow ? 'じっくり相手を知っていくスタイルのあなたには、プロフィールをしっかり読めるアプリが合いそう。' : 'しっかり聴きながらテンポよく距離を縮められるアプリが向いているかも。')
-    : (isSlow ? '話すのが好きだけど焦らないあなたには、ゆっくり関係を育てられる真剣系がおすすめ。' : '会話が得意で積極的なあなたには、アクティブにやり取りできるアプリがぴったり。');
-
-  return `
-    <div class="affil-banner">
-      <div class="affil-head">💕 あなたのタイプにおすすめの出会い方</div>
-      <div class="affil-body">
-        <div class="affil-desc">${msg}</div>
-        <div class="affil-apps">
-          ${apps.map(a => `
-            <a class="affil-app" href="${a.url}" target="_blank" rel="noopener sponsored">
-              <div class="affil-app-icon">${a.icon}</div>
-              <div class="affil-app-info">
-                <div class="affil-app-name" style="color:${a.color}">${a.name}</div>
-                <div class="affil-app-sub">${a.sub}</div>
-              </div>
-              <div class="affil-app-cta">${a.cta}</div>
-            </a>`).join('')}
-        </div>
-        <p style="font-size:0.68rem;color:var(--text-light);margin-top:10px;text-align:center;">※ PRを含みます</p>
-      </div>
-    </div>`;
-}
-
-// シェアURLから結果を直接表示（?result=TYPE_IDでアクセスされた場合）
-function checkSharedResult() {
-  const params = new URLSearchParams(location.search);
-  const typeId = params.get('result');
-  if (!typeId) return;
-  const type = getType(typeId);
-  if (!type) return;
-
-  // 診断タブのスタート画面を隠して結果を表示
-  document.getElementById('q-start').style.display = 'none';
-  const area = document.getElementById('q-result');
-  area.style.display = 'block';
-
-  // タイプ位置から近似スコアを計算（バー表示用）
-  const a1n = 6, a2n = 6;
-  // 各ポジションの中間値（1→1.5n, 2→2.5n, 3→3.5n, 4→4n近似）
-  const a1sum = Math.round(a1n * (type.a1 * 1.0 + 0.5));
-  const a2sum = Math.round(a2n * (type.a2 * 1.0 + 0.5));
-
-  // シェアされた結果である旨のバナーを追加
-  const shareBanner = `
-    <div class="shared-banner">
-      <div style="font-size:2rem;">💌</div>
-      <p><strong>友達からシェアされた診断結果</strong>あなたのタイプもチェックしてみよう！下にスクロールして「もう一度診断する」から自分の結果を出せます。</p>
-    </div>`;
-
-  area.innerHTML = shareBanner + buildResultHTML(type, a1sum, a2sum, a1n, a2n);
-
-  setTimeout(() => {
-    const lPct = Math.min(100, Math.round((a1sum - a1n) / (a1n * 3) * 100));
-    const sPct = Math.min(100, Math.round((a2sum - a2n) / (a2n * 3) * 100));
-    const ba1 = document.getElementById('bar-a1');
-    const ba2 = document.getElementById('bar-a2');
-    const pa1 = document.getElementById('pct-a1');
-    const pa2 = document.getElementById('pct-a2');
-    if (ba1) { ba1.style.width = `${lPct}%`; pa1.textContent = `${lPct}%`; }
-    if (ba2) { ba2.style.width = `${sPct}%`; pa2.textContent = `${sPct}%`; }
-  }, 100);
-}
-
-// ================================================================
-//  PRIVACY / MISC
+//  PRIVACY
 // ================================================================
 function showPrivacy() {
   document.getElementById('privacy-modal').style.display = 'block';
@@ -1484,9 +1290,21 @@ function showPrivacy() {
 // ================================================================
 //  INIT
 // ================================================================
-buildCompatTab();
-buildTypesTab();
-checkSharedResult(); // ?result=TYPE_ID でシェアURLからアクセスされた場合に結果を表示
+document.addEventListener('DOMContentLoaded', () => {
+  // Check for shared result in URL
+  const params = new URLSearchParams(location.search);
+  const sharedType = params.get('type');
+  if (sharedType) {
+    const t = getType(sharedType);
+    if (t) {
+      const banner = document.createElement('div');
+      banner.className = 'shared-banner';
+      banner.innerHTML = `<span style="font-size:2rem;">${t.icon}</span><p><strong>シェアされた結果：${t.name}</strong><br>あなたのタイプも診断してみよう！</p>`;
+      document.querySelector('main').prepend(banner);
+    }
+  }
+});
+
 </script>
 </body>
 </html>

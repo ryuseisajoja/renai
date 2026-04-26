@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- トップページ（診断） -->
   <url>
     <loc>https://ryuseisajoja.github.io/renai/</loc>
     <changefreq>weekly</changefreq>
@@ -9,7 +8,6 @@
     <lastmod>2026-04-26</lastmod>
   </url>
 
-  <!-- コラム一覧 -->
   <url>
     <loc>https://ryuseisajoja.github.io/renai/articles/</loc>
     <changefreq>weekly</changefreq>
@@ -17,7 +15,6 @@
     <lastmod>2026-04-26</lastmod>
   </url>
 
-  <!-- 記事ページ -->
   <url>
     <loc>https://ryuseisajoja.github.io/renai/articles/2026-04-26-line-henshin-speed-couple.html</loc>
     <changefreq>monthly</changefreq>

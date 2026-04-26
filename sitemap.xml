@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://あなたのドメイン/</loc>
+    <loc>https://https://love-kotoba-shindan.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://あなたのドメイン/articles/</loc>
+    <loc>https://https://love-kotoba-shindan.com/articles/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://あなたのドメイン/articles/kiki-jouzu-renai.html</loc>
+    <loc>https://https://love-kotoba-shindan.com/articles/kiki-jouzu-renai.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://あなたのドメイン/articles/speed-gap-renai.html</loc>
+    <loc>https://https://love-kotoba-shindan.com/articles/speed-gap-renai.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -1,50 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- トップページ（診断） -->
   <url>
-    <loc>https://love-kotoba-shindan.com/</loc>
+    <loc>https://ryuseisajoja.github.io/renai/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <lastmod>2026-04-26</lastmod>
   </url>
 
+  <!-- コラム一覧 -->
   <url>
-    <loc>https://love-kotoba-shindan.com/articles/</loc>
+    <loc>https://ryuseisajoja.github.io/renai/articles/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <lastmod>2026-04-26</lastmod>
   </url>
 
+  <!-- 記事ページ -->
   <url>
-    <loc>https://love-kotoba-shindan.com/articles/2026-04-26-line-henshin-speed-couple.html</loc>
+    <loc>https://ryuseisajoja.github.io/renai/articles/2026-04-26-line-henshin-speed-couple.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-04-26</lastmod>
   </url>
 
   <url>
-    <loc>https://love-kotoba-shindan.com/articles/2026-04-26-oshaberi-renai-wana.html</loc>
+    <loc>https://ryuseisajoja.github.io/renai/articles/2026-04-26-oshaberi-renai-wana.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-04-26</lastmod>
   </url>
 
   <url>
-    <loc>https://love-kotoba-shindan.com/articles/2026-04-26-first-date-kaiwa-tsudzukanai.html</loc>
+    <loc>https://ryuseisajoja.github.io/renai/articles/2026-04-26-first-date-kaiwa-tsudzukanai.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-04-26</lastmod>
   </url>
 
   <url>
-    <loc>https://love-kotoba-shindan.com/articles/kiki-jouzu-renai.html</loc>
+    <loc>https://ryuseisajoja.github.io/renai/articles/kiki-jouzu-renai.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-04-26</lastmod>
   </url>
 
   <url>
-    <loc>https://love-kotoba-shindan.com/articles/speed-gap-renai.html</loc>
+    <loc>https://ryuseisajoja.github.io/renai/articles/speed-gap-renai.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-04-26</lastmod>

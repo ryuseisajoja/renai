@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>「聞いてほしいだけなのにアドバイスされる」問題の解決法｜共感型と解決型のすれ違い</title>
+  <meta name="description" content="ただ聞いてほしいだけなのに解決策を返されてモヤモヤする…共感型と解決型のすれ違いが起きる理由と、どちらも我慢しなくていい具体的な伝え方を会話スタイル別に解説します。">
+  <link rel="canonical" href="https://ryuseisajoja.github.io/renai/articles/2026-08-18-kyokan-kaiketsu-surechigai.html">
+
+  <!-- OGP -->
+  <meta property="og:title" content="「聞いてほしいだけなのにアドバイスされる」問題の解決法">
+  <meta property="og:description" content="共感型と解決型のすれ違いが起きる理由と、どちらも我慢しなくていい伝え方を解説します。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ryuseisajoja.github.io/renai/articles/2026-08-18-kyokan-kaiketsu-surechigai.html">
+  <meta property="og:site_name" content="ことばの波長診断">
+  <meta name="twitter:card" content="summary">
+
+  <style>
+    :root {
+      --pink: #f06292; --pink-light: #fce4ec; --pink-pale: #fff8fb;
+      --purple: #9c6fc9; --text-dark: #2d2d2d; --text-mid: #555; --text-light: #999;
+      --white: #fff; --radius: 16px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+      background: linear-gradient(145deg, #fff0f7 0%, #f3e5ff 55%, #e8f4fd 100%);
+      min-height: 100vh; color: var(--text-dark); line-height: 1.8;
+    }
+    header {
+      background: linear-gradient(135deg, #f06292, #9c6fc9);
+      color: white; padding: 14px 20px;
+    }
+    .site-name {
+      font-size: 0.82rem; font-weight: 700; opacity: 0.9; text-decoration: none; color: white;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 28px 16px 80px; }
+    .breadcrumb { font-size: 0.75rem; color: var(--text-light); margin-bottom: 18px; }
+    .breadcrumb a { color: var(--pink); text-decoration: none; }
+    h1 {
+      font-size: clamp(1.3rem, 4.5vw, 1.85rem); font-weight: 900; line-height: 1.4;
+      color: var(--text-dark); margin-bottom: 10px;
+    }
+    .meta { font-size: 0.78rem; color: var(--text-light); margin-bottom: 24px; }
+    .lead {
+      background: var(--pink-pale); border-left: 4px solid var(--pink);
+      border-radius: 0 12px 12px 0; padding: 16px 18px; margin-bottom: 28px;
+      font-size: 0.95rem; color: var(--text-mid);
+    }
+    h2 {
+      font-size: 1.15rem; font-weight: 900; color: var(--text-dark);
+      margin: 32px 0 12px; padding-left: 12px;
+      border-left: 4px solid var(--pink);
+    }
+    h3 { font-size: 1rem; font-weight: 800; color: var(--purple); margin: 22px 0 8px; }
+    p { color: var(--text-mid); margin-bottom: 14px; font-size: 0.93rem; }
+    .card {
+      background: white; border-radius: var(--radius); padding: 22px;
+      margin-bottom: 20px; box-shadow: 0 4px 18px rgba(200,100,150,0.1);
+    }
+    .point-list { display: flex; flex-direction: column; gap: 12px; margin: 14px 0; }
+    .point-item {
+      display: flex; gap: 12px; align-items: flex-start;
+      background: var(--pink-pale); border-radius: 11px; padding: 13px 15px;
+    }
+    .point-num {
+      width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0;
+      background: linear-gradient(135deg, #f06292, #9c6fc9); color: white;
+      font-size: 0.82rem; font-weight: 900; display: flex; align-items: center; justify-content: center;
+    }
+    .point-body strong { display: block; font-size: 0.92rem; color: var(--text-dark); margin-bottom: 3px; }
+    .point-body span { font-size: 0.83rem; color: var(--text-mid); }
+    .warn-box {
+      background: #fff3e0; border-radius: 12px; border-left: 4px solid #ff9800;
+      padding: 14px 16px; margin: 16px 0;
+    }
+    .warn-box p { color: #795548; margin: 0; font-size: 0.87rem; }
+    /* CTA */
+    .cta-block {
+      background: linear-gradient(135deg, #f06292, #9c6fc9);
+      border-radius: 18px; padding: 28px 24px; text-align: center; margin: 32px 0; color: white;
+    }
+    .cta-block h3 { color: white; font-size: 1.1rem; margin-bottom: 8px; }
+    .cta-block p { color: rgba(255,255,255,0.88); font-size: 0.88rem; margin-bottom: 18px; }
+    .cta-btn {
+      display: inline-block; background: white; color: var(--pink); font-weight: 900;
+      font-size: 1rem; padding: 13px 32px; border-radius: 50px;
+      text-decoration: none; box-shadow: 0 4px 14px rgba(0,0,0,0.15); transition: all 0.2s;
+    }
+    .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
+    .type-badge {
+      display: inline-block; padding: 4px 14px; border-radius: 50px; font-size: 0.8rem;
+      font-weight: 700; margin: 3px; background: var(--pink-light); color: var(--pink);
+    }
+    .related-articles { margin-top: 36px; }
+    .related-articles h3 { color: var(--text-dark); border-left-color: var(--purple); }
+    .related-link {
+      display: flex; align-items: center; gap: 10px; background: white; border-radius: 12px;
+      padding: 13px 16px; margin-bottom: 8px; text-decoration: none; color: var(--text-dark);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06); transition: all 0.18s;
+    }
+    .related-link:hover { transform: translateX(4px); background: var(--pink-pale); }
+    footer { text-align: center; padding: 16px; color: var(--text-light); font-size: 0.75rem; }
+    footer a { color: var(--text-light); }
+  </style>
+
+  <!-- 構造化データ（SEO用） -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "「聞いてほしいだけなのにアドバイスされる」問題の解決法｜共感型と解決型のすれ違い",
+    "description": "ただ聞いてほしいだけなのに解決策を返されてモヤモヤする理由と、どちらも我慢しなくていい具体的な伝え方を会話スタイル別に解説します。",
+    "author": { "@type": "Organization", "name": "ことばの波長診断" },
+    "publisher": { "@type": "Organization", "name": "ことばの波長診断" },
+    "datePublished": "2026-08-18",
+    "url": "https://ryuseisajoja.github.io/renai/articles/2026-08-18-kyokan-kaiketsu-surechigai.html"
+  }
+  </script>
+</head>
+<body>
+
+<header>
+  <a class="site-name" href="../index.html">💕 ことばの波長診断</a>
+</header>
+
+<main>
+  <div class="breadcrumb">
+    <a href="../index.html">ホーム</a> &rsaquo; <a href="index.html">コラム一覧</a> &rsaquo; 共感型と解決型のすれ違い
+  </div>
+
+  <h1>🫧 「聞いてほしいだけなのにアドバイスされる」問題<br>共感型と解決型、どちらも悪くない解決法</h1>
+  <p class="meta">2026年8月更新 ｜ 読了時間：約6分</p>
+
+  <div class="lead">
+    今日あった嫌なことを話しただけなのに、「それはこうすればいいよ」と返される。間違ってはいないけれど、なぜかモヤモヤが残る——。恋愛でいちばん多いすれ違いのひとつです。原因は思いやりの欠如ではなく、<strong>話を聞いたときに脳が最初に動く方向が違うこと</strong>。この記事では、そのメカニズムと、お互いが我慢しなくて済む具体的な伝え方を紹介します。
+  </div>
+
+  <h2>なぜ「アドバイスされるとモヤモヤする」のか</h2>
+  <p>
+    悩みを話す人には、大きく分けてふたつの目的があります。ひとつは<strong>気持ちを整理したい</strong>、もうひとつは<strong>答えを見つけたい</strong>。前者の人にとって、話すこと自体が処理作業です。声に出して並べているうちに、自分でも何に傷ついたのかがわかってくる。
+  </p>
+  <p>
+    ところが解決型の人は、悩みを聞くと反射的に「どうすれば元に戻せるか」を探し始めます。これは冷たさではなく、<strong>相手の苦しい時間を1秒でも短くしたいという善意</strong>です。ただ、まだ気持ちの整理が終わっていない人に答えを渡すと、「私の感じたことは飛ばされた」という印象だけが残ってしまいます。
+  </p>
+  <p>
+    つまりこのすれ違いは、優しさの量ではなく<strong>優しさの出し方の順番</strong>の違いです。
+  </p>
+
+  <h2>あなたはどっち？ 5秒でわかる見分け方</h2>
+
+  <div class="point-list">
+    <div class="point-item">
+      <div class="point-num">A</div>
+      <div class="point-body">
+        <strong>共感先行タイプ（聴く寄り・ゆっくり寄りに多い）</strong>
+        <span>話し終わるまで結論を出したくない。「わかる」「それはしんどいね」と言われると、それだけで半分軽くなる。逆に、すぐ解決策を出されると急かされた気がする。</span>
+      </div>
+    </div>
+    <div class="point-item">
+      <div class="point-num">B</div>
+      <div class="point-body">
+        <strong>解決先行タイプ（話す寄り・はやい寄りに多い）</strong>
+        <span>問題を聞くと同時に選択肢が浮かぶ。「うんうん」だけで終わる会話はもったいなく感じる。役に立てていないと、話を聞いた気がしない。</span>
+      </div>
+    </div>
+    <div class="point-item">
+      <div class="point-num">C</div>
+      <div class="point-body">
+        <strong>場面で切り替わるタイプ</strong>
+        <span>仕事の悩みは解決してほしい、人間関係の悩みは聞いてほしい——というように話題で変わる人も多くいます。この場合、相手が読み違えるのはむしろ自然です。</span>
+      </div>
+    </div>
+  </div>
+
+  <p>
+    ポイントは、<strong>どちらが正しいかを決めないこと</strong>です。Aの人がBの人を「冷たい」と評価し、Bの人がAの人を「話すだけで何も変えない」と評価し始めると、すれ違いは一気に対立になります。
+  </p>
+
+  <h2>話す側ができること：最初の一言で行き先を示す</h2>
+
+  <h3>1. 「聞いてほしいだけ」と先に言う</h3>
+  <p>
+    もっとも簡単で、もっとも効果が大きい方法です。「解決しなくていいから聞いて」「今日は愚痴だけ言わせて」。この一言があるだけで、解決型の相手は<strong>安心して黙っていられます</strong>。彼らが口を出すのは、黙っていることが手抜きに思えるからです。「聞くのが今日の正解だ」と伝われば、驚くほど素直に聞き役になってくれます。
+  </p>
+
+  <h3>2. 求めているものを名前で言う</h3>
+  <p>
+    「共感がほしい」「意見がほしい」「ただ隣にいてほしい」。抽象的に思えますが、言われた側にはとても具体的な指示になります。特に話すテンポの速い相手には、<strong>ゴールを先に渡すほど会話が穏やかになります</strong>。
+  </p>
+
+  <h3>3. アドバイスされたら、拒否ではなく順番でお願いする</h3>
+  <p>
+    「そうじゃない」と否定すると、相手は善意を突き返されたと感じます。代わりに「ありがとう、それも聞きたい。でも先に最後まで話させて」と伝える。<strong>否定ではなく順番の調整</strong>にすると、関係が傷つきません。
+  </p>
+
+  <h2>聞く側ができること：解決の前に「3ターン」我慢する</h2>
+
+  <h3>1. 最初の3往復は質問と相づちだけにする</h3>
+  <p>
+    解決型の人におすすめなのが、回数で区切る方法です。「最初の3ターンは、意見を言わない」と決めておく。相づちと「それでどうなったの？」だけで進めます。3往復あれば、たいていの人は自分で気持ちを整理し終えます。
+  </p>
+
+  <h3>2. 提案する前に許可をとる</h3>
+  <p>
+    「思いついたことがあるんだけど、言ってもいい？」。このワンクッションは、あなたの意見の価値を下げません。むしろ<strong>受け取ってもらえる確率が上がります</strong>。同じ提案でも、求められてから出したときのほうが、相手にはずっと届きます。
+  </p>
+
+  <h3>3. 「大変だったね」は思考停止の言葉ではない</h3>
+  <p>
+    解決型の人ほど、共感の言葉を「中身がない」と感じがちです。けれど共感先行の人にとって、その一言は<strong>状況が正しく理解されたという確認</strong>です。無駄な相づちではなく、次に進むためのチェックポイントだと考えてみてください。
+  </p>
+
+  <div class="warn-box">
+    <p>⚠️ <strong>「察して」もう一歩手前で止まっていませんか</strong><br>
+    「言わなくてもわかってほしい」という気持ちは自然なものです。ただ、共感型と解決型は、そもそも同じ場面で反応する場所が違います。察してもらうのを待つより、最初の一言を足すほうが、圧倒的に早く伝わります。</p>
+  </div>
+
+  <h2>すれ違いが続いたときのリセット方法</h2>
+  <p>
+    何度も同じ揉め方をしている場合は、揉めていないときに一度だけ話しておくと効きます。おすすめは、<strong>「悩みを話すとき、私はこうしてもらえると助かる」を平時に共有すること</strong>。揉めた直後に言うと責めているように聞こえますが、穏やかなときなら単なる取扱説明書として受け取ってもらえます。
+  </p>
+  <p>
+    そのうえで、ふたりの会話スタイルが「聴く↔話す」「ゆっくり↔はやく」のどこに位置するのかを知っておくと、次に同じ場面が来たときの理解がまるで変わります。相手はあなたを軽んじたのではなく、<strong>自分の得意な優しさを先に出しただけ</strong>だとわかるからです。
+  </p>
+  <div style="margin:12px 0 18px;">
+    <span class="type-badge">🗣️ 最初に「聞いてほしいだけ」</span>
+    <span class="type-badge">✋ 提案の前に許可をとる</span>
+    <span class="type-badge">3️⃣ 最初の3ターンは相づちだけ</span>
+  </div>
+
+  <h2>まとめ：どちらの優しさも捨てなくていい</h2>
+  <p>
+    共感型と解決型のすれ違いは、恋愛が冷めたサインではありません。<strong>むしろ、お互いに何とかしてあげたいと思っているからこそ起きるズレ</strong>です。順番さえ合わせれば、共感のあとに提案が続く、いちばん心強い会話になります。
+  </p>
+  <p>
+    まずは、自分と相手がどちらの反応から始まる人なのかを知ってみてください。それだけで、次の「聞いてほしいだけの夜」は、ずっと穏やかになります。
+  </p>
+
+  <!-- 診断へのCTA -->
+  <div class="cta-block">
+    <h3>💕 ふたりの「ことばの波長」を診断してみよう</h3>
+    <p>全12問・約3分・無料<br>共感先行か解決先行か、あなたのタイプがわかります。</p>
+    <a class="cta-btn" href="../index.html">無料で診断する ▶</a>
+  </div>
+
+  <div class="related-articles">
+    <h2>関連コラム</h2>
+    <a class="related-link" href="2026-05-19-kikiyaku-yarisugi-renai.html">
+      <span style="font-size:1.4rem;">👂</span>
+      <span><strong>聞き役をやりすぎる人の恋愛</strong><br><span style="font-size:0.8rem;color:var(--text-light);">聴き上手が疲れてしまう前に</span></span>
+    </a>
+    <a class="related-link" href="2026-06-09-kenka-damarikomu-hanashiai.html">
+      <span style="font-size:1.4rem;">🤫</span>
+      <span><strong>ケンカで黙り込む相手との話し合い方</strong><br><span style="font-size:0.8rem;color:var(--text-light);">沈黙を「拒絶」と読み違えない</span></span>
+    </a>
+    <a class="related-link" href="2026-08-13-dousei-kaiwa-zure.html">
+      <span style="font-size:1.4rem;">🏠</span>
+      <span><strong>同棲して初めて気づく「会話のズレ」5つ</strong><br><span style="font-size:0.8rem;color:var(--text-light);">生活の中で表面化する違い</span></span>
+    </a>
+  </div>
+
+</main>
+
+<footer>
+  💕 ことばの波長診断 ｜
+  <a href="../index.html">診断トップ</a> ｜
+  <a href="index.html">コラム一覧</a>
+</footer>
+
+</body>
+</html>

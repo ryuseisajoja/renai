@@ -36,6 +36,7 @@
   -->
   <!-- ▲ Google AdSense ▲ -->
 
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
   <style>
   /* ── Share Buttons ── */
   .share-row { display:flex; gap:8px; margin-bottom:10px; }
@@ -390,7 +391,33 @@
     .share-copy:hover { background:var(--pink-light); transform:translateY(-2px) scale(1.04); }
     .share-img  { background:linear-gradient(135deg,#fd5949,#d6249f,#285aeb); color:#fff; }
     .share-img:hover { transform:translateY(-2px) scale(1.04); }
+  /*KW-OVERRIDE-START*/
+  :root{--pink:#3a4fd1;--pink-light:#dfe4fb;--pink-pale:#f3f5fe;--purple:#2a9d8f;--purple-light:#e0f3f0;--text-dark:#1c2333;--text-mid:#4b5568;--text-light:#8a93a5;
+    --shadow:0 2px 10px rgba(28,35,51,.06);--shadow-sm:0 1px 6px rgba(28,35,51,.06);--radius:16px;--coral:#ff6f59;--ink:#1c2333;--line:#e3e7ef;--t1:#2a9d8f;--t2:#3a86ff;--t3:#f4a261;--t4:#ef476f}
+  body{font-family:'Zen Kaku Gothic New','Hiragino Kaku Gothic ProN','Meiryo',sans-serif!important;background:#f3f5fa!important}
+  header{padding:34px 20px 20px}
+  header h1{background:none!important;-webkit-text-fill-color:var(--ink)!important;color:var(--ink)!important;font-weight:900;letter-spacing:.01em}
+  header h1::before{content:"";display:block;width:44px;height:44px;border-radius:13px;margin:0 auto 14px;background:conic-gradient(var(--t1) 0 25%,var(--t2) 0 50%,var(--t3) 0 75%,var(--t4) 0)}
+  .card{border:1px solid var(--line)}
+  .nav-tabs{background:#fff!important;border:1px solid var(--line)}
+  .nav-tab.active{background:var(--ink)!important;box-shadow:none!important;color:#fff}
+  .btn-next,.btn-full{background:var(--coral)!important;box-shadow:0 6px 16px rgba(255,111,89,.32)!important;color:#fff}
+  .btn-next:disabled,.btn-full:disabled{background:#c9ced9!important;box-shadow:none!important}
+  .opt-btn.selected{background:var(--pink-pale)!important;border-color:var(--pink)!important}
+  .progress-fill{background:var(--coral)!important}
+  .kw-hero-dots{display:flex;justify-content:center;gap:8px;margin-bottom:14px}
+  .kw-hero-dots i{width:14px;height:14px;border-radius:50%;display:block}
+  .kw-chips{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 18px}
+  .kw-chips div{border-radius:12px;padding:10px 12px;font-size:.8rem;font-weight:700;color:#fff;line-height:1.5}
+  .kw-chips small{display:block;font-weight:500;opacity:.9;font-size:.72rem}
+  .kw-faq{margin-top:22px;border-top:1px solid var(--line);padding-top:18px}
+  .kw-faq h3{font-size:.95rem;font-weight:900;margin-bottom:10px}
+  .kw-faq details{border:1px solid var(--line);border-radius:12px;padding:11px 14px;margin-bottom:8px;background:#fff}
+  .kw-faq summary{cursor:pointer;font-weight:700;font-size:.88rem}
+  .kw-faq p{font-size:.84rem;color:var(--text-mid);line-height:1.8;margin-top:8px}
+/*KW-OVERRIDE-END*/
   </style>
+  <script type="application/ld+json" id="kw-ld">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "name": "ことばの波長診断", "url": "https://love-kotoba-shindan.com/", "applicationCategory": "LifestyleApplication", "operatingSystem": "Web", "inLanguage": "ja", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}, "description": "聴く↔話す、ゆっくり↔はやいの2軸で会話スタイルを16タイプに分類し、恋愛相性を診断する無料サイト"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "診断は無料ですか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、すべて無料です。会員登録も不要で、全12問・約3分で結果が出ます。"}}, {"@type": "Question", "name": "診断結果は保存されますか？", "acceptedAnswer": {"@type": "Answer", "text": "入力内容や結果は端末の外に送信・保存されません。気軽にお試しください。"}}, {"@type": "Question", "name": "相性が悪いタイプだと付き合えませんか？", "acceptedAnswer": {"@type": "Answer", "text": "いいえ。タイプの違いは優劣ではなく『会話のテンポや聴き方のクセ』の違いです。違いを知っておくことで、すれ違いは減らせます。"}}, {"@type": "Question", "name": "パートナーのタイプがわからないときは？", "acceptedAnswer": {"@type": "Answer", "text": "『相性チェック』タブで、相手の話し方に近いタイプを選ぶだけで相性を確認できます。"}}]}]}</script>
 </head>
 <body>
 
@@ -412,11 +439,12 @@
 
     <div id="q-start" class="card">
       <div style="text-align:center;margin-bottom:22px;">
-        <div style="font-size:2.8rem;margin-bottom:12px;">💬</div>
+        <div class="kw-hero-dots"><i style="background:#2a9d8f"></i><i style="background:#3a86ff"></i><i style="background:#f4a261"></i><i style="background:#ef476f"></i></div>
         <h2 style="font-size:1.25rem;font-weight:900;margin-bottom:6px;">あなたの「ことばの波長」を診断</h2>
         <p style="color:var(--text-mid);font-size:0.82rem;">全12問 / 約3分 / 無料</p>
       </div>
 
+      <div class="kw-chips"><div style="background:#2a9d8f">聴く × ゆっくり<small>静かに寄り添う</small></div><div style="background:#3a86ff">聴く × はやい<small>テンポよく共感</small></div><div style="background:#f4a261">話す × ゆっくり<small>じっくり語る</small></div><div style="background:#ef476f">話す × はやい<small>勢いで盛り上げる</small></div></div>
       <div style="background:var(--pink-pale);border-radius:14px;padding:18px;margin-bottom:18px;">
         <p style="font-size:0.88rem;line-height:1.9;color:var(--text-mid);">
           話し方って、人によって全然違いますよね。<br>
@@ -444,6 +472,10 @@
       </div>
 
       <button class="btn-full" onclick="startQuiz()">診断スタート ▶</button>
+      <div class="kw-faq" id="kw-faq"><h3>よくある質問</h3><details><summary>診断は無料ですか？</summary><p>はい、すべて無料です。会員登録も不要で、全12問・約3分で結果が出ます。</p></details><details><summary>診断結果は保存されますか？</summary><p>入力内容や結果は端末の外に送信・保存されません。気軽にお試しください。</p></details><details><summary>相性が悪いタイプだと付き合えませんか？</summary><p>いいえ。タイプの違いは優劣ではなく『会話のテンポや聴き方のクセ』の違いです。違いを知っておくことで、すれ違いは減らせます。</p></details><details><summary>パートナーのタイプがわからないときは？</summary><p>『相性チェック』タブで、相手の話し方に近いタイプを選ぶだけで相性を確認できます。</p></details></div>
+      
+      
+      
     </div>
 
     <div id="q-form" class="card" style="display:none;">

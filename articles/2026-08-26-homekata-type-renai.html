@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="theme-color" content="#3a4fd1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>褒めても喜ばれないのはなぜ？｜タイプ別・恋人に本当に届く褒め方</title>
   <meta name="description" content="褒めたのに反応が薄い、社交辞令だと思われる…原因は褒め言葉の中身ではなく届け方です。会話スタイル4タイプ別に、恋人に本当に響く褒め方と、褒められるのが苦手な人への配慮を解説します。">
@@ -15,93 +16,62 @@
   <meta property="og:site_name" content="ことばの波長診断">
   <meta name="twitter:card" content="summary">
 
-  <style>
-    :root {
-      --pink: #f06292; --pink-light: #fce4ec; --pink-pale: #fff8fb;
-      --purple: #9c6fc9; --text-dark: #2d2d2d; --text-mid: #555; --text-light: #999;
-      --white: #fff; --radius: 16px;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
-      background: linear-gradient(145deg, #fff0f7 0%, #f3e5ff 55%, #e8f4fd 100%);
-      min-height: 100vh; color: var(--text-dark); line-height: 1.8;
-    }
-    header {
-      background: linear-gradient(135deg, #f06292, #9c6fc9);
-      color: white; padding: 14px 20px;
-    }
-    .site-name {
-      font-size: 0.82rem; font-weight: 700; opacity: 0.9; text-decoration: none; color: white;
-    }
-    main { max-width: 720px; margin: 0 auto; padding: 28px 16px 80px; }
-    .breadcrumb { font-size: 0.75rem; color: var(--text-light); margin-bottom: 18px; }
-    .breadcrumb a { color: var(--pink); text-decoration: none; }
-    h1 {
-      font-size: clamp(1.3rem, 4.5vw, 1.85rem); font-weight: 900; line-height: 1.4;
-      color: var(--text-dark); margin-bottom: 10px;
-    }
-    .meta { font-size: 0.78rem; color: var(--text-light); margin-bottom: 24px; }
-    .lead {
-      background: var(--pink-pale); border-left: 4px solid var(--pink);
-      border-radius: 0 12px 12px 0; padding: 16px 18px; margin-bottom: 28px;
-      font-size: 0.95rem; color: var(--text-mid);
-    }
-    h2 {
-      font-size: 1.15rem; font-weight: 900; color: var(--text-dark);
-      margin: 32px 0 12px; padding-left: 12px;
-      border-left: 4px solid var(--pink);
-    }
-    h3 { font-size: 1rem; font-weight: 800; color: var(--purple); margin: 22px 0 8px; }
-    p { color: var(--text-mid); margin-bottom: 14px; font-size: 0.93rem; }
-    .card {
-      background: white; border-radius: var(--radius); padding: 22px;
-      margin-bottom: 20px; box-shadow: 0 4px 18px rgba(200,100,150,0.1);
-    }
-    .point-list { display: flex; flex-direction: column; gap: 12px; margin: 14px 0; }
-    .point-item {
-      display: flex; gap: 12px; align-items: flex-start;
-      background: var(--pink-pale); border-radius: 11px; padding: 13px 15px;
-    }
-    .point-num {
-      width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0;
-      background: linear-gradient(135deg, #f06292, #9c6fc9); color: white;
-      font-size: 0.82rem; font-weight: 900; display: flex; align-items: center; justify-content: center;
-    }
-    .point-body strong { display: block; font-size: 0.92rem; color: var(--text-dark); margin-bottom: 3px; }
-    .point-body span { font-size: 0.83rem; color: var(--text-mid); }
-    .warn-box {
-      background: #fff3e0; border-radius: 12px; border-left: 4px solid #ff9800;
-      padding: 14px 16px; margin: 16px 0;
-    }
-    .warn-box p { color: #795548; margin: 0; font-size: 0.87rem; }
-    /* CTA */
-    .cta-block {
-      background: linear-gradient(135deg, #f06292, #9c6fc9);
-      border-radius: 18px; padding: 28px 24px; text-align: center; margin: 32px 0; color: white;
-    }
-    .cta-block h3 { color: white; font-size: 1.1rem; margin-bottom: 8px; }
-    .cta-block p { color: rgba(255,255,255,0.88); font-size: 0.88rem; margin-bottom: 18px; }
-    .cta-btn {
-      display: inline-block; background: white; color: var(--pink); font-weight: 900;
-      font-size: 1rem; padding: 13px 32px; border-radius: 50px;
-      text-decoration: none; box-shadow: 0 4px 14px rgba(0,0,0,0.15); transition: all 0.2s;
-    }
-    .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
-    .type-badge {
-      display: inline-block; padding: 4px 14px; border-radius: 50px; font-size: 0.8rem;
-      font-weight: 700; margin: 3px; background: var(--pink-light); color: var(--pink);
-    }
-    .related-articles { margin-top: 36px; }
-    .related-articles h3 { color: var(--text-dark); border-left-color: var(--purple); }
-    .related-link {
-      display: flex; align-items: center; gap: 10px; background: white; border-radius: 12px;
-      padding: 13px 16px; margin-bottom: 8px; text-decoration: none; color: var(--text-dark);
-      box-shadow: 0 2px 10px rgba(0,0,0,0.06); transition: all 0.18s;
-    }
-    .related-link:hover { transform: translateX(4px); background: var(--pink-pale); }
-    footer { text-align: center; padding: 16px; color: var(--text-light); font-size: 0.75rem; }
-    footer a { color: var(--text-light); }
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style id="kw-design">
+    :root{--ink:#1c2333;--sub:#4b5568;--mute:#8a93a5;--bg:#f3f5fa;--card:#fff;--line:#e3e7ef;--accent:#3a4fd1;--accent-soft:#eceffd;--coral:#ff6f59;
+      --t1:#2a9d8f;--t2:#3a86ff;--t3:#f4a261;--t4:#ef476f;}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Zen Kaku Gothic New','Hiragino Kaku Gothic ProN','Meiryo',sans-serif;background:var(--bg);color:var(--ink);line-height:1.95;padding-bottom:64px;-webkit-text-size-adjust:100%}
+    header{background:#fff;border-bottom:1px solid var(--line);padding:13px 20px}
+    .site-name{display:inline-flex;align-items:center;gap:9px;font-size:.9rem;font-weight:900;color:var(--ink);text-decoration:none;letter-spacing:.04em}
+    .site-name::before{content:"";width:22px;height:22px;border-radius:7px;flex-shrink:0;
+      background:conic-gradient(var(--t1) 0 25%,var(--t2) 0 50%,var(--t3) 0 75%,var(--t4) 0)}
+    main{max-width:720px;margin:24px auto 0;background:var(--card);padding:34px 22px 56px;border:1px solid var(--line);border-radius:20px}
+    @media(max-width:760px){main{margin:0;border-radius:0;border-left:0;border-right:0;padding-top:26px}}
+    .breadcrumb{font-size:.74rem;color:var(--mute);margin-bottom:16px}
+    .breadcrumb a{color:var(--mute);text-decoration:none;border-bottom:1px solid var(--line)}
+    h1{font-size:clamp(1.45rem,5vw,2rem);font-weight:900;line-height:1.45;letter-spacing:.01em;margin-bottom:12px}
+    .meta{font-size:.76rem;color:var(--mute);margin-bottom:26px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+    .lead{font-size:1rem;color:var(--sub);margin-bottom:26px;padding:0;border:0;background:none}
+    .toc{background:var(--accent-soft);border-radius:14px;padding:16px 20px;margin-bottom:34px}
+    .toc-title{font-size:.78rem;font-weight:900;color:var(--accent);letter-spacing:.12em;margin-bottom:6px}
+    .toc ol{padding-left:1.3em}.toc li{font-size:.9rem;line-height:1.7;padding:3px 0}
+    .toc a{color:var(--ink);text-decoration:none;font-weight:700}.toc a:hover{color:var(--accent)}
+    article,main{counter-reset:sec}
+    h2{counter-increment:sec;font-size:1.28rem;font-weight:900;line-height:1.5;margin:46px 0 14px;padding:0;border:0;scroll-margin-top:16px}
+    h2::before{content:counter(sec,decimal-leading-zero);display:block;font-size:.8rem;font-weight:900;letter-spacing:.2em;color:var(--accent);margin-bottom:2px}
+    h2::after{content:"";display:block;width:36px;height:3px;border-radius:2px;background:var(--coral);margin-top:8px}
+    .related-articles h2::before,.related-articles h2::after{display:none}
+    h3{font-size:1.02rem;font-weight:900;margin:26px 0 8px;padding-left:12px;border-left:4px solid var(--accent);color:var(--ink)}
+    h3:nth-of-type(4n+1){border-left-color:var(--t1)}h3:nth-of-type(4n+2){border-left-color:var(--t2)}h3:nth-of-type(4n+3){border-left-color:var(--t3)}h3:nth-of-type(4n+4){border-left-color:var(--t4)}
+    p{color:var(--sub);margin-bottom:16px;font-size:.96rem}
+    .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:18px}
+    .point-list{display:flex;flex-direction:column;gap:10px;margin:18px 0}
+    .point-item{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px 16px}
+    .point-num{width:30px;height:30px;border-radius:9px;flex-shrink:0;background:var(--accent);color:#fff;font-size:.85rem;font-weight:900;display:flex;align-items:center;justify-content:center}
+    .point-body strong{display:block;font-size:.97rem;color:var(--ink);margin-bottom:3px;line-height:1.55}
+    .point-body span{font-size:.88rem;color:var(--sub);line-height:1.8}
+    .warn-box{background:#fff6f4;border:1px solid #ffd6cf;border-radius:12px;padding:15px 17px;margin:22px 0}
+    .warn-box p{color:#7a4a42;margin:0;font-size:.9rem}.warn-box strong{color:#b4402f}
+    .cta-block{background:var(--ink);border-radius:18px;padding:30px 24px;text-align:center;margin:44px 0 36px;color:#fff;position:relative;overflow:hidden}
+    .cta-block::before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:linear-gradient(90deg,var(--t1) 0 25%,var(--t2) 0 50%,var(--t3) 0 75%,var(--t4) 0)}
+    .cta-block h3{color:#fff;border:0;padding:0;font-size:1.12rem;margin:6px 0 10px}
+    .cta-block p{color:rgba(255,255,255,.82);font-size:.88rem;margin-bottom:20px}
+    .cta-btn{display:inline-block;background:var(--coral);color:#fff;font-weight:900;font-size:1rem;padding:14px 34px;border-radius:50px;text-decoration:none;transition:transform .15s,box-shadow .15s;box-shadow:0 6px 18px rgba(255,111,89,.35)}
+    .cta-btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(255,111,89,.45)}
+    .type-badge{display:inline-block;padding:3px 12px;border-radius:50px;font-size:.78rem;font-weight:700;margin:3px;background:var(--accent-soft);color:var(--accent)}
+    .related-articles{margin-top:40px}
+    .related-articles h2{font-size:1.05rem;margin:0 0 12px;counter-increment:none}
+    .related-link{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 16px;margin-bottom:8px;text-decoration:none;color:var(--ink);transition:border-color .15s,transform .15s}
+    .related-link:hover{border-color:var(--accent);transform:translateX(3px)}
+    .related-link>span:first-child{display:none}
+    .related-link::after{content:"→";margin-left:auto;color:var(--accent);font-weight:900}
+    .related-link strong{font-size:.92rem;line-height:1.5}
+    footer{text-align:center;padding:22px 16px 30px;color:var(--mute);font-size:.76rem}footer a{color:var(--mute)}
+    .sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-top:1px solid var(--line);padding:9px 14px;display:flex;align-items:center;justify-content:center;gap:12px}
+    .sticky-cta span{font-size:.8rem;font-weight:700;color:var(--sub)}
+    .sticky-cta a{background:var(--coral);color:#fff;font-weight:900;font-size:.88rem;padding:9px 20px;border-radius:50px;text-decoration:none;white-space:nowrap}
   </style>
 
   <!-- 構造化データ（SEO用） -->
@@ -121,7 +91,7 @@
 <body>
 
 <header>
-  <a class="site-name" href="../index.html">💕 ことばの波長診断</a>
+  <a class="site-name" href="../index.html">ことばの波長診断</a>
 </header>
 
 <main>
@@ -135,8 +105,9 @@
   <div class="lead">
     「かわいいね」「すごいね」と伝えているのに、返ってくるのは「そんなことないよ」だけ。褒めた側は手応えがなく、だんだん言わなくなる——恋愛でよく起きるすれ違いです。原因は言葉の中身ではなく、<strong>褒め方が相手の受け取り方に合っていないこと</strong>。この記事では、会話スタイル4タイプ別に、実際に届く褒め方を紹介します。
   </div>
+  <nav class="toc"><div class="toc-title">この記事の内容</div><ol><li><a href="#s1">褒め言葉が届かない3つの理由</a></li><li><a href="#s2">タイプ別・その人に届く褒め方</a></li><li><a href="#s3">どのタイプにも共通する4つのコツ</a></li><li><a href="#s4">褒められるのが苦手な人への伝え方</a></li><li><a href="#s5">まとめ：褒め方は「相手の受け取り方」に合わせる</a></li></ol></nav>
 
-  <h2>褒め言葉が届かない3つの理由</h2>
+  <h2 id="s1">褒め言葉が届かない3つの理由</h2>
   <p>
     ひとつめは<strong>抽象度が高すぎる</strong>こと。「すごい」「えらい」は範囲が広く、相手は自分のどこを見てもらえたのか分かりません。ふたつめは<strong>頻度が高すぎる</strong>こと。毎回同じ言葉が返ってくると、口癖として処理されます。
   </p>
@@ -144,7 +115,7 @@
     そしてみっつめが、いちばん見落とされがちな<strong>タイミングとテンポの不一致</strong>です。褒められた瞬間に反応を返すのが得意な人と、あとからじわじわ嬉しくなる人がいます。後者に即レスを期待すると、「反応が薄い＝喜んでいない」と誤読してしまうのです。
   </p>
 
-  <h2>タイプ別・その人に届く褒め方</h2>
+  <h2 id="s2">タイプ別・その人に届く褒め方</h2>
 
   <h3>① 聴く寄り × ゆっくり話す相手</h3>
   <p>
@@ -178,7 +149,7 @@
     注意点は、明るく振る舞っているぶん<strong>「頑張り」を見落とされやすい</strong>こと。楽しそうにこなしている裏側に気づいて言葉にすると、他の誰よりも深く刺さります。
   </p>
 
-  <h2>どのタイプにも共通する4つのコツ</h2>
+  <h2 id="s3">どのタイプにも共通する4つのコツ</h2>
 
   <div class="point-list">
     <div class="point-item">
@@ -212,11 +183,11 @@
   </div>
 
   <div class="warn-box">
-    <p>⚠️ <strong>「そんなことないよ」は拒否ではありません</strong><br>
+    <p><strong>「そんなことないよ」は拒否ではありません</strong><br>
     謙遜は、日本語の会話ではほとんど反射に近い反応です。否定されたからといって褒めるのをやめると、相手は「もう見てもらえていない」と感じます。反応の薄さと、嬉しさの大きさは別物だと考えてください。</p>
   </div>
 
-  <h2>褒められるのが苦手な人への伝え方</h2>
+  <h2 id="s4">褒められるのが苦手な人への伝え方</h2>
   <p>
     どう言っても居心地が悪そうにする人もいます。その場合は、褒め言葉を<strong>お願いや感謝の形に変換する</strong>と受け取りやすくなります。「上手だね」ではなく「またお願いしたい」、「気が利くね」ではなく「助かった、ありがとう」。
   </p>
@@ -229,7 +200,7 @@
     <span class="type-badge">⏳ 時間差でもう一度</span>
   </div>
 
-  <h2>まとめ：褒め方は「相手の受け取り方」に合わせる</h2>
+  <h2 id="s5">まとめ：褒め方は「相手の受け取り方」に合わせる</h2>
   <p>
     褒め言葉が届かないのは、あなたの気持ちが足りないからでも、相手が冷たいからでもありません。<strong>届け方が相手の受信の仕方と噛み合っていないだけ</strong>です。
   </p>
@@ -239,7 +210,7 @@
 
   <!-- 診断へのCTA -->
   <div class="cta-block">
-    <h3>💕 ふたりの「ことばの波長」を診断してみよう</h3>
+    <h3>ふたりの「ことばの波長」を診断してみよう</h3>
     <p>全12問・約3分・無料<br>タイプがわかれば、褒め言葉の届け方も変わります。</p>
     <a class="cta-btn" href="../index.html">無料で診断する ▶</a>
   </div>
@@ -263,10 +234,10 @@
 </main>
 
 <footer>
-  💕 ことばの波長診断 ｜
+  ことばの波長診断 ｜
   <a href="../index.html">診断トップ</a> ｜
   <a href="index.html">コラム一覧</a>
 </footer>
-
+<div class="sticky-cta"><span>あなたの会話タイプは？</span><a href="../index.html">無料診断（3分）</a></div>
 </body>
 </html>

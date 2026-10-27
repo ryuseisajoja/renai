@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="theme-color" content="#3a4fd1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>カップルの会話が減ってきた原因と対処法｜「最近話してないな」を解消する5つのステップ</title>
   <meta name="description" content="付き合いが長くなると会話が減るのはなぜ？会話スタイルのズレが原因のことも。カップルの会話が減ってきたときの原因分析と、関係を取り戻すための具体的な対処法を解説します。">
@@ -15,102 +16,62 @@
   <meta property="og:site_name" content="ことばの波長診断">
   <meta name="twitter:card" content="summary">
 
-  <style>
-    :root {
-      --pink: #f06292; --pink-light: #fce4ec; --pink-pale: #fff8fb;
-      --purple: #9c6fc9; --text-dark: #2d2d2d; --text-mid: #555; --text-light: #999;
-      --white: #fff; --radius: 16px;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
-      background: linear-gradient(145deg, #fff0f7 0%, #f3e5ff 55%, #e8f4fd 100%);
-      min-height: 100vh; color: var(--text-dark); line-height: 1.8;
-    }
-    header {
-      background: linear-gradient(135deg, #f06292, #9c6fc9);
-      color: white; padding: 14px 20px;
-    }
-    .site-name {
-      font-size: 0.82rem; font-weight: 700; opacity: 0.9; text-decoration: none; color: white;
-    }
-    main { max-width: 720px; margin: 0 auto; padding: 28px 16px 80px; }
-    .breadcrumb { font-size: 0.75rem; color: var(--text-light); margin-bottom: 18px; }
-    .breadcrumb a { color: var(--pink); text-decoration: none; }
-    h1 {
-      font-size: clamp(1.3rem, 4.5vw, 1.85rem); font-weight: 900; line-height: 1.4;
-      color: var(--text-dark); margin-bottom: 10px;
-    }
-    .meta { font-size: 0.78rem; color: var(--text-light); margin-bottom: 24px; }
-    .lead {
-      background: var(--pink-pale); border-left: 4px solid var(--pink);
-      border-radius: 0 12px 12px 0; padding: 16px 18px; margin-bottom: 28px;
-      font-size: 0.95rem; color: var(--text-mid);
-    }
-    h2 {
-      font-size: 1.15rem; font-weight: 900; color: var(--text-dark);
-      margin: 32px 0 12px; padding-left: 12px;
-      border-left: 4px solid var(--pink);
-    }
-    h3 { font-size: 1rem; font-weight: 800; color: var(--purple); margin: 22px 0 8px; }
-    p { color: var(--text-mid); margin-bottom: 14px; font-size: 0.93rem; }
-    .card {
-      background: white; border-radius: var(--radius); padding: 22px;
-      margin-bottom: 20px; box-shadow: 0 4px 18px rgba(200,100,150,0.1);
-    }
-    .point-list { display: flex; flex-direction: column; gap: 12px; margin: 14px 0; }
-    .point-item {
-      display: flex; gap: 12px; align-items: flex-start;
-      background: var(--pink-pale); border-radius: 11px; padding: 13px 15px;
-    }
-    .point-num {
-      width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0;
-      background: linear-gradient(135deg, #f06292, #9c6fc9); color: white;
-      font-size: 0.82rem; font-weight: 900; display: flex; align-items: center; justify-content: center;
-    }
-    .point-body strong { display: block; font-size: 0.92rem; color: var(--text-dark); margin-bottom: 3px; }
-    .point-body span { font-size: 0.83rem; color: var(--text-mid); }
-    .warn-box {
-      background: #fff3e0; border-radius: 12px; border-left: 4px solid #ff9800;
-      padding: 14px 16px; margin: 16px 0;
-    }
-    .warn-box p { color: #795548; margin: 0; font-size: 0.87rem; }
-    .tip-box {
-      background: #e8f5e9; border-radius: 12px; border-left: 4px solid #66bb6a;
-      padding: 14px 16px; margin: 16px 0;
-    }
-    .tip-box p { color: #2e7d32; margin: 0; font-size: 0.87rem; }
-    .check-list {
-      display: flex; flex-direction: column; gap: 10px; margin: 16px 0;
-    }
-    .check-item {
-      display: flex; gap: 10px; align-items: flex-start;
-      background: white; border-radius: 10px; padding: 12px 14px;
-      box-shadow: 0 2px 8px rgba(200,100,150,0.08);
-    }
-    .check-icon { font-size: 1.1rem; flex-shrink: 0; }
-    .check-text { font-size: 0.88rem; color: var(--text-mid); }
-    .cta-block {
-      background: linear-gradient(135deg, #f06292, #9c6fc9);
-      border-radius: 18px; padding: 28px 24px; text-align: center; margin: 32px 0; color: white;
-    }
-    .cta-block h3 { color: white; font-size: 1.1rem; margin-bottom: 8px; }
-    .cta-block p { color: rgba(255,255,255,0.88); font-size: 0.88rem; margin-bottom: 18px; }
-    .cta-btn {
-      display: inline-block; background: white; color: var(--pink); font-weight: 900;
-      font-size: 1rem; padding: 13px 32px; border-radius: 50px;
-      text-decoration: none; box-shadow: 0 4px 14px rgba(0,0,0,0.15); transition: all 0.2s;
-    }
-    .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
-    .related-articles { margin-top: 36px; }
-    .related-link {
-      display: flex; align-items: center; gap: 10px; background: white; border-radius: 12px;
-      padding: 13px 16px; margin-bottom: 8px; text-decoration: none; color: var(--text-dark);
-      box-shadow: 0 2px 10px rgba(0,0,0,0.06); transition: all 0.18s;
-    }
-    .related-link:hover { transform: translateX(4px); background: var(--pink-pale); }
-    footer { text-align: center; padding: 16px; color: var(--text-light); font-size: 0.75rem; }
-    footer a { color: var(--text-light); }
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style id="kw-design">
+    :root{--ink:#1c2333;--sub:#4b5568;--mute:#8a93a5;--bg:#f3f5fa;--card:#fff;--line:#e3e7ef;--accent:#3a4fd1;--accent-soft:#eceffd;--coral:#ff6f59;
+      --t1:#2a9d8f;--t2:#3a86ff;--t3:#f4a261;--t4:#ef476f;}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Zen Kaku Gothic New','Hiragino Kaku Gothic ProN','Meiryo',sans-serif;background:var(--bg);color:var(--ink);line-height:1.95;padding-bottom:64px;-webkit-text-size-adjust:100%}
+    header{background:#fff;border-bottom:1px solid var(--line);padding:13px 20px}
+    .site-name{display:inline-flex;align-items:center;gap:9px;font-size:.9rem;font-weight:900;color:var(--ink);text-decoration:none;letter-spacing:.04em}
+    .site-name::before{content:"";width:22px;height:22px;border-radius:7px;flex-shrink:0;
+      background:conic-gradient(var(--t1) 0 25%,var(--t2) 0 50%,var(--t3) 0 75%,var(--t4) 0)}
+    main{max-width:720px;margin:24px auto 0;background:var(--card);padding:34px 22px 56px;border:1px solid var(--line);border-radius:20px}
+    @media(max-width:760px){main{margin:0;border-radius:0;border-left:0;border-right:0;padding-top:26px}}
+    .breadcrumb{font-size:.74rem;color:var(--mute);margin-bottom:16px}
+    .breadcrumb a{color:var(--mute);text-decoration:none;border-bottom:1px solid var(--line)}
+    h1{font-size:clamp(1.45rem,5vw,2rem);font-weight:900;line-height:1.45;letter-spacing:.01em;margin-bottom:12px}
+    .meta{font-size:.76rem;color:var(--mute);margin-bottom:26px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+    .lead{font-size:1rem;color:var(--sub);margin-bottom:26px;padding:0;border:0;background:none}
+    .toc{background:var(--accent-soft);border-radius:14px;padding:16px 20px;margin-bottom:34px}
+    .toc-title{font-size:.78rem;font-weight:900;color:var(--accent);letter-spacing:.12em;margin-bottom:6px}
+    .toc ol{padding-left:1.3em}.toc li{font-size:.9rem;line-height:1.7;padding:3px 0}
+    .toc a{color:var(--ink);text-decoration:none;font-weight:700}.toc a:hover{color:var(--accent)}
+    article,main{counter-reset:sec}
+    h2{counter-increment:sec;font-size:1.28rem;font-weight:900;line-height:1.5;margin:46px 0 14px;padding:0;border:0;scroll-margin-top:16px}
+    h2::before{content:counter(sec,decimal-leading-zero);display:block;font-size:.8rem;font-weight:900;letter-spacing:.2em;color:var(--accent);margin-bottom:2px}
+    h2::after{content:"";display:block;width:36px;height:3px;border-radius:2px;background:var(--coral);margin-top:8px}
+    .related-articles h2::before,.related-articles h2::after{display:none}
+    h3{font-size:1.02rem;font-weight:900;margin:26px 0 8px;padding-left:12px;border-left:4px solid var(--accent);color:var(--ink)}
+    h3:nth-of-type(4n+1){border-left-color:var(--t1)}h3:nth-of-type(4n+2){border-left-color:var(--t2)}h3:nth-of-type(4n+3){border-left-color:var(--t3)}h3:nth-of-type(4n+4){border-left-color:var(--t4)}
+    p{color:var(--sub);margin-bottom:16px;font-size:.96rem}
+    .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:18px}
+    .point-list{display:flex;flex-direction:column;gap:10px;margin:18px 0}
+    .point-item{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px 16px}
+    .point-num{width:30px;height:30px;border-radius:9px;flex-shrink:0;background:var(--accent);color:#fff;font-size:.85rem;font-weight:900;display:flex;align-items:center;justify-content:center}
+    .point-body strong{display:block;font-size:.97rem;color:var(--ink);margin-bottom:3px;line-height:1.55}
+    .point-body span{font-size:.88rem;color:var(--sub);line-height:1.8}
+    .warn-box{background:#fff6f4;border:1px solid #ffd6cf;border-radius:12px;padding:15px 17px;margin:22px 0}
+    .warn-box p{color:#7a4a42;margin:0;font-size:.9rem}.warn-box strong{color:#b4402f}
+    .cta-block{background:var(--ink);border-radius:18px;padding:30px 24px;text-align:center;margin:44px 0 36px;color:#fff;position:relative;overflow:hidden}
+    .cta-block::before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:linear-gradient(90deg,var(--t1) 0 25%,var(--t2) 0 50%,var(--t3) 0 75%,var(--t4) 0)}
+    .cta-block h3{color:#fff;border:0;padding:0;font-size:1.12rem;margin:6px 0 10px}
+    .cta-block p{color:rgba(255,255,255,.82);font-size:.88rem;margin-bottom:20px}
+    .cta-btn{display:inline-block;background:var(--coral);color:#fff;font-weight:900;font-size:1rem;padding:14px 34px;border-radius:50px;text-decoration:none;transition:transform .15s,box-shadow .15s;box-shadow:0 6px 18px rgba(255,111,89,.35)}
+    .cta-btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(255,111,89,.45)}
+    .type-badge{display:inline-block;padding:3px 12px;border-radius:50px;font-size:.78rem;font-weight:700;margin:3px;background:var(--accent-soft);color:var(--accent)}
+    .related-articles{margin-top:40px}
+    .related-articles h2{font-size:1.05rem;margin:0 0 12px;counter-increment:none}
+    .related-link{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 16px;margin-bottom:8px;text-decoration:none;color:var(--ink);transition:border-color .15s,transform .15s}
+    .related-link:hover{border-color:var(--accent);transform:translateX(3px)}
+    .related-link>span:first-child{display:none}
+    .related-link::after{content:"→";margin-left:auto;color:var(--accent);font-weight:900}
+    .related-link strong{font-size:.92rem;line-height:1.5}
+    footer{text-align:center;padding:22px 16px 30px;color:var(--mute);font-size:.76rem}footer a{color:var(--mute)}
+    .sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-top:1px solid var(--line);padding:9px 14px;display:flex;align-items:center;justify-content:center;gap:12px}
+    .sticky-cta span{font-size:.8rem;font-weight:700;color:var(--sub)}
+    .sticky-cta a{background:var(--coral);color:#fff;font-weight:900;font-size:.88rem;padding:9px 20px;border-radius:50px;text-decoration:none;white-space:nowrap}
   </style>
 
   <script type="application/ld+json">
@@ -129,7 +90,7 @@
 <body>
 
 <header>
-  <a class="site-name" href="../index.html">💕 ことばの波長診断</a>
+  <a class="site-name" href="../index.html">ことばの波長診断</a>
 </header>
 
 <main>
@@ -143,8 +104,9 @@
   <div class="lead">
     「付き合いたてはあんなに話していたのに、最近は何も話さない日が増えてきた…」。このような状況は、決して珍しいことではありません。ただ、会話の減少をそのまま放置すると、少しずつ関係に溝ができていくこともあります。この記事では、カップルの会話が減る原因を整理し、関係をもう一度温める5つの具体的な対処法をお伝えします。
   </div>
+  <nav class="toc"><div class="toc-title">この記事の内容</div><ol><li><a href="#s1">「会話が減る」のは仲が悪くなったサインではない</a></li><li><a href="#s2">カップルの会話が減る4つの主な原因</a></li><li><a href="#s3">会話を取り戻す5つのステップ</a></li><li><a href="#s4">こんなときは要注意——放置すると危険なサイン</a></li><li><a href="#s5">まとめ</a></li></ol></nav>
 
-  <h2>「会話が減る」のは仲が悪くなったサインではない</h2>
+  <h2 id="s1">「会話が減る」のは仲が悪くなったサインではない</h2>
   <p>
     まず知っておいてほしいのは、カップルの会話が減ること自体は必ずしも「関係が冷えている」証拠ではないということです。付き合いが長くなるほど、お互いのことをよく知り、沈黙でも安心していられる関係が育まれます。これは自然な成熟のプロセスです。
   </p>
@@ -152,7 +114,7 @@
     問題になるのは、「話したいのに話せていない」「会話が減って不安や孤独を感じる」という状況です。どちらか一方が「もっと話したい」と思っているのに、それが伝わっていない——この「気持ちのズレ」が積み重なると、関係に影響が出てきます。
   </p>
 
-  <h2>カップルの会話が減る4つの主な原因</h2>
+  <h2 id="s2">カップルの会話が減る4つの主な原因</h2>
 
   <div class="check-list">
     <div class="check-item">
@@ -173,7 +135,7 @@
     </div>
   </div>
 
-  <h2>会話を取り戻す5つのステップ</h2>
+  <h2 id="s3">会話を取り戻す5つのステップ</h2>
 
   <div class="point-list">
     <div class="point-item">
@@ -213,16 +175,16 @@
     </div>
   </div>
 
-  <h2>こんなときは要注意——放置すると危険なサイン</h2>
+  <h2 id="s4">こんなときは要注意——放置すると危険なサイン</h2>
   <p>
     会話が減っても「それぞれのペースで過ごしている」という状態なら問題になりにくいですが、以下のような場合は関係の見直しが必要なこともあります。
   </p>
   <div class="warn-box">
-    <p>⚠️ <strong>話しかけても一言で返されることが続いている</strong><br>
+    <p><strong>話しかけても一言で返されることが続いている</strong><br>
     「ふーん」「そう」など、明らかに会話を終わらせる返答が続く場合は、疲れや不満がたまっているサインの可能性があります。責めるのではなく、「最近何か大変なことある？」と相手の状態を確認することが先決です。</p>
   </div>
   <div class="warn-box">
-    <p>⚠️ <strong>「どうせ言っても変わらない」という気持ちが出てきている</strong><br>
+    <p><strong>「どうせ言っても変わらない」という気持ちが出てきている</strong><br>
     このような思いが自分の中に芽生えていたら、早めに2人で話し合う場を設けることをおすすめします。諦めの感情は、関係を少しずつ空洞化させていきます。</p>
   </div>
 
@@ -233,12 +195,12 @@
 
   <!-- 診断へのCTA -->
   <div class="cta-block">
-    <h3>💕 自分の「ことばの波長タイプ」を診断してみよう</h3>
+    <h3>自分の「ことばの波長タイプ」を診断してみよう</h3>
     <p>全12問・約3分・無料<br>2人でそれぞれ診断して、タイプを比べてみよう<br>相性のよい会話スタイルと改善のヒントがわかります。</p>
     <a class="cta-btn" href="../index.html">無料で診断する ▶</a>
   </div>
 
-  <h2>まとめ</h2>
+  <h2 id="s5">まとめ</h2>
   <p>
     カップルの会話が減ることは、必ずしも危機のサインではありません。でも、「話したいのに話せない」「なんとなく疎遠になってきた」という感覚があるなら、早めに小さな行動を起こすことが大切です。会話を責めずに伝える、時間をつくる、共通の体験をする——どれも難しいことではありません。2人の「ことばの波長」を改めて合わせることで、関係はまた温かくなります。
   </p>
@@ -262,10 +224,10 @@
 </main>
 
 <footer>
-  💕 ことばの波長診断 ｜
+  ことばの波長診断 ｜
   <a href="../index.html">診断トップ</a> ｜
   <a href="index.html">コラム一覧</a>
 </footer>
-
+<div class="sticky-cta"><span>あなたの会話タイプは？</span><a href="../index.html">無料診断（3分）</a></div>
 </body>
 </html>

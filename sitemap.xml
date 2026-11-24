@@ -4,13 +4,13 @@
     <loc>https://love-kotoba-shindan.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-24</lastmod>
   </url>
   <url>
     <loc>https://love-kotoba-shindan.com/articles/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-24</lastmod>
   </url>
   <url>
     <loc>https://love-kotoba-shindan.com/articles/2026-04-26-first-date-kaiwa-tsudzukanai.html</loc>
@@ -503,6 +503,24 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://love-kotoba-shindan.com/articles/2026-11-24-daijoubu-kuchiguse-koibito.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-11-24</lastmod>
+  </url>
+  <url>
+    <loc>https://love-kotoba-shindan.com/articles/2026-11-24-nenmatsu-ichinen-furikaeri-couple.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-11-24</lastmod>
+  </url>
+  <url>
+    <loc>https://love-kotoba-shindan.com/articles/2026-11-24-shitsumon-zeme-mensetsu-kaiwa.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-11-24</lastmod>
   </url>
   <url>
     <loc>https://love-kotoba-shindan.com/articles/kiki-jouzu-renai.html</loc>
